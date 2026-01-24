@@ -1,0 +1,139 @@
+{
+	"French Kiss": {
+		"name": "French Kiss",
+		"description": "Deeply kiss target with tongue",
+		"category": "Mouth",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently French kisses %TARGET%",
+				"%USER% softly deepens the kiss with %TARGET%",
+				"%USER% tenderly explores %TARGET%'s mouth with their tongue",
+				"%USER% carefully deepens the kiss with %TARGET%"
+			],
+			"neutral": [
+				"%USER% French kisses %TARGET%",
+				"%USER% deepens the kiss with %TARGET%",
+				"%USER% explores %TARGET%'s mouth with their tongue",
+				"%USER% passionately kisses %TARGET%"
+			],
+			"hard": [
+				"%USER% roughly French kisses %TARGET%",
+				"%USER% aggressively deepens the kiss with %TARGET%",
+				"%USER% forcefully explores %TARGET%'s mouth with their tongue",
+				"%USER% roughly deepens the kiss with %TARGET%"
+			],
+			"rough": [
+				"%USER% aggressively French kisses %TARGET%",
+				"%USER% harshly deepens the kiss with %TARGET%",
+				"%USER% forcefully explores %TARGET%'s mouth with their tongue",
+				"%USER% roughly deepens the kiss with %TARGET%"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently French kiss target",
+				"Softly deepen the kiss with target",
+				"Tenderly explore target's mouth with your tongue",
+				"Carefully deepen the kiss with target"
+			],
+			"neutral": [
+				"French kiss target",
+				"Deepen the kiss with target",
+				"Explore target's mouth with your tongue",
+				"Passionately kiss target"
+			],
+			"hard": [
+				"Roughly French kiss target",
+				"Aggressively deepen the kiss with target",
+				"Forcefully explore target's mouth with your tongue",
+				"Roughly deepen the kiss with target"
+			],
+			"rough": [
+				"Aggressively French kiss target",
+				"Harshly deepen the kiss with target",
+				"Forcefully explore target's mouth with your tongue",
+				"Roughly deepen the kiss with target"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["mouth"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 8,
+		"target_pleasure": 8,
+		"user_arousal": 8,
+		"target_arousal": 8
+	},
+	"Suck Tongue": {
+		"name": "Suck Tongue",
+		"description": "Suck on target's tongue",
+		"category": "Mouth",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently sucks on %TARGET%'s tongue",
+				"%USER% softly takes %TARGET%'s tongue into their mouth",
+				"%USER% tenderly sucks on %TARGET%'s tongue",
+				"%USER% carefully draws %TARGET%'s tongue into their mouth"
+			],
+			"neutral": [
+				"%USER% sucks on %TARGET%'s tongue",
+				"%USER% takes %TARGET%'s tongue into their mouth",
+				"%USER% draws %TARGET%'s tongue into their mouth",
+				"%USER% performs oral on %TARGET%'s tongue"
+			],
+			"hard": [
+				"%USER% roughly sucks on %TARGET%'s tongue",
+				"%USER% aggressively takes %TARGET%'s tongue into their mouth",
+				"%USER% forcefully sucks on %TARGET%'s tongue",
+				"%USER% roughly draws %TARGET%'s tongue into their mouth"
+			],
+			"rough": [
+				"%USER% aggressively sucks on %TARGET%'s tongue",
+				"%USER% harshly takes %TARGET%'s tongue into their mouth",
+				"%USER% forcefully sucks on %TARGET%'s tongue",
+				"%USER% roughly draws %TARGET%'s tongue into their mouth"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently suck on target's tongue",
+				"Softly take target's tongue into your mouth",
+				"Tenderly suck on target's tongue",
+				"Carefully draw target's tongue into your mouth"
+			],
+			"neutral": [
+				"Suck on target's tongue",
+				"Take target's tongue into your mouth",
+				"Draw target's tongue into your mouth",
+				"Perform oral on target's tongue"
+			],
+			"hard": [
+				"Roughly suck on target's tongue",
+				"Aggressively take target's tongue into your mouth",
+				"Forcefully suck on target's tongue",
+				"Roughly draw target's tongue into your mouth"
+			],
+			"rough": [
+				"Aggressively suck on target's tongue",
+				"Harshly take target's tongue into your mouth",
+				"Forcefully suck on target's tongue",
+				"Roughly draw target's tongue into your mouth"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["mouth"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 6,
+		"target_pleasure": 6,
+		"user_arousal": 6,
+		"target_arousal": 6
+	}
+}
+

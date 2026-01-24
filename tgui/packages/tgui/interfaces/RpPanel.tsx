@@ -97,6 +97,8 @@ type RpPanelData = {
     erp_status_nc?: string;
     erp_status_v?: string;
     erp_status_hypno?: string;
+    erp_status_depraved?: string;
+    erp_status_violent?: string;
     erp_status_mechanics?: string;
     genitals?: Array<{
       slot: string;
@@ -1724,6 +1726,72 @@ export const RpPanel = (props) => {
                                 onClick={() => {
                                   act('set_self_preference', {
                                     pref_type: 'erp_status_hypno',
+                                    pref_value: option,
+                                  });
+                                }}
+                              >
+                                {option}
+                              </Button>
+                            </Stack.Item>
+                          ))}
+                        </Stack>
+                      </Stack.Item>
+                    </Stack>
+                  </Stack.Item>
+
+                  {/* Depraved Preference */}
+                  <Stack.Item>
+                    <Stack>
+                      <Stack.Item>
+                        <Box fontSize="0.9em" style={{ minWidth: '120px' }}>Depraved:</Box>
+                      </Stack.Item>
+                      <Stack.Item grow>
+                        <Stack wrap>
+                          {[
+                            'Yes',
+                            'Ask (L)OOC',
+                            'Check OOC Notes',
+                            'No',
+                          ].map((option) => (
+                            <Stack.Item key={option} mr={0.3} mb={0.3}>
+                              <Button
+                                selected={self_preferences?.erp_status_depraved === option}
+                                onClick={() => {
+                                  act('set_self_preference', {
+                                    pref_type: 'erp_status_depraved',
+                                    pref_value: option,
+                                  });
+                                }}
+                              >
+                                {option}
+                              </Button>
+                            </Stack.Item>
+                          ))}
+                        </Stack>
+                      </Stack.Item>
+                    </Stack>
+                  </Stack.Item>
+
+                  {/* Violent Preference */}
+                  <Stack.Item>
+                    <Stack>
+                      <Stack.Item>
+                        <Box fontSize="0.9em" style={{ minWidth: '120px' }}>Violent:</Box>
+                      </Stack.Item>
+                      <Stack.Item grow>
+                        <Stack wrap>
+                          {[
+                            'Yes',
+                            'Ask (L)OOC',
+                            'Check OOC Notes',
+                            'No',
+                          ].map((option) => (
+                            <Stack.Item key={option} mr={0.3} mb={0.3}>
+                              <Button
+                                selected={self_preferences?.erp_status_violent === option}
+                                onClick={() => {
+                                  act('set_self_preference', {
+                                    pref_type: 'erp_status_violent',
                                     pref_value: option,
                                   });
                                 }}

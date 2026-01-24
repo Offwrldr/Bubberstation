@@ -1,0 +1,71 @@
+{
+	"Hold Hands": {
+		"name": "Hold Hands",
+		"description": "Hold target's hands",
+		"category": "Hands",
+		"usage": "other",
+		"lewd": 0,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently holds %TARGET%'s hands",
+				"%USER% softly interlaces fingers with %TARGET%",
+				"%USER% tenderly holds %TARGET%'s hands",
+				"%USER% carefully clasps %TARGET%'s hands"
+			],
+			"neutral": [
+				"%USER% holds %TARGET%'s hands",
+				"%USER% interlaces fingers with %TARGET%",
+				"%USER% clasps %TARGET%'s hands",
+				"%USER% takes %TARGET%'s hands"
+			],
+			"hard": [
+				"%USER% roughly holds %TARGET%'s hands",
+				"%USER% aggressively interlaces fingers with %TARGET%",
+				"%USER% forcefully clasps %TARGET%'s hands",
+				"%USER% roughly takes %TARGET%'s hands"
+			],
+			"rough": [
+				"%USER% aggressively holds %TARGET%'s hands",
+				"%USER% harshly interlaces fingers with %TARGET%",
+				"%USER% forcefully clasps %TARGET%'s hands",
+				"%USER% roughly takes %TARGET%'s hands"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently hold target's hands",
+				"Softly interlace fingers with target",
+				"Tenderly hold target's hands",
+				"Carefully clasp target's hands"
+			],
+			"neutral": [
+				"Hold target's hands",
+				"Interlace fingers with target",
+				"Clasp target's hands",
+				"Take target's hands"
+			],
+			"hard": [
+				"Roughly hold target's hands",
+				"Aggressively interlace fingers with target",
+				"Forcefully clasp target's hands",
+				"Roughly take target's hands"
+			],
+			"rough": [
+				"Aggressively hold target's hands",
+				"Harshly interlace fingers with target",
+				"Forcefully clasp target's hands",
+				"Roughly take target's hands"
+			]
+		},
+		"user_required_parts": ["hands"],
+		"target_required_parts": ["hands"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "green",
+		"user_pleasure": 1,
+		"target_pleasure": 1,
+		"user_arousal": 1,
+		"target_arousal": 1
+	}
+}
+

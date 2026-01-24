@@ -1,0 +1,139 @@
+{
+	"Suck Balls": {
+		"name": "Suck Balls",
+		"description": "Perform oral on target's testicles",
+		"category": "Balls",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently kisses %TARGET%'s balls",
+				"%USER% softly licks %TARGET%'s testicles",
+				"%USER% tenderly sucks on %TARGET%'s balls",
+				"%USER% carefully takes %TARGET%'s balls into their mouth"
+			],
+			"neutral": [
+				"%USER% sucks on %TARGET%'s balls",
+				"%USER% licks %TARGET%'s testicles",
+				"%USER% takes %TARGET%'s balls into their mouth",
+				"%USER% performs oral on %TARGET%'s testicles"
+			],
+			"hard": [
+				"%USER% roughly sucks on %TARGET%'s balls",
+				"%USER% aggressively licks %TARGET%'s testicles",
+				"%USER% forcefully takes %TARGET%'s balls into their mouth",
+				"%USER% roughly performs oral on %TARGET%'s testicles"
+			],
+			"rough": [
+				"%USER% aggressively sucks on %TARGET%'s balls",
+				"%USER% harshly licks %TARGET%'s testicles",
+				"%USER% forcefully takes %TARGET%'s balls into their mouth",
+				"%USER% roughly performs oral on %TARGET%'s testicles"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently perform oral on target's testicles",
+				"Softly kiss and lick target's balls",
+				"Tenderly suck on target's testicles",
+				"Carefully take target's balls into your mouth"
+			],
+			"neutral": [
+				"Perform oral on target's testicles",
+				"Suck on target's balls",
+				"Lick target's testicles",
+				"Take target's balls into your mouth"
+			],
+			"hard": [
+				"Roughly perform oral on target's testicles",
+				"Aggressively suck on target's balls",
+				"Forcefully lick target's testicles",
+				"Roughly take target's balls into your mouth"
+			],
+			"rough": [
+				"Aggressively perform oral on target's testicles",
+				"Harshly suck on target's balls",
+				"Forcefully lick target's testicles",
+				"Roughly take target's balls into your mouth"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["testicles"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 5,
+		"target_pleasure": 10,
+		"user_arousal": 5,
+		"target_arousal": 10
+	},
+	"Fondle Balls": {
+		"name": "Fondle Balls",
+		"description": "Gently fondle target's testicles",
+		"category": "Balls",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently fondles %TARGET%'s balls",
+				"%USER% softly caresses %TARGET%'s testicles",
+				"%USER% tenderly strokes %TARGET%'s balls",
+				"%USER% carefully massages %TARGET%'s testicles"
+			],
+			"neutral": [
+				"%USER% fondles %TARGET%'s balls",
+				"%USER% caresses %TARGET%'s testicles",
+				"%USER% strokes %TARGET%'s balls",
+				"%USER% massages %TARGET%'s testicles"
+			],
+			"hard": [
+				"%USER% roughly fondles %TARGET%'s balls",
+				"%USER% aggressively caresses %TARGET%'s testicles",
+				"%USER% forcefully strokes %TARGET%'s balls",
+				"%USER% roughly massages %TARGET%'s testicles"
+			],
+			"rough": [
+				"%USER% aggressively fondles %TARGET%'s balls",
+				"%USER% harshly caresses %TARGET%'s testicles",
+				"%USER% forcefully strokes %TARGET%'s balls",
+				"%USER% roughly massages %TARGET%'s testicles"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently fondle target's testicles",
+				"Softly caress target's balls",
+				"Tenderly stroke target's testicles",
+				"Carefully massage target's balls"
+			],
+			"neutral": [
+				"Fondle target's testicles",
+				"Caress target's balls",
+				"Stroke target's testicles",
+				"Massage target's balls"
+			],
+			"hard": [
+				"Roughly fondle target's testicles",
+				"Aggressively caress target's balls",
+				"Forcefully stroke target's testicles",
+				"Roughly massage target's balls"
+			],
+			"rough": [
+				"Aggressively fondle target's testicles",
+				"Harshly caress target's balls",
+				"Forcefully stroke target's testicles",
+				"Roughly massage target's balls"
+			]
+		},
+		"user_required_parts": ["hands"],
+		"target_required_parts": ["testicles"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 8,
+		"user_arousal": 3,
+		"target_arousal": 8
+	}
+}
+

@@ -313,12 +313,16 @@
 			self_prefs["erp_status_nc"] = prefs.read_preference(/datum/preference/choiced/erp_status_nc) || "No"
 			self_prefs["erp_status_v"] = prefs.read_preference(/datum/preference/choiced/erp_status_v) || "No"
 			self_prefs["erp_status_hypno"] = prefs.read_preference(/datum/preference/choiced/erp_status_hypno) || "No"
+			self_prefs["erp_status_depraved"] = prefs.read_preference(/datum/preference/choiced/erp_status_depraved) || "No"
+			self_prefs["erp_status_violent"] = prefs.read_preference(/datum/preference/choiced/erp_status_violent) || "No"
 			self_prefs["erp_status_mechanics"] = prefs.read_preference(/datum/preference/choiced/erp_status_mechanics) || "None"
 		else
 			self_prefs["erp_status"] = "No"
 			self_prefs["erp_status_nc"] = "No"
 			self_prefs["erp_status_v"] = "No"
 			self_prefs["erp_status_hypno"] = "No"
+			self_prefs["erp_status_depraved"] = "No"
+			self_prefs["erp_status_violent"] = "No"
 			self_prefs["erp_status_mechanics"] = "None"
 
 		// Get genital visibility data
@@ -577,6 +581,10 @@
 					preference_entry = GLOB.preference_entries[/datum/preference/choiced/erp_status_v]
 				if("erp_status_hypno")
 					preference_entry = GLOB.preference_entries[/datum/preference/choiced/erp_status_hypno]
+				if("erp_status_depraved")
+					preference_entry = GLOB.preference_entries[/datum/preference/choiced/erp_status_depraved]
+				if("erp_status_violent")
+					preference_entry = GLOB.preference_entries[/datum/preference/choiced/erp_status_violent]
 				if("erp_status_mechanics")
 					preference_entry = GLOB.preference_entries[/datum/preference/choiced/erp_status_mechanics]
 
@@ -726,19 +734,22 @@
 				to_chat(holder, span_warning("You cannot perform '[interaction_name]' on [target]."))
 				return
 
-			// Get the message that will be displayed (before triggering)
+			// Get the message that will be displayed (before triggering) - use attitude-based if available
 			var/interaction_message = ""
-			if(found_interaction.message && length(found_interaction.message))
-				var/msg = pick(found_interaction.message)
+			var/list/messages_to_use = found_interaction.message
+			if(found_interaction.message_by_attitude.len && found_interaction.message_by_attitude[approach_mode])
+				messages_to_use = found_interaction.message_by_attitude[approach_mode]
+			if(messages_to_use && length(messages_to_use))
+				var/msg = pick(messages_to_use)
 				if(interaction_component.body_relay && !can_see(holder, target))
 					msg = replacetext(msg, "%TARGET%", "\the [interaction_component.body_relay.name]")
 				interaction_message = trim(replacetext(replacetext(msg, "%TARGET%", "[target]"), "%USER%", ""), INTERACTION_MAX_CHAR)
 
-			// Trigger the interaction
+			// Trigger the interaction with current approach mode
 			if(interaction_component.body_relay && !can_see(holder, target))
-				found_interaction.act(holder, target, interaction_component.body_relay)
+				found_interaction.act(holder, target, interaction_component.body_relay, approach_mode)
 			else
-				found_interaction.act(holder, target)
+				found_interaction.act(holder, target, null, approach_mode)
 
 			// Update interaction cooldown
 			var/datum/component/interactable/holder_component = holder.GetComponent(/datum/component/interactable)
@@ -1357,12 +1368,16 @@
 
 	// Check ERP preferences for filtering Sex verbs
 	var/show_sex_verbs = FALSE
+	var/depraved_pref = "No"
+	var/violent_pref = "No"
 	if(holder.client?.prefs)
 		var/erp_enabled = holder.client.prefs.read_preference(/datum/preference/toggle/erp)
 		var/erp_mechanics = holder.client.prefs.read_preference(/datum/preference/choiced/erp_status_mechanics)
 		// Show sex verbs only if ERP is enabled AND mechanics is Mechanical or Mechanical and Roleplay
 		if(erp_enabled && (erp_mechanics == "Mechanical only" || erp_mechanics == "Mechanical and Roleplay"))
 			show_sex_verbs = TRUE
+		depraved_pref = holder.client.prefs.read_preference(/datum/preference/choiced/erp_status_depraved) || "No"
+		violent_pref = holder.client.prefs.read_preference(/datum/preference/choiced/erp_status_violent) || "No"
 
 	for(var/datum/interaction/interaction in interaction_component.interactions)
 		if(!interaction_component.can_interact(interaction, holder))
@@ -1374,13 +1389,34 @@
 		if(interaction.category == "Sex" && !show_sex_verbs)
 			continue
 
+		// Filter Depraved category verbs
+		if(interaction.category == "Depraved" && depraved_pref == "No")
+			continue
+
+		// Filter Violent category verbs
+		if(interaction.category == "Violent" && violent_pref == "No")
+			continue
+
+		// Filter by category flags (for verbs that have the flag but aren't in those categories)
+		if(interaction.category_depraved && depraved_pref == "No")
+			continue
+		if(interaction.category_violent && violent_pref == "No")
+			continue
+
 			if(!categories[interaction.category])
 				categories[interaction.category] = list(interaction.name)
 			else
 				categories[interaction.category] += interaction.name
 				var/list/sorted_category = sort_list(categories[interaction.category])
 				categories[interaction.category] = sorted_category
-			descriptions[interaction.name] = interaction.description
+
+			// Get description based on current approach mode
+			var/desc = interaction.description
+			if(interaction.description_by_attitude.len && interaction.description_by_attitude[approach_mode])
+				var/list/desc_list = interaction.description_by_attitude[approach_mode]
+				if(desc_list && desc_list.len)
+					desc = pick(desc_list)
+			descriptions[interaction.name] = desc
 			colors[interaction.name] = interaction.color
 
 

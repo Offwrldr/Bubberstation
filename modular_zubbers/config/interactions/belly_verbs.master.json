@@ -1,0 +1,71 @@
+{
+	"Kiss Belly": {
+		"name": "Kiss Belly",
+		"description": "Kiss target's belly",
+		"category": "Belly",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently kisses %TARGET%'s belly",
+				"%USER% softly kisses %TARGET%'s stomach",
+				"%USER% tenderly kisses %TARGET%'s belly",
+				"%USER% carefully kisses along %TARGET%'s belly"
+			],
+			"neutral": [
+				"%USER% kisses %TARGET%'s belly",
+				"%USER% kisses %TARGET%'s stomach",
+				"%USER% kisses along %TARGET%'s belly",
+				"%USER% performs oral on %TARGET%'s belly"
+			],
+			"hard": [
+				"%USER% roughly kisses %TARGET%'s belly",
+				"%USER% aggressively kisses %TARGET%'s stomach",
+				"%USER% forcefully kisses %TARGET%'s belly",
+				"%USER% roughly kisses along %TARGET%'s belly"
+			],
+			"rough": [
+				"%USER% aggressively kisses %TARGET%'s belly",
+				"%USER% harshly kisses %TARGET%'s stomach",
+				"%USER% forcefully kisses %TARGET%'s belly",
+				"%USER% roughly kisses along %TARGET%'s belly"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently kiss target's belly",
+				"Softly kiss target's stomach",
+				"Tenderly kiss target's belly",
+				"Carefully kiss along target's belly"
+			],
+			"neutral": [
+				"Kiss target's belly",
+				"Kiss target's stomach",
+				"Kiss along target's belly",
+				"Perform oral on target's belly"
+			],
+			"hard": [
+				"Roughly kiss target's belly",
+				"Aggressively kiss target's stomach",
+				"Forcefully kiss target's belly",
+				"Roughly kiss along target's belly"
+			],
+			"rough": [
+				"Aggressively kiss target's belly",
+				"Harshly kiss target's stomach",
+				"Forcefully kiss target's belly",
+				"Roughly kiss along target's belly"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["belly"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 5,
+		"user_arousal": 2,
+		"target_arousal": 5
+	}
+}
+

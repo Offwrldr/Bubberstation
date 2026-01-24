@@ -30,6 +30,16 @@
 				continue
 			if(interaction.sexuality != "" && interaction.sexuality != self.client?.prefs?.read_preference(/datum/preference/choiced/erp_sexuality))
 				continue
+			// Filter by Depraved preference
+			if(interaction.category_depraved)
+				var/depraved_pref = self.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_depraved) || "No"
+				if(depraved_pref == "No")
+					continue
+			// Filter by Violent preference
+			if(interaction.category_violent)
+				var/violent_pref = self.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_violent) || "No"
+				if(violent_pref == "No")
+					continue
 		interactions.Add(interaction)
 
 /datum/component/interactable/RegisterWithParent()
@@ -49,18 +59,115 @@
 	build_interactions_list()
 	ui_interact(user)
 
-/datum/component/interactable/proc/can_interact(datum/interaction/interaction, mob/living/carbon/human/target)
-	if(!interaction.allow_act(target, self))
+/datum/component/interactable/proc/has_required_parts(mob/living/carbon/human/user, list/required_parts)
+	if(!required_parts || !required_parts.len)
+		return TRUE
+	if(!ishuman(user))
 		return FALSE
-	if(interaction.lewd && !target.client?.prefs?.read_preference(/datum/preference/toggle/erp))
+
+	for(var/part_string in required_parts)
+		var/part_slot = map_part_string_to_slot(part_string)
+		if(!part_slot)
+			continue
+
+		// Handle special cases
+		switch(part_slot)
+			if("hands")
+				// Check if user has hands (arms)
+				var/has_hands = FALSE
+				for(var/obj/item/bodypart/arm/arm in user.bodyparts)
+					has_hands = TRUE
+					break
+				if(!has_hands)
+					return FALSE
+			if("feet")
+				// Check if user has feet (legs)
+				var/has_feet = FALSE
+				for(var/obj/item/bodypart/leg/leg in user.bodyparts)
+					has_feet = TRUE
+					break
+				if(!has_feet)
+					return FALSE
+			if("arms", "armpits")
+				// Check if user has arms
+				var/has_arms = FALSE
+				for(var/obj/item/bodypart/arm/arm in user.bodyparts)
+					has_arms = TRUE
+					break
+				if(!has_arms)
+					return FALSE
+			if("belly")
+				// Belly/stomach is always present
+				continue
+			if("tail")
+				// Check if user has a tail
+				var/obj/item/organ/tail/tail_organ = user.get_organ_slot(ORGAN_SLOT_TAIL)
+				if(!tail_organ)
+					return FALSE
+			else
+				// Regular organ slot check
+				var/obj/item/organ/organ = user.get_organ_slot(part_slot)
+				if(!organ)
+					return FALSE
+	return TRUE
+
+/datum/component/interactable/proc/map_part_string_to_slot(part_string)
+	switch(lowertext(part_string))
+		if("mouth", "tongue")
+			return ORGAN_SLOT_TONGUE
+		if("penis", "cock")
+			return ORGAN_SLOT_PENIS
+		if("vagina", "pussy")
+			return ORGAN_SLOT_VAGINA
+		if("anus", "ass")
+			return ORGAN_SLOT_ANUS
+		if("breasts", "breast")
+			return ORGAN_SLOT_BREASTS
+		if("testicles", "balls")
+			return ORGAN_SLOT_TESTICLES
+		if("tail")
+			return ORGAN_SLOT_TAIL
+		if("hands", "hand")
+			// Hands are special - check if user has hands
+			return "hands" // Special case
+		if("feet", "paws", "foot", "paw")
+			// Feet are special - check if user has feet
+			return "feet" // Special case
+		if("arms", "arm")
+			// Arms are special
+			return "arms" // Special case
+		if("armpits", "armpit")
+			// Armpits are part of arms
+			return "armpits" // Special case
+		if("belly", "stomach")
+			// Belly/stomach is always present
+			return "belly" // Special case
+		else
+			return null
+
+/datum/component/interactable/proc/can_interact(datum/interaction/interaction, mob/living/carbon/human/user)
+	// user is the person performing the interaction (holder)
+	// self is the target (component owner)
+	if(!interaction.allow_act(user, self))
 		return FALSE
-	if(!interaction.distance_allowed && !target.Adjacent(self))
-		if(!body_relay || !target.Adjacent(body_relay))
+	if(interaction.lewd && !self.client?.prefs?.read_preference(/datum/preference/toggle/erp))
+		return FALSE
+	if(!interaction.distance_allowed && !user.Adjacent(self))
+		if(!body_relay || !user.Adjacent(body_relay))
 			return FALSE
 	if(interaction.category == INTERACTION_CAT_HIDE)
 		return FALSE
-	if(self == target && interaction.usage == INTERACTION_OTHER)
+	if(self == user && interaction.usage == INTERACTION_OTHER)
 		return FALSE
+
+	// Check if user has required parts (user_required_parts)
+	if(!has_required_parts(user, interaction.user_required_parts))
+		return FALSE
+
+	// Check if target (self) has required parts (target_required_parts)
+	if(!has_required_parts(self, interaction.target_required_parts))
+		return FALSE
+
 	return TRUE
 
 /// UI Control

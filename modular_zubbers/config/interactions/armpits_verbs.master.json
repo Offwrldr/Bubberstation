@@ -1,0 +1,71 @@
+{
+	"Lick Armpits": {
+		"name": "Lick Armpits",
+		"description": "Lick target's armpits",
+		"category": "Armpits",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently licks %TARGET%'s armpits",
+				"%USER% softly kisses %TARGET%'s armpits",
+				"%USER% tenderly licks %TARGET%'s armpits",
+				"%USER% carefully performs oral on %TARGET%'s armpits"
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s armpits",
+				"%USER% kisses %TARGET%'s armpits",
+				"%USER% performs oral on %TARGET%'s armpits",
+				"%USER% licks %TARGET%'s underarms"
+			],
+			"hard": [
+				"%USER% roughly licks %TARGET%'s armpits",
+				"%USER% aggressively kisses %TARGET%'s armpits",
+				"%USER% forcefully performs oral on %TARGET%'s armpits",
+				"%USER% roughly licks %TARGET%'s underarms"
+			],
+			"rough": [
+				"%USER% aggressively licks %TARGET%'s armpits",
+				"%USER% harshly kisses %TARGET%'s armpits",
+				"%USER% forcefully performs oral on %TARGET%'s armpits",
+				"%USER% roughly licks %TARGET%'s underarms"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently lick target's armpits",
+				"Softly kiss target's armpits",
+				"Tenderly lick target's armpits",
+				"Carefully perform oral on target's armpits"
+			],
+			"neutral": [
+				"Lick target's armpits",
+				"Kiss target's armpits",
+				"Perform oral on target's armpits",
+				"Lick target's underarms"
+			],
+			"hard": [
+				"Roughly lick target's armpits",
+				"Aggressively kiss target's armpits",
+				"Forcefully perform oral on target's armpits",
+				"Roughly lick target's underarms"
+			],
+			"rough": [
+				"Aggressively lick target's armpits",
+				"Harshly kiss target's armpits",
+				"Forcefully perform oral on target's armpits",
+				"Roughly lick target's underarms"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["armpits"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 6,
+		"user_arousal": 3,
+		"target_arousal": 6
+	}
+}
+

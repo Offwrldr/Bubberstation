@@ -1,0 +1,139 @@
+{
+	"Footjob": {
+		"name": "Footjob",
+		"description": "Use your feet to pleasure target's genitals",
+		"category": "Feet/Paws",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently uses their feet to pleasure %TARGET%",
+				"%USER% softly rubs %TARGET% with their feet",
+				"%USER% tenderly performs a footjob on %TARGET%",
+				"%USER% carefully strokes %TARGET% with their feet"
+			],
+			"neutral": [
+				"%USER% uses their feet to pleasure %TARGET%",
+				"%USER% rubs %TARGET% with their feet",
+				"%USER% performs a footjob on %TARGET%",
+				"%USER% strokes %TARGET% with their feet"
+			],
+			"hard": [
+				"%USER% roughly uses their feet to pleasure %TARGET%",
+				"%USER% aggressively rubs %TARGET% with their feet",
+				"%USER% forcefully performs a footjob on %TARGET%",
+				"%USER% roughly strokes %TARGET% with their feet"
+			],
+			"rough": [
+				"%USER% aggressively uses their feet to pleasure %TARGET%",
+				"%USER% harshly rubs %TARGET% with their feet",
+				"%USER% forcefully performs a footjob on %TARGET%",
+				"%USER% roughly strokes %TARGET% with their feet"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently use your feet to pleasure target",
+				"Softly rub target with your feet",
+				"Tenderly perform a footjob on target",
+				"Carefully stroke target with your feet"
+			],
+			"neutral": [
+				"Use your feet to pleasure target",
+				"Rub target with your feet",
+				"Perform a footjob on target",
+				"Stroke target with your feet"
+			],
+			"hard": [
+				"Roughly use your feet to pleasure target",
+				"Aggressively rub target with your feet",
+				"Forcefully perform a footjob on target",
+				"Roughly stroke target with your feet"
+			],
+			"rough": [
+				"Aggressively use your feet to pleasure target",
+				"Harshly rub target with your feet",
+				"Forcefully perform a footjob on target",
+				"Roughly stroke target with your feet"
+			]
+		},
+		"user_required_parts": ["feet"],
+		"target_required_parts": ["penis"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 5,
+		"target_pleasure": 10,
+		"user_arousal": 5,
+		"target_arousal": 10
+	},
+	"Suck Toes": {
+		"name": "Suck Toes",
+		"description": "Suck on target's toes",
+		"category": "Feet/Paws",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently sucks on %TARGET%'s toes",
+				"%USER% softly takes %TARGET%'s toes into their mouth",
+				"%USER% tenderly licks %TARGET%'s toes",
+				"%USER% carefully performs oral on %TARGET%'s feet"
+			],
+			"neutral": [
+				"%USER% sucks on %TARGET%'s toes",
+				"%USER% takes %TARGET%'s toes into their mouth",
+				"%USER% licks %TARGET%'s toes",
+				"%USER% performs oral on %TARGET%'s feet"
+			],
+			"hard": [
+				"%USER% roughly sucks on %TARGET%'s toes",
+				"%USER% aggressively takes %TARGET%'s toes into their mouth",
+				"%USER% forcefully licks %TARGET%'s toes",
+				"%USER% roughly performs oral on %TARGET%'s feet"
+			],
+			"rough": [
+				"%USER% aggressively sucks on %TARGET%'s toes",
+				"%USER% harshly takes %TARGET%'s toes into their mouth",
+				"%USER% forcefully licks %TARGET%'s toes",
+				"%USER% roughly performs oral on %TARGET%'s feet"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently suck on target's toes",
+				"Softly take target's toes into your mouth",
+				"Tenderly lick target's toes",
+				"Carefully perform oral on target's feet"
+			],
+			"neutral": [
+				"Suck on target's toes",
+				"Take target's toes into your mouth",
+				"Lick target's toes",
+				"Perform oral on target's feet"
+			],
+			"hard": [
+				"Roughly suck on target's toes",
+				"Aggressively take target's toes into your mouth",
+				"Forcefully lick target's toes",
+				"Roughly perform oral on target's feet"
+			],
+			"rough": [
+				"Aggressively suck on target's toes",
+				"Harshly take target's toes into your mouth",
+				"Forcefully lick target's toes",
+				"Roughly perform oral on target's feet"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["feet"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 4,
+		"target_pleasure": 8,
+		"user_arousal": 4,
+		"target_arousal": 8
+	}
+}
+

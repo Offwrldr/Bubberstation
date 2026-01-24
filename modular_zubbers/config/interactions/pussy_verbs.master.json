@@ -1,0 +1,139 @@
+{
+	"Cunnilingus": {
+		"name": "Cunnilingus",
+		"description": "Perform oral on target's vagina",
+		"category": "Pussy",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently licks %TARGET%'s pussy",
+				"%USER% softly performs oral on %TARGET%",
+				"%USER% tenderly eats %TARGET% out",
+				"%USER% carefully licks %TARGET%'s vagina"
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s pussy",
+				"%USER% performs oral on %TARGET%",
+				"%USER% eats %TARGET% out",
+				"%USER% licks %TARGET%'s vagina"
+			],
+			"hard": [
+				"%USER% roughly licks %TARGET%'s pussy",
+				"%USER% aggressively performs oral on %TARGET%",
+				"%USER% forcefully eats %TARGET% out",
+				"%USER% roughly licks %TARGET%'s vagina"
+			],
+			"rough": [
+				"%USER% aggressively licks %TARGET%'s pussy",
+				"%USER% harshly performs oral on %TARGET%",
+				"%USER% forcefully eats %TARGET% out",
+				"%USER% roughly licks %TARGET%'s vagina"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently perform oral on target's vagina",
+				"Softly lick target's pussy",
+				"Tenderly eat target out",
+				"Carefully perform cunnilingus on target"
+			],
+			"neutral": [
+				"Perform oral on target's vagina",
+				"Lick target's pussy",
+				"Eat target out",
+				"Perform cunnilingus on target"
+			],
+			"hard": [
+				"Roughly perform oral on target's vagina",
+				"Aggressively lick target's pussy",
+				"Forcefully eat target out",
+				"Roughly perform cunnilingus on target"
+			],
+			"rough": [
+				"Aggressively perform oral on target's vagina",
+				"Harshly lick target's pussy",
+				"Forcefully eat target out",
+				"Roughly perform cunnilingus on target"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["vagina"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 5,
+		"target_pleasure": 15,
+		"user_arousal": 5,
+		"target_arousal": 15
+	},
+	"Finger Pussy": {
+		"name": "Finger Pussy",
+		"description": "Finger target's vagina",
+		"category": "Pussy",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently fingers %TARGET%'s pussy",
+				"%USER% softly inserts fingers into %TARGET%'s vagina",
+				"%USER% tenderly fingers %TARGET%",
+				"%USER% carefully penetrates %TARGET%'s pussy with their fingers"
+			],
+			"neutral": [
+				"%USER% fingers %TARGET%'s pussy",
+				"%USER% inserts fingers into %TARGET%'s vagina",
+				"%USER% fingers %TARGET%",
+				"%USER% penetrates %TARGET%'s pussy with their fingers"
+			],
+			"hard": [
+				"%USER% roughly fingers %TARGET%'s pussy",
+				"%USER% aggressively inserts fingers into %TARGET%'s vagina",
+				"%USER% forcefully fingers %TARGET%",
+				"%USER% roughly penetrates %TARGET%'s pussy with their fingers"
+			],
+			"rough": [
+				"%USER% aggressively fingers %TARGET%'s pussy",
+				"%USER% harshly inserts fingers into %TARGET%'s vagina",
+				"%USER% forcefully fingers %TARGET%",
+				"%USER% roughly penetrates %TARGET%'s pussy with their fingers"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently finger target's vagina",
+				"Softly insert fingers into target's pussy",
+				"Tenderly finger target",
+				"Carefully penetrate target's pussy with your fingers"
+			],
+			"neutral": [
+				"Finger target's vagina",
+				"Insert fingers into target's pussy",
+				"Finger target",
+				"Penetrate target's pussy with your fingers"
+			],
+			"hard": [
+				"Roughly finger target's vagina",
+				"Aggressively insert fingers into target's pussy",
+				"Forcefully finger target",
+				"Roughly penetrate target's pussy with your fingers"
+			],
+			"rough": [
+				"Aggressively finger target's vagina",
+				"Harshly insert fingers into target's pussy",
+				"Forcefully finger target",
+				"Roughly penetrate target's pussy with your fingers"
+			]
+		},
+		"user_required_parts": ["hands"],
+		"target_required_parts": ["vagina"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 12,
+		"user_arousal": 3,
+		"target_arousal": 12
+	}
+}
+

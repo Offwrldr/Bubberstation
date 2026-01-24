@@ -1,0 +1,139 @@
+{
+	"Fondle Breasts": {
+		"name": "Fondle Breasts",
+		"description": "Fondle target's breasts",
+		"category": "Breast",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently fondles %TARGET%'s breasts",
+				"%USER% softly caresses %TARGET%'s tits",
+				"%USER% tenderly massages %TARGET%'s breasts",
+				"%USER% carefully gropes %TARGET%'s tits"
+			],
+			"neutral": [
+				"%USER% fondles %TARGET%'s breasts",
+				"%USER% caresses %TARGET%'s tits",
+				"%USER% massages %TARGET%'s breasts",
+				"%USER% gropes %TARGET%'s tits"
+			],
+			"hard": [
+				"%USER% roughly fondles %TARGET%'s breasts",
+				"%USER% aggressively caresses %TARGET%'s tits",
+				"%USER% forcefully massages %TARGET%'s breasts",
+				"%USER% roughly gropes %TARGET%'s tits"
+			],
+			"rough": [
+				"%USER% aggressively fondles %TARGET%'s breasts",
+				"%USER% harshly caresses %TARGET%'s tits",
+				"%USER% forcefully massages %TARGET%'s breasts",
+				"%USER% roughly gropes %TARGET%'s tits"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently fondle target's breasts",
+				"Softly caress target's tits",
+				"Tenderly massage target's breasts",
+				"Carefully grope target's tits"
+			],
+			"neutral": [
+				"Fondle target's breasts",
+				"Caress target's tits",
+				"Massage target's breasts",
+				"Grope target's tits"
+			],
+			"hard": [
+				"Roughly fondle target's breasts",
+				"Aggressively caress target's tits",
+				"Forcefully massage target's breasts",
+				"Roughly grope target's tits"
+			],
+			"rough": [
+				"Aggressively fondle target's breasts",
+				"Harshly caress target's tits",
+				"Forcefully massage target's breasts",
+				"Roughly grope target's tits"
+			]
+		},
+		"user_required_parts": ["hands"],
+		"target_required_parts": ["breasts"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 10,
+		"user_arousal": 3,
+		"target_arousal": 10
+	},
+	"Suck Nipples": {
+		"name": "Suck Nipples",
+		"description": "Suck on target's nipples",
+		"category": "Breast",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently sucks on %TARGET%'s nipples",
+				"%USER% softly licks %TARGET%'s nipples",
+				"%USER% tenderly takes %TARGET%'s nipple into their mouth",
+				"%USER% carefully sucks on %TARGET%'s nipples"
+			],
+			"neutral": [
+				"%USER% sucks on %TARGET%'s nipples",
+				"%USER% licks %TARGET%'s nipples",
+				"%USER% takes %TARGET%'s nipple into their mouth",
+				"%USER% performs oral on %TARGET%'s nipples"
+			],
+			"hard": [
+				"%USER% roughly sucks on %TARGET%'s nipples",
+				"%USER% aggressively licks %TARGET%'s nipples",
+				"%USER% forcefully takes %TARGET%'s nipple into their mouth",
+				"%USER% roughly performs oral on %TARGET%'s nipples"
+			],
+			"rough": [
+				"%USER% aggressively sucks on %TARGET%'s nipples",
+				"%USER% harshly licks %TARGET%'s nipples",
+				"%USER% forcefully takes %TARGET%'s nipple into their mouth",
+				"%USER% roughly performs oral on %TARGET%'s nipples"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently suck on target's nipples",
+				"Softly lick target's nipples",
+				"Tenderly take target's nipple into your mouth",
+				"Carefully perform oral on target's nipples"
+			],
+			"neutral": [
+				"Suck on target's nipples",
+				"Lick target's nipples",
+				"Take target's nipple into your mouth",
+				"Perform oral on target's nipples"
+			],
+			"hard": [
+				"Roughly suck on target's nipples",
+				"Aggressively lick target's nipples",
+				"Forcefully take target's nipple into your mouth",
+				"Roughly perform oral on target's nipples"
+			],
+			"rough": [
+				"Aggressively suck on target's nipples",
+				"Harshly lick target's nipples",
+				"Forcefully take target's nipple into your mouth",
+				"Roughly perform oral on target's nipples"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["breasts"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 5,
+		"target_pleasure": 12,
+		"user_arousal": 5,
+		"target_arousal": 12
+	}
+}
+

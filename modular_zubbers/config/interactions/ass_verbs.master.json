@@ -1,0 +1,140 @@
+{
+	"Spank": {
+		"name": "Spank",
+		"description": "Spank target's ass",
+		"category": "Ass",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently spanks %TARGET%'s ass",
+				"%USER% softly pats %TARGET%'s ass",
+				"%USER% tenderly spanks %TARGET%",
+				"%USER% carefully slaps %TARGET%'s ass"
+			],
+			"neutral": [
+				"%USER% spanks %TARGET%'s ass",
+				"%USER% pats %TARGET%'s ass",
+				"%USER% spanks %TARGET%",
+				"%USER% slaps %TARGET%'s ass"
+			],
+			"hard": [
+				"%USER% roughly spanks %TARGET%'s ass",
+				"%USER% aggressively pats %TARGET%'s ass",
+				"%USER% forcefully spanks %TARGET%",
+				"%USER% roughly slaps %TARGET%'s ass"
+			],
+			"rough": [
+				"%USER% aggressively spanks %TARGET%'s ass",
+				"%USER% harshly pats %TARGET%'s ass",
+				"%USER% forcefully spanks %TARGET%",
+				"%USER% roughly slaps %TARGET%'s ass"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently spank target's ass",
+				"Softly pat target's ass",
+				"Tenderly spank target",
+				"Carefully slap target's ass"
+			],
+			"neutral": [
+				"Spank target's ass",
+				"Pat target's ass",
+				"Spank target",
+				"Slap target's ass"
+			],
+			"hard": [
+				"Roughly spank target's ass",
+				"Aggressively pat target's ass",
+				"Forcefully spank target",
+				"Roughly slap target's ass"
+			],
+			"rough": [
+				"Aggressively spank target's ass",
+				"Harshly pat target's ass",
+				"Forcefully spank target",
+				"Roughly slap target's ass"
+			]
+		},
+		"user_required_parts": ["hands"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 5,
+		"user_arousal": 3,
+		"target_arousal": 5,
+		"target_pain": 2
+	},
+	"Grope Ass": {
+		"name": "Grope Ass",
+		"description": "Grope target's ass",
+		"category": "Ass",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently gropes %TARGET%'s ass",
+				"%USER% softly squeezes %TARGET%'s ass",
+				"%USER% tenderly gropes %TARGET%",
+				"%USER% carefully massages %TARGET%'s ass"
+			],
+			"neutral": [
+				"%USER% gropes %TARGET%'s ass",
+				"%USER% squeezes %TARGET%'s ass",
+				"%USER% gropes %TARGET%",
+				"%USER% massages %TARGET%'s ass"
+			],
+			"hard": [
+				"%USER% roughly gropes %TARGET%'s ass",
+				"%USER% aggressively squeezes %TARGET%'s ass",
+				"%USER% forcefully gropes %TARGET%",
+				"%USER% roughly massages %TARGET%'s ass"
+			],
+			"rough": [
+				"%USER% aggressively gropes %TARGET%'s ass",
+				"%USER% harshly squeezes %TARGET%'s ass",
+				"%USER% forcefully gropes %TARGET%",
+				"%USER% roughly massages %TARGET%'s ass"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently grope target's ass",
+				"Softly squeeze target's ass",
+				"Tenderly grope target",
+				"Carefully massage target's ass"
+			],
+			"neutral": [
+				"Grope target's ass",
+				"Squeeze target's ass",
+				"Grope target",
+				"Massage target's ass"
+			],
+			"hard": [
+				"Roughly grope target's ass",
+				"Aggressively squeeze target's ass",
+				"Forcefully grope target",
+				"Roughly massage target's ass"
+			],
+			"rough": [
+				"Aggressively grope target's ass",
+				"Harshly squeeze target's ass",
+				"Forcefully grope target",
+				"Roughly massage target's ass"
+			]
+		},
+		"user_required_parts": ["hands"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 4,
+		"target_pleasure": 8,
+		"user_arousal": 4,
+		"target_arousal": 8
+	}
+}
+

@@ -1,0 +1,139 @@
+{
+	"Tailjob": {
+		"name": "Tailjob",
+		"description": "Use your tail to pleasure target",
+		"category": "Tail",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently wraps their tail around %TARGET%",
+				"%USER% softly uses their tail to pleasure %TARGET%",
+				"%USER% tenderly performs a tailjob on %TARGET%",
+				"%USER% carefully strokes %TARGET% with their tail"
+			],
+			"neutral": [
+				"%USER% wraps their tail around %TARGET%",
+				"%USER% uses their tail to pleasure %TARGET%",
+				"%USER% performs a tailjob on %TARGET%",
+				"%USER% strokes %TARGET% with their tail"
+			],
+			"hard": [
+				"%USER% roughly wraps their tail around %TARGET%",
+				"%USER% aggressively uses their tail to pleasure %TARGET%",
+				"%USER% forcefully performs a tailjob on %TARGET%",
+				"%USER% roughly strokes %TARGET% with their tail"
+			],
+			"rough": [
+				"%USER% aggressively wraps their tail around %TARGET%",
+				"%USER% harshly uses their tail to pleasure %TARGET%",
+				"%USER% forcefully performs a tailjob on %TARGET%",
+				"%USER% roughly strokes %TARGET% with their tail"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently use your tail to pleasure target",
+				"Softly wrap your tail around target",
+				"Tenderly perform a tailjob on target",
+				"Carefully stroke target with your tail"
+			],
+			"neutral": [
+				"Use your tail to pleasure target",
+				"Wrap your tail around target",
+				"Perform a tailjob on target",
+				"Stroke target with your tail"
+			],
+			"hard": [
+				"Roughly use your tail to pleasure target",
+				"Aggressively wrap your tail around target",
+				"Forcefully perform a tailjob on target",
+				"Roughly stroke target with your tail"
+			],
+			"rough": [
+				"Aggressively use your tail to pleasure target",
+				"Harshly wrap your tail around target",
+				"Forcefully perform a tailjob on target",
+				"Roughly stroke target with your tail"
+			]
+		},
+		"user_required_parts": ["tail"],
+		"target_required_parts": ["penis"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 5,
+		"target_pleasure": 10,
+		"user_arousal": 5,
+		"target_arousal": 10
+	},
+	"Tail Insertion": {
+		"name": "Tail Insertion",
+		"description": "Insert your tail into target",
+		"category": "Tail",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently inserts their tail into %TARGET%",
+				"%USER% softly penetrates %TARGET% with their tail",
+				"%USER% tenderly slides their tail into %TARGET%",
+				"%USER% carefully fucks %TARGET% with their tail"
+			],
+			"neutral": [
+				"%USER% inserts their tail into %TARGET%",
+				"%USER% penetrates %TARGET% with their tail",
+				"%USER% slides their tail into %TARGET%",
+				"%USER% fucks %TARGET% with their tail"
+			],
+			"hard": [
+				"%USER% roughly inserts their tail into %TARGET%",
+				"%USER% aggressively penetrates %TARGET% with their tail",
+				"%USER% forcefully slides their tail into %TARGET%",
+				"%USER% roughly fucks %TARGET% with their tail"
+			],
+			"rough": [
+				"%USER% aggressively inserts their tail into %TARGET%",
+				"%USER% harshly penetrates %TARGET% with their tail",
+				"%USER% forcefully slides their tail into %TARGET%",
+				"%USER% roughly fucks %TARGET% with their tail"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently insert your tail into target",
+				"Softly penetrate target with your tail",
+				"Tenderly slide your tail into target",
+				"Carefully fuck target with your tail"
+			],
+			"neutral": [
+				"Insert your tail into target",
+				"Penetrate target with your tail",
+				"Slide your tail into target",
+				"Fuck target with your tail"
+			],
+			"hard": [
+				"Roughly insert your tail into target",
+				"Aggressively penetrate target with your tail",
+				"Forcefully slide your tail into target",
+				"Roughly fuck target with your tail"
+			],
+			"rough": [
+				"Aggressively insert your tail into target",
+				"Harshly penetrate target with your tail",
+				"Forcefully slide your tail into target",
+				"Roughly fuck target with your tail"
+			]
+		},
+		"user_required_parts": ["tail"],
+		"target_required_parts": ["vagina"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 8,
+		"target_pleasure": 12,
+		"user_arousal": 8,
+		"target_arousal": 12
+	}
+}
+
