@@ -150,8 +150,14 @@
 	// self is the target (component owner)
 	if(!interaction.allow_act(user, self))
 		return FALSE
-	if(interaction.lewd && !self.client?.prefs?.read_preference(/datum/preference/toggle/erp))
-		return FALSE
+	// For lewd interactions, both actor (user) and target (self) must have ERP enabled
+	if(interaction.lewd)
+		// Check actor's ERP preference
+		if(!user.client?.prefs?.read_preference(/datum/preference/toggle/erp))
+			return FALSE
+		// Check target's ERP preference
+		if(!self.client?.prefs?.read_preference(/datum/preference/toggle/erp))
+			return FALSE
 	if(!interaction.distance_allowed && !user.Adjacent(self))
 		if(!body_relay || !user.Adjacent(body_relay))
 			return FALSE

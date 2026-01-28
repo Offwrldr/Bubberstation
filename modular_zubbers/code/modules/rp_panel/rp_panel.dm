@@ -16,6 +16,8 @@
 	var/sending_message = FALSE
 	/// Current approach mode: "gentle", "neutral", "hard", "rough"
 	var/approach_mode = "neutral"
+	/// Current submissive mode: "dominant" or "submissive"
+	var/submissive_mode = "dominant"
 	/// Current selected participant for verb targeting
 	var/mob/living/selected_participant = null
 	/// List of participants currently typing (weakrefs)
@@ -26,6 +28,12 @@
 	var/sound_message_enabled = TRUE
 	var/sound_join_enabled = TRUE
 	var/sound_leave_enabled = TRUE
+	/// Current soundpack: "default", "simpleandsweet", "delicate", "funkyou", "gravitas", "8bitautumn"
+	var/soundpack = "default"
+	/// Volume levels (0-100)
+	var/volume_message = 50
+	var/volume_join = 50
+	var/volume_leave = 50
 
 /datum/rp_panel/New(mob/living/new_holder)
 	. = ..()
@@ -63,6 +71,14 @@
 
 /datum/rp_panel/ui_data(mob/user)
 	var/list/data = list()
+
+	// Reset approach_mode to "neutral" if it's "rough" but violent preference is disabled
+	if(approach_mode == "rough")
+		var/violent_pref = "No"
+		if(holder.client?.prefs)
+			violent_pref = holder.client.prefs.read_preference(/datum/preference/choiced/erp_status_violent) || "No"
+		if(violent_pref != "Yes")
+			approach_mode = "neutral"
 
 	// Current emote mode
 	data["emote_mode"] = emote_mode
@@ -132,6 +148,8 @@
 
 	// Current approach mode
 	data["approach_mode"] = approach_mode
+	// Current submissive mode
+	data["submissive_mode"] = submissive_mode
 
 	// Selected participant for verb targeting (default to holder if none selected)
 	if(!selected_participant || QDELETED(selected_participant))
@@ -290,12 +308,28 @@
 				// Convert to uppercase for display
 				erp_mechanics_status = uppertext(erp_mechanics_choice)
 			selected_data["erp_mechanics_display"] = erp_mechanics_status
+
+			// Check Depraved status for selected participant
+			var/depraved_status = "NO"
+			if(target_prefs.read_preference(/datum/preference/toggle/master_erp_preferences))
+				var/depraved_choice = target_prefs.read_preference(/datum/preference/choiced/erp_status_depraved) || "No"
+				depraved_status = get_preference_status(depraved_choice)
+			selected_data["erp_status_depraved_display"] = depraved_status
+
+			// Check Violent status for selected participant
+			var/violent_status = "NO"
+			if(target_prefs.read_preference(/datum/preference/toggle/master_erp_preferences))
+				var/violent_choice = target_prefs.read_preference(/datum/preference/choiced/erp_status_violent) || "No"
+				violent_status = get_preference_status(violent_choice)
+			selected_data["erp_status_violent_display"] = violent_status
 		else
 			selected_data["erp_status_display"] = "NO"
 			selected_data["hypno_status_display"] = "NO"
 			selected_data["vore_status_display"] = "NO"
 			selected_data["noncon_status_display"] = "NO"
 			selected_data["erp_mechanics_display"] = "NONE"
+			selected_data["erp_status_depraved_display"] = "NO"
+			selected_data["erp_status_violent_display"] = "NO"
 
 		selected_data["details"] = details
 		data["selected_participant"] = selected_data
@@ -357,6 +391,10 @@
 	data["sound_message_enabled"] = sound_message_enabled
 	data["sound_join_enabled"] = sound_join_enabled
 	data["sound_leave_enabled"] = sound_leave_enabled
+	data["soundpack"] = soundpack
+	data["volume_message"] = volume_message
+	data["volume_join"] = volume_join
+	data["volume_leave"] = volume_leave
 
 	// Check ERP preferences for showing Romance/Sex approaches
 	var/show_erp_approaches = TRUE
@@ -427,7 +465,28 @@
 		if("set_approach_mode")
 			var/new_approach = params["approach"]
 			if(new_approach in list("gentle", "neutral", "hard", "rough"))
+				// Check if trying to set "rough" without violent preference enabled
+				if(new_approach == "rough")
+					// Check holder's violent preference
+					var/holder_violent_pref = "No"
+					if(holder.client?.prefs)
+						holder_violent_pref = holder.client.prefs.read_preference(/datum/preference/choiced/erp_status_violent) || "No"
+					if(holder_violent_pref != "Yes")
+						// Don't allow setting rough if holder's violent preference is not "Yes"
+						return
+					// Check selected participant's violent preference (if there is one and it's not self)
+					if(selected_participant && selected_participant != holder && selected_participant.client?.prefs)
+						var/partner_violent_pref = selected_participant.client.prefs.read_preference(/datum/preference/choiced/erp_status_violent) || "No"
+						if(partner_violent_pref != "Yes")
+							// Don't allow setting rough if partner's violent preference is not "Yes"
+							return
 				approach_mode = new_approach
+				. = TRUE
+
+		if("set_submissive_mode")
+			var/new_mode = params["mode"]
+			if(new_mode in list("dominant", "submissive"))
+				submissive_mode = new_mode
 				. = TRUE
 
 		if("set_selected_participant")
@@ -559,6 +618,29 @@
 			sound_leave_enabled = !sound_leave_enabled
 			. = TRUE
 
+		if("set_soundpack")
+			var/new_soundpack = params["soundpack"]
+			if(new_soundpack in list("default", "simpleandsweet", "delicate", "funkyou", "gravitas", "8bitautumn"))
+				soundpack = new_soundpack
+			. = TRUE
+
+		if("set_volume_message")
+			var/new_volume = text2num(params["volume"])
+			if(isnum(new_volume) && new_volume >= 0 && new_volume <= 100)
+				volume_message = new_volume
+			. = TRUE
+
+		if("set_volume_join")
+			var/new_volume = text2num(params["volume"])
+			if(isnum(new_volume) && new_volume >= 0 && new_volume <= 100)
+				volume_join = new_volume
+			. = TRUE
+
+		if("set_volume_leave")
+			var/new_volume = text2num(params["volume"])
+			if(isnum(new_volume) && new_volume >= 0 && new_volume <= 100)
+				volume_leave = new_volume
+			. = TRUE
 
 		if("set_self_preference")
 			if(!holder.client?.prefs)
@@ -735,21 +817,37 @@
 				return
 
 			// Get the message that will be displayed (before triggering) - use attitude-based if available
+			// Find the closest available attitude (with fallback)
+			var/available_attitude = null
+			// Check for attitude fallback based on submissive mode
+			if(submissive_mode == "submissive" && found_interaction.message_by_attitude_submissive && found_interaction.message_by_attitude_submissive.len)
+				available_attitude = get_available_attitude_submissive(found_interaction, approach_mode)
+			else if(found_interaction.message_by_attitude && found_interaction.message_by_attitude.len)
+				available_attitude = get_available_attitude(found_interaction, approach_mode)
+			// If interaction has attitude-based messages but none match (including fallbacks), error
+			if((found_interaction.message_by_attitude && found_interaction.message_by_attitude.len) || (found_interaction.message_by_attitude_submissive && found_interaction.message_by_attitude_submissive.len))
+				if(!available_attitude)
+					to_chat(holder, span_warning("Interaction '[interaction_name]' is not available with the current attitude."))
+					return
+			
 			var/interaction_message = ""
 			var/list/messages_to_use = found_interaction.message
-			if(found_interaction.message_by_attitude.len && found_interaction.message_by_attitude[approach_mode])
-				messages_to_use = found_interaction.message_by_attitude[approach_mode]
+			// Check for submissive variations first if in submissive mode
+			if(submissive_mode == "submissive" && available_attitude && found_interaction.message_by_attitude_submissive && found_interaction.message_by_attitude_submissive.len && found_interaction.message_by_attitude_submissive[available_attitude])
+				messages_to_use = found_interaction.message_by_attitude_submissive[available_attitude]
+			else if(available_attitude && found_interaction.message_by_attitude && found_interaction.message_by_attitude.len && found_interaction.message_by_attitude[available_attitude])
+				messages_to_use = found_interaction.message_by_attitude[available_attitude]
 			if(messages_to_use && length(messages_to_use))
 				var/msg = pick(messages_to_use)
 				if(interaction_component.body_relay && !can_see(holder, target))
 					msg = replacetext(msg, "%TARGET%", "\the [interaction_component.body_relay.name]")
 				interaction_message = trim(replacetext(replacetext(msg, "%TARGET%", "[target]"), "%USER%", ""), INTERACTION_MAX_CHAR)
 
-			// Trigger the interaction with current approach mode
+			// Trigger the interaction with available attitude (fallback if needed, or null if no attitude-based messages)
 			if(interaction_component.body_relay && !can_see(holder, target))
-				found_interaction.act(holder, target, interaction_component.body_relay, approach_mode)
+				found_interaction.act(holder, target, interaction_component.body_relay, available_attitude)
 			else
-				found_interaction.act(holder, target, null, approach_mode)
+				found_interaction.act(holder, target, null, available_attitude)
 
 			// Update interaction cooldown
 			var/datum/component/interactable/holder_component = holder.GetComponent(/datum/component/interactable)
@@ -787,13 +885,9 @@
 					if(participant && !QDELETED(participant) && participant.rp_panel)
 						participant.rp_panel.messages += list(message_entry)
 						SStgui.update_uis(participant.rp_panel)
-						// Play chime sound
-						if(participant.client)
-							participant.playsound_local(get_turf(holder), 'modular_zubbers/sound/misc/rppanelsounds/messagechime.ogg', 50, FALSE)
 
-				// Play chime for holder
-				if(holder.client)
-					holder.playsound_local(get_turf(holder), 'modular_zubbers/sound/misc/rppanelsounds/messagechime.ogg', 50, FALSE)
+			// Play chime sound
+			play_sound_to_participants("message")
 
 			. = TRUE
 
@@ -861,7 +955,7 @@
 					messages += list(msg)
 
 			// Play join sound for all participants
-			play_sound_to_participants('modular_zubbers/sound/misc/rppanelsounds/messagejoin.ogg')
+			play_sound_to_participants("join")
 
 			// Open the target's panel
 			target.rp_panel.ui_interact(target)
@@ -889,7 +983,7 @@
 								break
 
 					// Play leave sound
-					play_sound_to_participants('modular_zubbers/sound/misc/rppanelsounds/messageleave.ogg')
+					play_sound_to_participants("leave")
 					. = TRUE
 					break
 
@@ -1095,7 +1189,7 @@
 							SStgui.update_uis(participant.rp_panel)
 
 			// Play chime sound for all participants
-			play_sound_to_participants('modular_zubbers/sound/misc/rppanelsounds/messagechime.ogg')
+			play_sound_to_participants("message")
 
 			// Reset flag after a brief delay to allow signal handlers to complete
 			spawn(1)
@@ -1104,30 +1198,87 @@
 			. = TRUE
 
 // Play sound to all participants
-/datum/rp_panel/proc/play_sound_to_participants(sound_file)
-	if(!sound_file)
+/datum/rp_panel/proc/play_sound_to_participants(sound_type)
+	// sound_type: "message", "join", or "leave"
+	if(!sound_type)
 		return
+
 	var/should_play = FALSE
-	// Check which sound this is and if it's enabled
-	if(sound_file == 'modular_zubbers/sound/misc/rppanelsounds/messagechime.ogg')
-		should_play = sound_message_enabled
-	else if(sound_file == 'modular_zubbers/sound/misc/rppanelsounds/messagejoin.ogg')
-		should_play = sound_join_enabled
-	else if(sound_file == 'modular_zubbers/sound/misc/rppanelsounds/messageleave.ogg')
-		should_play = sound_leave_enabled
-	else
-		should_play = TRUE // Default to enabled for unknown sounds
+	var/volume = 50
+	var/sound_file
+
+	// Determine sound file based on soundpack and type
+	switch(sound_type)
+		if("message")
+			should_play = sound_message_enabled
+			volume = volume_message
+			switch(soundpack)
+				if("default")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/messagechime.ogg'
+				if("simpleandsweet")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/simpleandsweetmessage.ogg'
+				if("delicate")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/delicatemessage.ogg'
+				if("funkyou")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/funkyoumessage.ogg'
+				if("gravitas")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/gravitasmessage.ogg'
+				if("8bitautumn")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/8bitautumnmessage.ogg'
+				else
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/messagechime.ogg' // Fallback to default
+		if("join")
+			should_play = sound_join_enabled
+			volume = volume_join
+			switch(soundpack)
+				if("default")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/messagejoin.ogg'
+				if("simpleandsweet")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/simpleandsweetjoin.ogg'
+				if("delicate")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/delicatejoin.ogg'
+				if("funkyou")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/funkyoujoin.ogg'
+				if("gravitas")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/gravitasjoin.ogg'
+				if("8bitautumn")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/8bitautumnjoin.ogg'
+				else
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/messagejoin.ogg' // Fallback to default
+		if("leave")
+			should_play = sound_leave_enabled
+			volume = volume_leave
+			switch(soundpack)
+				if("default")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/messageleave.ogg'
+				if("simpleandsweet")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/simpleandsweetexit.ogg'
+				if("delicate")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/delicateexit.ogg'
+				if("funkyou")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/funkyouexit.ogg'
+				if("gravitas")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/gravitasexit.ogg'
+				if("8bitautumn")
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/8bitautumnexit.ogg'
+				else
+					sound_file = 'modular_zubbers/sound/misc/rppanelsounds/messageleave.ogg' // Fallback to default
+		else
+			return // Unknown sound type
 
 	if(!should_play)
 		return
 
+	// Convert volume from 0-100 to 0-100 for playsound_local (it uses 0-100 scale)
+	var/volume_scaled = volume
+
 	for(var/datum/weakref/participant_ref as anything in participants)
 		var/mob/living/participant = participant_ref.resolve()
 		if(participant && !QDELETED(participant) && participant.client)
-			participant.playsound_local(get_turf(holder), sound_file, 50, FALSE)
+			participant.playsound_local(get_turf(holder), sound_file, volume_scaled, FALSE)
 	// Also play to holder
 	if(holder.client)
-		holder.playsound_local(get_turf(holder), sound_file, 50, FALSE)
+		holder.playsound_local(get_turf(holder), sound_file, volume_scaled, FALSE)
 
 // Signal handler for external say messages
 /datum/rp_panel/proc/on_say(mob/living/source, list/speech_args)
@@ -1182,12 +1333,7 @@
 			participant.rp_panel.messages += list(message_entry)
 			SStgui.update_uis(participant.rp_panel)
 			// Play chime sound
-			if(participant.client)
-				participant.playsound_local(get_turf(holder), 'modular_zubbers/sound/misc/rppanelsounds/messagechime.ogg', 50, FALSE)
-
-	// Play chime for holder
-	if(holder.client)
-		holder.playsound_local(get_turf(holder), 'modular_zubbers/sound/misc/rppanelsounds/messagechime.ogg', 50, FALSE)
+			play_sound_to_participants("message")
 
 // Signal handler for external emote messages
 /datum/rp_panel/proc/on_emote(mob/living/source, datum/emote/emote, act, type_override, message, intentional)
@@ -1199,38 +1345,97 @@
 	if(sending_message)
 		return
 
-	// Record /me emotes and subtle (lewd) emotes
 	var/emote_key = emote?.key
-	if(emote_key != "me" && emote_key != "subtle")
+	var/emote_message = message || act || ""
+
+	// Check if emote was canceled (empty message)
+	if(!emote_message)
 		return
 
-	var/emote_message = message || act || ""
-	if(!emote_message)
+	// Handle subtle and subtler emotes - only capture if directed to the holder
+	if(emote_key == "subtle" || emote_key == "subtler")
+		// Check if holder is within range to receive the emote
+		var/turf/source_turf = get_turf(source)
+		var/turf/holder_turf = get_turf(holder)
+
+		if(!source_turf || !holder_turf)
+			return
+
+		// For subtle: 1 tile range
+		// For subtler: default range (world.view), but we'll check if holder is in range
+		var/range = (emote_key == "subtle") ? 1 : world.view
+
+		// Check if holder is within range
+		if(get_dist(source_turf, holder_turf) > range)
+			return
+
+		// For subtle, also check if holder is in the viewers list (accounts for line of sight)
+		if(emote_key == "subtle")
+			var/list/viewers = get_hearers_in_view(1, source)
+			if(!(holder in viewers))
+				return
+
+		// Determine mode
+		var/mode = (emote_key == "subtle") ? "subtle" : "subtle_antighost"
+
+		// Get headshot
+		var/headshot_url = ""
+		if(ishuman(source))
+			var/mob/living/carbon/human/human_source = source
+			headshot_url = human_source.dna?.features["headshot"] || ""
+		else if(source.client?.ckey)
+			var/datum/preference/text/headshot/headshot_pref = GLOB.preference_entries[/datum/preference/text/headshot]
+			if(headshot_pref && headshot_pref.stored_link)
+				headshot_url = headshot_pref.stored_link[source.client.ckey] || ""
+
+		// Create message entry
+		var/list/message_entry = list(
+			"name" = source.name,
+			"message" = emote_message,
+			"headshot" = headshot_url,
+			"mode" = mode,
+			"timestamp" = time2text(world.timeofday, "HH:MM:SS"),
+			"ref" = REF(source)
+		)
+
+		// Add to all participants' panels
+		messages += list(message_entry)
+		for(var/datum/weakref/participant_ref as anything in participants)
+			var/mob/living/participant = participant_ref.resolve()
+			if(participant && !QDELETED(participant) && participant.rp_panel)
+				participant.rp_panel.messages += list(message_entry)
+				SStgui.update_uis(participant.rp_panel)
+				// Play chime sound
+				play_sound_to_participants("message")
+
+		return
+
+	// Only record /me emotes from outside the panel
+	// Note: For /me emotes, source should be holder (since signal is registered on holder)
+	if(emote_key != "me")
 		return
 
 	// Determine mode based on emote type
 	var/mode = "public"
-	if(emote_key == "subtle")
-		mode = "subtle"
 
-	// Get headshot
+	// Get headshot (for /me, source should be holder)
 	var/headshot_url = ""
-	if(ishuman(holder))
-		var/mob/living/carbon/human/human_holder = holder
-		headshot_url = human_holder.dna?.features["headshot"] || ""
-	else if(holder.client?.ckey)
+	if(ishuman(source))
+		var/mob/living/carbon/human/human_source = source
+		headshot_url = human_source.dna?.features["headshot"] || ""
+	else if(source.client?.ckey)
 		var/datum/preference/text/headshot/headshot_pref = GLOB.preference_entries[/datum/preference/text/headshot]
 		if(headshot_pref && headshot_pref.stored_link)
-			headshot_url = headshot_pref.stored_link[holder.client.ckey] || ""
+			headshot_url = headshot_pref.stored_link[source.client.ckey] || ""
 
 	// Create message entry
 	var/list/message_entry = list(
-		"name" = holder.name,
+		"name" = source.name,
 		"message" = emote_message,
 		"headshot" = headshot_url,
 		"mode" = mode,
 		"timestamp" = time2text(world.timeofday, "HH:MM:SS"),
-		"ref" = REF(holder)
+		"ref" = REF(source)
 	)
 
 	// Add to all participants' panels
@@ -1241,12 +1446,7 @@
 			participant.rp_panel.messages += list(message_entry)
 			SStgui.update_uis(participant.rp_panel)
 			// Play chime sound
-			if(participant.client)
-				participant.playsound_local(get_turf(holder), 'modular_zubbers/sound/misc/rppanelsounds/messagechime.ogg', 50, FALSE)
-
-	// Play chime for holder
-	if(holder.client)
-		holder.playsound_local(get_turf(holder), 'modular_zubbers/sound/misc/rppanelsounds/messagechime.ogg', 50, FALSE)
+			play_sound_to_participants("message")
 
 // Check if a genital is actually exposed, accounting for visibility preferences, clothing, and underwear
 // Helper proc to determine status display from preference value
@@ -1337,12 +1537,82 @@
 						SStgui.update_uis(participant.rp_panel)
 						break
 			// Play leave sound
-			play_sound_to_participants('modular_zubbers/sound/misc/rppanelsounds/messageleave.ogg')
+			play_sound_to_participants("leave")
 			to_chat(holder, span_notice("[participant] has left the RP panel range and was removed."))
 
 	// Remove out-of-range participants
 	for(var/datum/weakref/ref_to_remove as anything in to_remove)
 		participants -= ref_to_remove
+
+// Helper proc to find the closest available attitude for an interaction (dominant)
+// Falls back: rough -> hard -> neutral -> gentle
+// Returns null if no attitude-based messages exist (verb should use default)
+/datum/rp_panel/proc/get_available_attitude(datum/interaction/interaction, desired_attitude)
+	if(!interaction)
+		return null
+	
+	// If interaction doesn't have attitude-based messages, return null (will use default)
+	if(!interaction.message_by_attitude || !interaction.message_by_attitude.len)
+		return null
+	
+	// If the desired attitude exists, use it
+	if(interaction.message_by_attitude[desired_attitude])
+		return desired_attitude
+	
+	// Fallback order based on desired attitude
+	var/list/fallback_order = list()
+	switch(desired_attitude)
+		if("rough")
+			fallback_order = list("hard", "neutral", "gentle")
+		if("hard")
+			fallback_order = list("neutral", "gentle")
+		if("neutral")
+			fallback_order = list("gentle")
+		if("gentle")
+			fallback_order = list() // No fallback for gentle
+	
+	// Try fallbacks
+	for(var/fallback_attitude in fallback_order)
+		if(interaction.message_by_attitude[fallback_attitude])
+			return fallback_attitude
+	
+	// If no attitude found, return null (verb should be hidden if attitude-based messages exist but none match)
+	return null
+
+// Helper proc to find the closest available attitude for an interaction (submissive)
+// Falls back: rough -> hard -> neutral -> gentle
+// Returns null if no attitude-based messages exist (verb should use default)
+/datum/rp_panel/proc/get_available_attitude_submissive(datum/interaction/interaction, desired_attitude)
+	if(!interaction)
+		return null
+	
+	// If interaction doesn't have attitude-based messages, return null (will use default)
+	if(!interaction.message_by_attitude_submissive || !interaction.message_by_attitude_submissive.len)
+		return null
+	
+	// If the desired attitude exists, use it
+	if(interaction.message_by_attitude_submissive[desired_attitude])
+		return desired_attitude
+	
+	// Fallback order based on desired attitude
+	var/list/fallback_order = list()
+	switch(desired_attitude)
+		if("rough")
+			fallback_order = list("hard", "neutral", "gentle")
+		if("hard")
+			fallback_order = list("neutral", "gentle")
+		if("neutral")
+			fallback_order = list("gentle")
+		if("gentle")
+			fallback_order = list() // No fallback for gentle
+	
+	// Try fallbacks
+	for(var/fallback_attitude in fallback_order)
+		if(interaction.message_by_attitude_submissive[fallback_attitude])
+			return fallback_attitude
+	
+	// If no attitude found, return null (verb should be hidden if attitude-based messages exist but none match)
+	return null
 
 // Get verb mode data (interactions from participants)
 /datum/rp_panel/proc/get_verb_mode_data(mob/user)
@@ -1358,7 +1628,10 @@
 
 	var/datum/component/interactable/interaction_component = target_participant.GetComponent(/datum/component/interactable)
 	if(!interaction_component)
-		return verb_data
+		// Add the component if it doesn't exist
+		interaction_component = target_participant.AddComponent(/datum/component/interactable)
+		if(!interaction_component)
+			return verb_data
 
 	// Build interaction data similar to interaction_component.ui_data
 	var/list/descriptions = list()
@@ -1366,7 +1639,7 @@
 	var/list/display_categories = list()
 	var/list/colors = list()
 
-	// Check ERP preferences for filtering Sex verbs
+	// Check ERP preferences for filtering Sex verbs (based on holder's preferences)
 	var/show_sex_verbs = FALSE
 	var/depraved_pref = "No"
 	var/violent_pref = "No"
@@ -1379,11 +1652,32 @@
 		depraved_pref = holder.client.prefs.read_preference(/datum/preference/choiced/erp_status_depraved) || "No"
 		violent_pref = holder.client.prefs.read_preference(/datum/preference/choiced/erp_status_violent) || "No"
 
-	for(var/datum/interaction/interaction in interaction_component.interactions)
+	// Iterate through all interactions, not just the component's filtered list
+	// This ensures we show interactions based on the holder's preferences, not the target's
+	for(var/iterating_interaction_id in GLOB.interaction_instances)
+		var/datum/interaction/interaction = GLOB.interaction_instances[iterating_interaction_id]
+
+		// Check if interaction can be used (checks both actor's and target's preferences and body parts)
+		// can_interact validates both holder (actor) and target have ERP enabled for lewd interactions
 		if(!interaction_component.can_interact(interaction, holder))
 			continue
 		if(interaction.category == INTERACTION_CAT_HIDE)
 			continue
+
+		// Additional filtering based on holder's preferences (can_interact already checks ERP toggle)
+		// This handles additional preference checks like sexuality, depraved, and violent
+		if(interaction.lewd)
+			// Note: ERP toggle is already checked by can_interact, but we keep this for clarity
+			if(!holder.client?.prefs?.read_preference(/datum/preference/toggle/erp))
+				continue
+			if(interaction.sexuality != "" && interaction.sexuality != holder.client?.prefs?.read_preference(/datum/preference/choiced/erp_sexuality))
+				continue
+			// Filter by Depraved preference (holder's preference)
+			if(interaction.category_depraved && depraved_pref == "No")
+				continue
+			// Filter by Violent preference (holder's preference)
+			if(interaction.category_violent && violent_pref == "No")
+				continue
 
 		// Hide Sex interactions if ERP/mechanics requirements not met (Romance is always shown)
 		if(interaction.category == "Sex" && !show_sex_verbs)
@@ -1403,21 +1697,47 @@
 		if(interaction.category_violent && violent_pref == "No")
 			continue
 
-			if(!categories[interaction.category])
-				categories[interaction.category] = list(interaction.name)
-			else
-				categories[interaction.category] += interaction.name
-				var/list/sorted_category = sort_list(categories[interaction.category])
-				categories[interaction.category] = sorted_category
+		// Check if interaction has the selected attitude or a fallback attitude
+		// If interaction has attitude-based messages but none match (including fallbacks), hide the verb
+		// If interaction has no attitude-based messages, show it (will use default)
+		// Check both dominant and submissive variations for filtering
+		var/available_attitude = null
+		var/has_attitude_messages = (interaction.message_by_attitude && interaction.message_by_attitude.len) || (interaction.message_by_attitude_submissive && interaction.message_by_attitude_submissive.len)
+		if(has_attitude_messages)
+			// Check dominant first
+			if(interaction.message_by_attitude && interaction.message_by_attitude.len)
+				available_attitude = get_available_attitude(interaction, approach_mode)
+			// If no dominant, check submissive
+			if(!available_attitude && interaction.message_by_attitude_submissive && interaction.message_by_attitude_submissive.len)
+				available_attitude = get_available_attitude_submissive(interaction, approach_mode)
+			if(!available_attitude)
+				continue
 
-			// Get description based on current approach mode
-			var/desc = interaction.description
-			if(interaction.description_by_attitude.len && interaction.description_by_attitude[approach_mode])
-				var/list/desc_list = interaction.description_by_attitude[approach_mode]
+		// Add interaction to categories
+		if(!categories[interaction.category])
+			categories[interaction.category] = list(interaction.name)
+		else
+			categories[interaction.category] += interaction.name
+			var/list/sorted_category = sort_list(categories[interaction.category])
+			categories[interaction.category] = sorted_category
+
+		// Get description based on available attitude (fallback if needed)
+		// If no attitude-based messages exist, use default description
+		// Check submissive descriptions first if in submissive mode, otherwise check dominant
+		var/desc = interaction.description
+		if(available_attitude)
+			// Check submissive descriptions if in submissive mode
+			if(submissive_mode == "submissive" && interaction.description_by_attitude_submissive && interaction.description_by_attitude_submissive.len && interaction.description_by_attitude_submissive[available_attitude])
+				var/list/desc_list = interaction.description_by_attitude_submissive[available_attitude]
 				if(desc_list && desc_list.len)
 					desc = pick(desc_list)
-			descriptions[interaction.name] = desc
-			colors[interaction.name] = interaction.color
+			// Otherwise check dominant descriptions
+			else if(interaction.description_by_attitude && interaction.description_by_attitude.len && interaction.description_by_attitude[available_attitude])
+				var/list/desc_list = interaction.description_by_attitude[available_attitude]
+				if(desc_list && desc_list.len)
+					desc = pick(desc_list)
+		descriptions[interaction.name] = desc
+		colors[interaction.name] = interaction.color
 
 
 	for(var/category in categories)

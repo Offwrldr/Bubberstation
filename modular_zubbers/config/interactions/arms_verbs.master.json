@@ -17,18 +17,6 @@
 				"%USER% caresses %TARGET%'s arms",
 				"%USER% kisses along %TARGET%'s arms",
 				"%USER% performs oral on %TARGET%'s arms"
-			],
-			"hard": [
-				"%USER% roughly kisses %TARGET%'s arms",
-				"%USER% aggressively caresses %TARGET%'s arms",
-				"%USER% forcefully kisses %TARGET%'s arms",
-				"%USER% roughly kisses along %TARGET%'s arms"
-			],
-			"rough": [
-				"%USER% aggressively kisses %TARGET%'s arms",
-				"%USER% harshly caresses %TARGET%'s arms",
-				"%USER% forcefully kisses %TARGET%'s arms",
-				"%USER% roughly kisses along %TARGET%'s arms"
 			]
 		},
 		"description_by_attitude": {
@@ -43,18 +31,6 @@
 				"Caress target's arms",
 				"Kiss along target's arms",
 				"Perform oral on target's arms"
-			],
-			"hard": [
-				"Roughly kiss target's arms",
-				"Aggressively caress target's arms",
-				"Forcefully kiss target's arms",
-				"Roughly kiss along target's arms"
-			],
-			"rough": [
-				"Aggressively kiss target's arms",
-				"Harshly caress target's arms",
-				"Forcefully kiss target's arms",
-				"Roughly kiss along target's arms"
 			]
 		},
 		"user_required_parts": ["mouth"],

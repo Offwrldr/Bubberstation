@@ -7,10 +7,10 @@
 		"lewd": 1,
 		"message_by_attitude": {
 			"gentle": [
-				"%USER% gently spanks %TARGET%'s ass",
-				"%USER% softly pats %TARGET%'s ass",
-				"%USER% tenderly spanks %TARGET%",
-				"%USER% carefully slaps %TARGET%'s ass"
+				"%USER% gently spanks %TARGET%'s ass with playful affection",
+				"%USER% softly pats %TARGET%'s ass, showing loving care",
+				"%USER% tenderly spanks %TARGET%, lost in romantic playfulness",
+				"%USER% carefully slaps %TARGET%'s ass with gentle devotion"
 			],
 			"neutral": [
 				"%USER% spanks %TARGET%'s ass",
@@ -33,10 +33,10 @@
 		},
 		"description_by_attitude": {
 			"gentle": [
-				"Gently spank target's ass",
-				"Softly pat target's ass",
-				"Tenderly spank target",
-				"Carefully slap target's ass"
+				"Gently spank target's ass with playful affection",
+				"Softly pat target's ass, showing loving care",
+				"Tenderly spank target with romantic playfulness",
+				"Carefully slap target's ass with gentle devotion"
 			],
 			"neutral": [
 				"Spank target's ass",
@@ -76,10 +76,10 @@
 		"lewd": 1,
 		"message_by_attitude": {
 			"gentle": [
-				"%USER% gently gropes %TARGET%'s ass",
-				"%USER% softly squeezes %TARGET%'s ass",
-				"%USER% tenderly gropes %TARGET%",
-				"%USER% carefully massages %TARGET%'s ass"
+				"%USER% gently gropes %TARGET%'s ass with loving devotion",
+				"%USER% softly squeezes %TARGET%'s ass, showing romantic passion",
+				"%USER% tenderly gropes %TARGET%, expressing deep affection",
+				"%USER% carefully massages %TARGET%'s ass with loving care"
 			],
 			"neutral": [
 				"%USER% gropes %TARGET%'s ass",
@@ -102,10 +102,10 @@
 		},
 		"description_by_attitude": {
 			"gentle": [
-				"Gently grope target's ass",
-				"Softly squeeze target's ass",
-				"Tenderly grope target",
-				"Carefully massage target's ass"
+				"Gently grope target's ass with loving devotion",
+				"Softly squeeze target's ass, showing romantic passion",
+				"Tenderly grope target, expressing deep affection",
+				"Carefully massage target's ass with loving care"
 			],
 			"neutral": [
 				"Grope target's ass",
@@ -135,6 +135,187 @@
 		"target_pleasure": 8,
 		"user_arousal": 4,
 		"target_arousal": 8
+	},
+	"Kiss Ass": {
+		"name": "Kiss Ass",
+		"description": "Kiss target's ass",
+		"category": "Ass",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently kisses %TARGET%'s ass",
+				"%USER% softly pecks %TARGET%'s asscheeks",
+				"%USER% tenderly kisses %TARGET%'s ass",
+				"%USER% carefully presses their lips to %TARGET%'s ass"
+			],
+			"neutral": [
+				"%USER% kisses %TARGET%'s ass",
+				"%USER% pecks %TARGET%'s asscheeks",
+				"%USER% kisses %TARGET%'s ass",
+				"%USER% presses their lips to %TARGET%'s ass"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently kiss target's ass",
+				"Softly peck target's asscheeks",
+				"Tenderly kiss target's ass",
+				"Carefully press your lips to target's ass"
+			],
+			"neutral": [
+				"Kiss target's ass",
+				"Peck target's asscheeks",
+				"Kiss target's ass",
+				"Press your lips to target's ass"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 6,
+		"user_arousal": 3,
+		"target_arousal": 6
+	},
+	"Bite Ass": {
+		"name": "Bite Ass",
+		"description": "Bite target's ass",
+		"category": "Ass",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently bites %TARGET%'s ass",
+				"%USER% softly sinks their teeth into %TARGET%'s asscheeks",
+				"%USER% tenderly bites %TARGET%'s ass",
+				"%USER% carefully bites down on %TARGET%'s ass"
+			],
+			"neutral": [
+				"%USER% bites %TARGET%'s ass",
+				"%USER% sinks their teeth into %TARGET%'s asscheeks",
+				"%USER% bites %TARGET%'s ass",
+				"%USER% bites down on %TARGET%'s ass"
+			],
+			"hard": [
+				"%USER% roughly bites %TARGET%'s ass",
+				"%USER% aggressively sinks their teeth into %TARGET%'s asscheeks",
+				"%USER% forcefully bites %TARGET%'s ass",
+				"%USER% roughly bites down on %TARGET%'s ass"
+			],
+			"rough": [
+				"%USER% aggressively bites %TARGET%'s ass",
+				"%USER% harshly sinks their teeth into %TARGET%'s asscheeks",
+				"%USER% forcefully bites %TARGET%'s ass",
+				"%USER% roughly bites down on %TARGET%'s ass"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently bite target's ass",
+				"Softly sink your teeth into target's asscheeks",
+				"Tenderly bite target's ass",
+				"Carefully bite down on target's ass"
+			],
+			"neutral": [
+				"Bite target's ass",
+				"Sink your teeth into target's asscheeks",
+				"Bite target's ass",
+				"Bite down on target's ass"
+			],
+			"hard": [
+				"Roughly bite target's ass",
+				"Aggressively sink your teeth into target's asscheeks",
+				"Forcefully bite target's ass",
+				"Roughly bite down on target's ass"
+			],
+			"rough": [
+				"Aggressively bite target's ass",
+				"Harshly sink your teeth into target's asscheeks",
+				"Forcefully bite target's ass",
+				"Roughly bite down on target's ass"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 5,
+		"target_pleasure": 8,
+		"user_arousal": 5,
+		"target_arousal": 8,
+		"target_pain": 2
+	},
+	"Nuzzle Ass": {
+		"name": "Nuzzle Ass",
+		"description": "Nuzzle target's ass",
+		"category": "Ass",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently nuzzles %TARGET%'s ass",
+				"%USER% softly rubs their face against %TARGET%'s asscheeks",
+				"%USER% tenderly nuzzles into %TARGET%'s ass",
+				"%USER% carefully presses their face against %TARGET%'s ass"
+			],
+			"neutral": [
+				"%USER% nuzzles %TARGET%'s ass",
+				"%USER% rubs their face against %TARGET%'s asscheeks",
+				"%USER% nuzzles into %TARGET%'s ass",
+				"%USER% presses their face against %TARGET%'s ass"
+			],
+			"hard": [
+				"%USER% roughly nuzzles %TARGET%'s ass",
+				"%USER% aggressively rubs their face against %TARGET%'s asscheeks",
+				"%USER% forcefully nuzzles into %TARGET%'s ass",
+				"%USER% roughly presses their face against %TARGET%'s ass"
+			],
+			"rough": [
+				"%USER% aggressively nuzzles %TARGET%'s ass",
+				"%USER% harshly rubs their face against %TARGET%'s asscheeks",
+				"%USER% forcefully nuzzles into %TARGET%'s ass",
+				"%USER% roughly presses their face against %TARGET%'s ass"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently nuzzle target's ass",
+				"Softly rub your face against target's asscheeks",
+				"Tenderly nuzzle into target's ass",
+				"Carefully press your face against target's ass"
+			],
+			"neutral": [
+				"Nuzzle target's ass",
+				"Rub your face against target's asscheeks",
+				"Nuzzle into target's ass",
+				"Press your face against target's ass"
+			],
+			"hard": [
+				"Roughly nuzzle target's ass",
+				"Aggressively rub your face against target's asscheeks",
+				"Forcefully nuzzle into target's ass",
+				"Roughly press your face against target's ass"
+			],
+			"rough": [
+				"Aggressively nuzzle target's ass",
+				"Harshly rub your face against target's asscheeks",
+				"Forcefully nuzzle into target's ass",
+				"Roughly press your face against target's ass"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 6,
+		"user_arousal": 3,
+		"target_arousal": 6
 	}
 }
 

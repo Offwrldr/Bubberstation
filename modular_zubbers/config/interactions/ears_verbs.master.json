@@ -1,0 +1,412 @@
+{
+	"Sniff Ears": {
+		"name": "Sniff Ears",
+		"description": "Sniff target's ears",
+		"category": "Ears",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently sniffs %TARGET%'s ears",
+				"%USER% softly inhales the scent of %TARGET%'s ears",
+				"%USER% tenderly breathes in %TARGET%'s ear scent",
+				"%USER% carefully takes in %TARGET%'s ears scent"
+			],
+			"neutral": [
+				"%USER% sniffs %TARGET%'s ears",
+				"%USER% inhales the scent of %TARGET%'s ears",
+				"%USER% breathes in %TARGET%'s ear scent",
+				"%USER% takes in %TARGET%'s ears scent"
+			],
+			"hard": [
+				"%USER% roughly sniffs %TARGET%'s ears",
+				"%USER% aggressively inhales the scent of %TARGET%'s ears",
+				"%USER% forcefully breathes in %TARGET%'s ear scent",
+				"%USER% roughly takes in %TARGET%'s ears scent"
+			],
+			"rough": [
+				"%USER% aggressively sniffs %TARGET%'s ears",
+				"%USER% harshly inhales the scent of %TARGET%'s ears",
+				"%USER% forcefully breathes in %TARGET%'s ear scent",
+				"%USER% roughly takes in %TARGET%'s ears scent"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently sniff target's ears",
+				"Softly inhale the scent of target's ears",
+				"Tenderly breathe in target's ear scent",
+				"Carefully take in target's ears scent"
+			],
+			"neutral": [
+				"Sniff target's ears",
+				"Inhale the scent of target's ears",
+				"Breathe in target's ear scent",
+				"Take in target's ears scent"
+			],
+			"hard": [
+				"Roughly sniff target's ears",
+				"Aggressively inhale the scent of target's ears",
+				"Forcefully breathe in target's ear scent",
+				"Roughly take in target's ears scent"
+			],
+			"rough": [
+				"Aggressively sniff target's ears",
+				"Harshly inhale the scent of target's ears",
+				"Forcefully breathe in target's ear scent",
+				"Roughly take in target's ears scent"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 3,
+		"user_arousal": 2,
+		"target_arousal": 3
+	},
+	"Lick Ears": {
+		"name": "Lick Ears",
+		"description": "Lick target's ears",
+		"category": "Ears",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently licks %TARGET%'s ears",
+				"%USER% softly licks %TARGET%'s ear canal",
+				"%USER% tenderly runs their tongue along %TARGET%'s ears",
+				"%USER% carefully licks %TARGET%'s earlobes"
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s ears",
+				"%USER% licks %TARGET%'s ear canal",
+				"%USER% runs their tongue along %TARGET%'s ears",
+				"%USER% performs oral on %TARGET%'s ears"
+			],
+			"hard": [
+				"%USER% roughly licks %TARGET%'s ears",
+				"%USER% aggressively licks %TARGET%'s ear canal",
+				"%USER% forcefully runs their tongue along %TARGET%'s ears",
+				"%USER% roughly performs oral on %TARGET%'s ears"
+			],
+			"rough": [
+				"%USER% aggressively licks %TARGET%'s ears",
+				"%USER% harshly licks %TARGET%'s ear canal",
+				"%USER% forcefully runs their tongue along %TARGET%'s ears",
+				"%USER% roughly performs oral on %TARGET%'s ears"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently lick target's ears",
+				"Softly lick target's ear canal",
+				"Tenderly run your tongue along target's ears",
+				"Carefully lick target's earlobes"
+			],
+			"neutral": [
+				"Lick target's ears",
+				"Lick target's ear canal",
+				"Run your tongue along target's ears",
+				"Perform oral on target's ears"
+			],
+			"hard": [
+				"Roughly lick target's ears",
+				"Aggressively lick target's ear canal",
+				"Forcefully run your tongue along target's ears",
+				"Roughly perform oral on target's ears"
+			],
+			"rough": [
+				"Aggressively lick target's ears",
+				"Harshly lick target's ear canal",
+				"Forcefully run your tongue along target's ears",
+				"Roughly perform oral on target's ears"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 5,
+		"user_arousal": 3,
+		"target_arousal": 5
+	},
+	"Kiss Ears": {
+		"name": "Kiss Ears",
+		"description": "Kiss target's ears",
+		"category": "Ears",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently kisses %TARGET%'s ears",
+				"%USER% softly pecks %TARGET%'s earlobes",
+				"%USER% tenderly kisses %TARGET%'s ears",
+				"%USER% carefully presses their lips to %TARGET%'s ears"
+			],
+			"neutral": [
+				"%USER% kisses %TARGET%'s ears",
+				"%USER% pecks %TARGET%'s earlobes",
+				"%USER% kisses %TARGET%'s ears",
+				"%USER% presses their lips to %TARGET%'s ears"
+			],
+			"hard": [
+				"%USER% roughly kisses %TARGET%'s ears",
+				"%USER% aggressively pecks %TARGET%'s earlobes",
+				"%USER% forcefully kisses %TARGET%'s ears",
+				"%USER% roughly presses their lips to %TARGET%'s ears"
+			],
+			"rough": [
+				"%USER% aggressively kisses %TARGET%'s ears",
+				"%USER% harshly pecks %TARGET%'s earlobes",
+				"%USER% forcefully kisses %TARGET%'s ears",
+				"%USER% roughly presses their lips to %TARGET%'s ears"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently kiss target's ears",
+				"Softly peck target's earlobes",
+				"Tenderly kiss target's ears",
+				"Carefully press your lips to target's ears"
+			],
+			"neutral": [
+				"Kiss target's ears",
+				"Peck target's earlobes",
+				"Kiss target's ears",
+				"Press your lips to target's ears"
+			],
+			"hard": [
+				"Roughly kiss target's ears",
+				"Aggressively peck target's earlobes",
+				"Forcefully kiss target's ears",
+				"Roughly press your lips to target's ears"
+			],
+			"rough": [
+				"Aggressively kiss target's ears",
+				"Harshly peck target's earlobes",
+				"Forcefully kiss target's ears",
+				"Roughly press your lips to target's ears"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 4,
+		"user_arousal": 2,
+		"target_arousal": 4
+	},
+	"Nibble Ears": {
+		"name": "Nibble Ears",
+		"description": "Nibble on target's ears",
+		"category": "Ears",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently nibbles on %TARGET%'s ears",
+				"%USER% softly bites %TARGET%'s earlobes",
+				"%USER% tenderly nibbles %TARGET%'s ears",
+				"%USER% carefully nips at %TARGET%'s ears"
+			],
+			"neutral": [
+				"%USER% nibbles on %TARGET%'s ears",
+				"%USER% bites %TARGET%'s earlobes",
+				"%USER% nibbles %TARGET%'s ears",
+				"%USER% nips at %TARGET%'s ears"
+			],
+			"hard": [
+				"%USER% roughly nibbles on %TARGET%'s ears",
+				"%USER% aggressively bites %TARGET%'s earlobes",
+				"%USER% forcefully nibbles %TARGET%'s ears",
+				"%USER% roughly nips at %TARGET%'s ears"
+			],
+			"rough": [
+				"%USER% aggressively nibbles on %TARGET%'s ears",
+				"%USER% harshly bites %TARGET%'s earlobes",
+				"%USER% forcefully nibbles %TARGET%'s ears",
+				"%USER% roughly nips at %TARGET%'s ears"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently nibble on target's ears",
+				"Softly bite target's earlobes",
+				"Tenderly nibble target's ears",
+				"Carefully nip at target's ears"
+			],
+			"neutral": [
+				"Nibble on target's ears",
+				"Bite target's earlobes",
+				"Nibble target's ears",
+				"Nip at target's ears"
+			],
+			"hard": [
+				"Roughly nibble on target's ears",
+				"Aggressively bite target's earlobes",
+				"Forcefully nibble target's ears",
+				"Roughly nip at target's ears"
+			],
+			"rough": [
+				"Aggressively nibble on target's ears",
+				"Harshly bite target's earlobes",
+				"Forcefully nibble target's ears",
+				"Roughly nip at target's ears"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 5,
+		"user_arousal": 3,
+		"target_arousal": 5,
+		"target_pain": 1
+	},
+	"Bite Ears": {
+		"name": "Bite Ears",
+		"description": "Bite target's ears",
+		"category": "Ears",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently bites %TARGET%'s ears",
+				"%USER% softly sinks their teeth into %TARGET%'s earlobes",
+				"%USER% tenderly bites %TARGET%'s ears",
+				"%USER% carefully bites down on %TARGET%'s ears"
+			],
+			"neutral": [
+				"%USER% bites %TARGET%'s ears",
+				"%USER% sinks their teeth into %TARGET%'s earlobes",
+				"%USER% bites %TARGET%'s ears",
+				"%USER% bites down on %TARGET%'s ears"
+			],
+			"hard": [
+				"%USER% roughly bites %TARGET%'s ears",
+				"%USER% aggressively sinks their teeth into %TARGET%'s earlobes",
+				"%USER% forcefully bites %TARGET%'s ears",
+				"%USER% roughly bites down on %TARGET%'s ears"
+			],
+			"rough": [
+				"%USER% aggressively bites %TARGET%'s ears",
+				"%USER% harshly sinks their teeth into %TARGET%'s earlobes",
+				"%USER% forcefully bites %TARGET%'s ears",
+				"%USER% roughly bites down on %TARGET%'s ears"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently bite target's ears",
+				"Softly sink your teeth into target's earlobes",
+				"Tenderly bite target's ears",
+				"Carefully bite down on target's ears"
+			],
+			"neutral": [
+				"Bite target's ears",
+				"Sink your teeth into target's earlobes",
+				"Bite target's ears",
+				"Bite down on target's ears"
+			],
+			"hard": [
+				"Roughly bite target's ears",
+				"Aggressively sink your teeth into target's earlobes",
+				"Forcefully bite target's ears",
+				"Roughly bite down on target's ears"
+			],
+			"rough": [
+				"Aggressively bite target's ears",
+				"Harshly sink your teeth into target's earlobes",
+				"Forcefully bite target's ears",
+				"Roughly bite down on target's ears"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 4,
+		"target_pleasure": 6,
+		"user_arousal": 4,
+		"target_arousal": 6,
+		"target_pain": 2
+	},
+	"Nuzzle Ears": {
+		"name": "Nuzzle Ears",
+		"description": "Nuzzle target's ears",
+		"category": "Ears",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently nuzzles %TARGET%'s ears",
+				"%USER% softly rubs their face against %TARGET%'s ears",
+				"%USER% tenderly nuzzles into %TARGET%'s ears",
+				"%USER% carefully presses their face against %TARGET%'s ears"
+			],
+			"neutral": [
+				"%USER% nuzzles %TARGET%'s ears",
+				"%USER% rubs their face against %TARGET%'s ears",
+				"%USER% nuzzles into %TARGET%'s ears",
+				"%USER% presses their face against %TARGET%'s ears"
+			],
+			"hard": [
+				"%USER% roughly nuzzles %TARGET%'s ears",
+				"%USER% aggressively rubs their face against %TARGET%'s ears",
+				"%USER% forcefully nuzzles into %TARGET%'s ears",
+				"%USER% roughly presses their face against %TARGET%'s ears"
+			],
+			"rough": [
+				"%USER% aggressively nuzzles %TARGET%'s ears",
+				"%USER% harshly rubs their face against %TARGET%'s ears",
+				"%USER% forcefully nuzzles into %TARGET%'s ears",
+				"%USER% roughly presses their face against %TARGET%'s ears"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently nuzzle target's ears",
+				"Softly rub your face against target's ears",
+				"Tenderly nuzzle into target's ears",
+				"Carefully press your face against target's ears"
+			],
+			"neutral": [
+				"Nuzzle target's ears",
+				"Rub your face against target's ears",
+				"Nuzzle into target's ears",
+				"Press your face against target's ears"
+			],
+			"hard": [
+				"Roughly nuzzle target's ears",
+				"Aggressively rub your face against target's ears",
+				"Forcefully nuzzle into target's ears",
+				"Roughly press your face against target's ears"
+			],
+			"rough": [
+				"Aggressively nuzzle target's ears",
+				"Harshly rub your face against target's ears",
+				"Forcefully nuzzle into target's ears",
+				"Roughly press your face against target's ears"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 4,
+		"user_arousal": 2,
+		"target_arousal": 4
+	}
+}

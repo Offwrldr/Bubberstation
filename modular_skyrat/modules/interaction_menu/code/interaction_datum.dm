@@ -12,6 +12,8 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 	var/list/message = list()
 	/// A list of possible messages by attitude (gentle, neutral, hard, rough) - 4 variations per attitude
 	var/list/message_by_attitude = list()
+	/// A list of possible messages by attitude for submissive mode (gentle, neutral, hard, rough) - 4 variations per attitude
+	var/list/message_by_attitude_submissive = list()
 	/// A list of possible messages displayed directly to the USER.
 	var/list/user_messages = list()
 	/// A list of possible messages displayed directly to the TARGET.
@@ -54,6 +56,8 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 	var/sexuality = ""
 	/// A list of possible descriptions by attitude (gentle, neutral, hard, rough) - 4 variations per attitude
 	var/list/description_by_attitude = list()
+	/// A list of possible descriptions by attitude for submissive mode (gentle, neutral, hard, rough) - 4 variations per attitude
+	var/list/description_by_attitude_submissive = list()
 	/// Is this interaction in the Depraved category?
 	var/category_depraved = FALSE
 	/// Is this interaction in the Violent category?
@@ -224,6 +228,14 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 				if(attitude_data[attitude])
 					message_by_attitude[attitude] = sanitize_islist(attitude_data[attitude], list())
 
+	// Load submissive attitude-based messages if present
+	if(json["message_by_attitude_submissive"])
+		var/list/submissive_attitude_data = json["message_by_attitude_submissive"]
+		if(islist(submissive_attitude_data))
+			for(var/attitude in list("gentle", "neutral", "hard", "rough"))
+				if(submissive_attitude_data[attitude])
+					message_by_attitude_submissive[attitude] = sanitize_islist(submissive_attitude_data[attitude], list())
+
 	// Load attitude-based descriptions if present
 	if(json["description_by_attitude"])
 		var/list/desc_attitude_data = json["description_by_attitude"]
@@ -231,6 +243,14 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 			for(var/attitude in list("gentle", "neutral", "hard", "rough"))
 				if(desc_attitude_data[attitude])
 					description_by_attitude[attitude] = sanitize_islist(desc_attitude_data[attitude], list())
+
+	// Load submissive attitude-based descriptions if present
+	if(json["description_by_attitude_submissive"])
+		var/list/submissive_desc_attitude_data = json["description_by_attitude_submissive"]
+		if(islist(submissive_desc_attitude_data))
+			for(var/attitude in list("gentle", "neutral", "hard", "rough"))
+				if(submissive_desc_attitude_data[attitude])
+					description_by_attitude_submissive[attitude] = sanitize_islist(submissive_desc_attitude_data[attitude], list())
 
 	// Load category flags
 	category_depraved = sanitize_integer(json["category_depraved"], 0, 1, 0)

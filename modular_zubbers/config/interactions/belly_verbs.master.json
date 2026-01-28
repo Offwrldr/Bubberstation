@@ -66,6 +66,280 @@
 		"target_pleasure": 5,
 		"user_arousal": 2,
 		"target_arousal": 5
+	},
+	"Sniff Belly": {
+		"name": "Sniff Belly",
+		"description": "Sniff target's belly",
+		"category": "Belly",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently sniffs %TARGET%'s belly",
+				"%USER% softly inhales the scent of %TARGET%'s stomach",
+				"%USER% tenderly breathes in %TARGET%'s belly scent",
+				"%USER% carefully takes in %TARGET%'s belly scent"
+			],
+			"neutral": [
+				"%USER% sniffs %TARGET%'s belly",
+				"%USER% inhales the scent of %TARGET%'s stomach",
+				"%USER% breathes in %TARGET%'s belly scent",
+				"%USER% takes in %TARGET%'s belly scent"
+			],
+			"hard": [
+				"%USER% roughly sniffs %TARGET%'s belly",
+				"%USER% aggressively inhales the scent of %TARGET%'s stomach",
+				"%USER% forcefully breathes in %TARGET%'s belly scent",
+				"%USER% roughly takes in %TARGET%'s belly scent"
+			],
+			"rough": [
+				"%USER% aggressively sniffs %TARGET%'s belly",
+				"%USER% harshly inhales the scent of %TARGET%'s stomach",
+				"%USER% forcefully breathes in %TARGET%'s belly scent",
+				"%USER% roughly takes in %TARGET%'s belly scent"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently sniff target's belly",
+				"Softly inhale the scent of target's stomach",
+				"Tenderly breathe in target's belly scent",
+				"Carefully take in target's belly scent"
+			],
+			"neutral": [
+				"Sniff target's belly",
+				"Inhale the scent of target's stomach",
+				"Breathe in target's belly scent",
+				"Take in target's belly scent"
+			],
+			"hard": [
+				"Roughly sniff target's belly",
+				"Aggressively inhale the scent of target's stomach",
+				"Forcefully breathe in target's belly scent",
+				"Roughly take in target's belly scent"
+			],
+			"rough": [
+				"Aggressively sniff target's belly",
+				"Harshly inhale the scent of target's stomach",
+				"Forcefully breathe in target's belly scent",
+				"Roughly take in target's belly scent"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["belly"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 4,
+		"user_arousal": 2,
+		"target_arousal": 4
+	},
+	"Lick Belly": {
+		"name": "Lick Belly",
+		"description": "Lick target's belly",
+		"category": "Belly",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently licks %TARGET%'s belly",
+				"%USER% softly licks %TARGET%'s stomach",
+				"%USER% tenderly runs their tongue along %TARGET%'s belly",
+				"%USER% carefully licks %TARGET%'s belly"
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s belly",
+				"%USER% licks %TARGET%'s stomach",
+				"%USER% runs their tongue along %TARGET%'s belly",
+				"%USER% performs oral on %TARGET%'s belly"
+			],
+			"hard": [
+				"%USER% roughly licks %TARGET%'s belly",
+				"%USER% aggressively licks %TARGET%'s stomach",
+				"%USER% forcefully runs their tongue along %TARGET%'s belly",
+				"%USER% roughly performs oral on %TARGET%'s belly"
+			],
+			"rough": [
+				"%USER% aggressively licks %TARGET%'s belly",
+				"%USER% harshly licks %TARGET%'s stomach",
+				"%USER% forcefully runs their tongue along %TARGET%'s belly",
+				"%USER% roughly performs oral on %TARGET%'s belly"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently lick target's belly",
+				"Softly lick target's stomach",
+				"Tenderly run your tongue along target's belly",
+				"Carefully lick target's belly"
+			],
+			"neutral": [
+				"Lick target's belly",
+				"Lick target's stomach",
+				"Run your tongue along target's belly",
+				"Perform oral on target's belly"
+			],
+			"hard": [
+				"Roughly lick target's belly",
+				"Aggressively lick target's stomach",
+				"Forcefully run your tongue along target's belly",
+				"Roughly perform oral on target's belly"
+			],
+			"rough": [
+				"Aggressively lick target's belly",
+				"Harshly lick target's stomach",
+				"Forcefully run your tongue along target's belly",
+				"Roughly perform oral on target's belly"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["belly"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 6,
+		"user_arousal": 3,
+		"target_arousal": 6
+	},
+	"Nibble Belly": {
+		"name": "Nibble Belly",
+		"description": "Nibble on target's belly",
+		"category": "Belly",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently nibbles on %TARGET%'s belly",
+				"%USER% softly bites %TARGET%'s stomach",
+				"%USER% tenderly nibbles %TARGET%'s belly",
+				"%USER% carefully nips at %TARGET%'s belly"
+			],
+			"neutral": [
+				"%USER% nibbles on %TARGET%'s belly",
+				"%USER% bites %TARGET%'s stomach",
+				"%USER% nibbles %TARGET%'s belly",
+				"%USER% nips at %TARGET%'s belly"
+			],
+			"hard": [
+				"%USER% roughly nibbles on %TARGET%'s belly",
+				"%USER% aggressively bites %TARGET%'s stomach",
+				"%USER% forcefully nibbles %TARGET%'s belly",
+				"%USER% roughly nips at %TARGET%'s belly"
+			],
+			"rough": [
+				"%USER% aggressively nibbles on %TARGET%'s belly",
+				"%USER% harshly bites %TARGET%'s stomach",
+				"%USER% forcefully nibbles %TARGET%'s belly",
+				"%USER% roughly nips at %TARGET%'s belly"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently nibble on target's belly",
+				"Softly bite target's stomach",
+				"Tenderly nibble target's belly",
+				"Carefully nip at target's belly"
+			],
+			"neutral": [
+				"Nibble on target's belly",
+				"Bite target's stomach",
+				"Nibble target's belly",
+				"Nip at target's belly"
+			],
+			"hard": [
+				"Roughly nibble on target's belly",
+				"Aggressively bite target's stomach",
+				"Forcefully nibble target's belly",
+				"Roughly nip at target's belly"
+			],
+			"rough": [
+				"Aggressively nibble on target's belly",
+				"Harshly bite target's stomach",
+				"Forcefully nibble target's belly",
+				"Roughly nip at target's belly"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["belly"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 5,
+		"user_arousal": 3,
+		"target_arousal": 5,
+		"target_pain": 1
+	},
+	"Bite Belly": {
+		"name": "Bite Belly",
+		"description": "Bite target's belly",
+		"category": "Belly",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently bites %TARGET%'s belly",
+				"%USER% softly sinks their teeth into %TARGET%'s stomach",
+				"%USER% tenderly bites %TARGET%'s belly",
+				"%USER% carefully bites down on %TARGET%'s belly"
+			],
+			"neutral": [
+				"%USER% bites %TARGET%'s belly",
+				"%USER% sinks their teeth into %TARGET%'s stomach",
+				"%USER% bites %TARGET%'s belly",
+				"%USER% bites down on %TARGET%'s belly"
+			],
+			"hard": [
+				"%USER% roughly bites %TARGET%'s belly",
+				"%USER% aggressively sinks their teeth into %TARGET%'s stomach",
+				"%USER% forcefully bites %TARGET%'s belly",
+				"%USER% roughly bites down on %TARGET%'s belly"
+			],
+			"rough": [
+				"%USER% aggressively bites %TARGET%'s belly",
+				"%USER% harshly sinks their teeth into %TARGET%'s stomach",
+				"%USER% forcefully bites %TARGET%'s belly",
+				"%USER% roughly bites down on %TARGET%'s belly"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently bite target's belly",
+				"Softly sink your teeth into target's stomach",
+				"Tenderly bite target's belly",
+				"Carefully bite down on target's belly"
+			],
+			"neutral": [
+				"Bite target's belly",
+				"Sink your teeth into target's stomach",
+				"Bite target's belly",
+				"Bite down on target's belly"
+			],
+			"hard": [
+				"Roughly bite target's belly",
+				"Aggressively sink your teeth into target's stomach",
+				"Forcefully bite target's belly",
+				"Roughly bite down on target's belly"
+			],
+			"rough": [
+				"Aggressively bite target's belly",
+				"Harshly sink your teeth into target's stomach",
+				"Forcefully bite target's belly",
+				"Roughly bite down on target's belly"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["belly"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 4,
+		"target_pleasure": 6,
+		"user_arousal": 4,
+		"target_arousal": 6,
+		"target_pain": 2
 	}
 }
 

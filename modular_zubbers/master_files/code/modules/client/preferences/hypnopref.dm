@@ -55,6 +55,11 @@
 
 	if(!preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		return "No"
+
+	// Handle null/undefined input (for old savefiles)
+	if(isnull(input))
+		return create_default_value()
+
 	. = ..()
 
 /datum/preference/choiced/erp_status_depraved/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
@@ -86,6 +91,11 @@
 
 	if(!preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		return "No"
+
+	// Handle null/undefined input (for old savefiles)
+	if(isnull(input))
+		return create_default_value()
+
 	. = ..()
 
 /datum/preference/choiced/erp_status_violent/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)

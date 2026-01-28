@@ -134,6 +134,348 @@
 		"target_pleasure": 12,
 		"user_arousal": 8,
 		"target_arousal": 12
+	},
+	"Sniff Tail": {
+		"name": "Sniff Tail",
+		"description": "Sniff target's tail",
+		"category": "Tail",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently sniffs %TARGET%'s tail",
+				"%USER% softly inhales the scent of %TARGET%'s tail",
+				"%USER% tenderly breathes in %TARGET%'s tail scent",
+				"%USER% carefully takes in %TARGET%'s tail scent"
+			],
+			"neutral": [
+				"%USER% sniffs %TARGET%'s tail",
+				"%USER% inhales the scent of %TARGET%'s tail",
+				"%USER% breathes in %TARGET%'s tail scent",
+				"%USER% takes in %TARGET%'s tail scent"
+			],
+			"hard": [
+				"%USER% roughly sniffs %TARGET%'s tail",
+				"%USER% aggressively inhales the scent of %TARGET%'s tail",
+				"%USER% forcefully breathes in %TARGET%'s tail scent",
+				"%USER% roughly takes in %TARGET%'s tail scent"
+			],
+			"rough": [
+				"%USER% aggressively sniffs %TARGET%'s tail",
+				"%USER% harshly inhales the scent of %TARGET%'s tail",
+				"%USER% forcefully breathes in %TARGET%'s tail scent",
+				"%USER% roughly takes in %TARGET%'s tail scent"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently sniff target's tail",
+				"Softly inhale the scent of target's tail",
+				"Tenderly breathe in target's tail scent",
+				"Carefully take in target's tail scent"
+			],
+			"neutral": [
+				"Sniff target's tail",
+				"Inhale the scent of target's tail",
+				"Breathe in target's tail scent",
+				"Take in target's tail scent"
+			],
+			"hard": [
+				"Roughly sniff target's tail",
+				"Aggressively inhale the scent of target's tail",
+				"Forcefully breathe in target's tail scent",
+				"Roughly take in target's tail scent"
+			],
+			"rough": [
+				"Aggressively sniff target's tail",
+				"Harshly inhale the scent of target's tail",
+				"Forcefully breathe in target's tail scent",
+				"Roughly take in target's tail scent"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["tail"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 4,
+		"user_arousal": 2,
+		"target_arousal": 4
+	},
+	"Lick Tail": {
+		"name": "Lick Tail",
+		"description": "Lick target's tail",
+		"category": "Tail",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently licks %TARGET%'s tail",
+				"%USER% softly licks along %TARGET%'s tail",
+				"%USER% tenderly runs their tongue along %TARGET%'s tail",
+				"%USER% carefully licks %TARGET%'s tail"
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s tail",
+				"%USER% licks along %TARGET%'s tail",
+				"%USER% runs their tongue along %TARGET%'s tail",
+				"%USER% performs oral on %TARGET%'s tail"
+			],
+			"hard": [
+				"%USER% roughly licks %TARGET%'s tail",
+				"%USER% aggressively licks along %TARGET%'s tail",
+				"%USER% forcefully runs their tongue along %TARGET%'s tail",
+				"%USER% roughly performs oral on %TARGET%'s tail"
+			],
+			"rough": [
+				"%USER% aggressively licks %TARGET%'s tail",
+				"%USER% harshly licks along %TARGET%'s tail",
+				"%USER% forcefully runs their tongue along %TARGET%'s tail",
+				"%USER% roughly performs oral on %TARGET%'s tail"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently lick target's tail",
+				"Softly lick along target's tail",
+				"Tenderly run your tongue along target's tail",
+				"Carefully lick target's tail"
+			],
+			"neutral": [
+				"Lick target's tail",
+				"Lick along target's tail",
+				"Run your tongue along target's tail",
+				"Perform oral on target's tail"
+			],
+			"hard": [
+				"Roughly lick target's tail",
+				"Aggressively lick along target's tail",
+				"Forcefully run your tongue along target's tail",
+				"Roughly perform oral on target's tail"
+			],
+			"rough": [
+				"Aggressively lick target's tail",
+				"Harshly lick along target's tail",
+				"Forcefully run your tongue along target's tail",
+				"Roughly perform oral on target's tail"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["tail"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 6,
+		"user_arousal": 3,
+		"target_arousal": 6
+	},
+	"Kiss Tail": {
+		"name": "Kiss Tail",
+		"description": "Kiss target's tail",
+		"category": "Tail",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently kisses %TARGET%'s tail",
+				"%USER% softly pecks %TARGET%'s tail",
+				"%USER% tenderly kisses %TARGET%'s tail",
+				"%USER% carefully presses their lips to %TARGET%'s tail"
+			],
+			"neutral": [
+				"%USER% kisses %TARGET%'s tail",
+				"%USER% pecks %TARGET%'s tail",
+				"%USER% kisses %TARGET%'s tail",
+				"%USER% presses their lips to %TARGET%'s tail"
+			],
+			"hard": [
+				"%USER% roughly kisses %TARGET%'s tail",
+				"%USER% aggressively pecks %TARGET%'s tail",
+				"%USER% forcefully kisses %TARGET%'s tail",
+				"%USER% roughly presses their lips to %TARGET%'s tail"
+			],
+			"rough": [
+				"%USER% aggressively kisses %TARGET%'s tail",
+				"%USER% harshly pecks %TARGET%'s tail",
+				"%USER% forcefully kisses %TARGET%'s tail",
+				"%USER% roughly presses their lips to %TARGET%'s tail"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently kiss target's tail",
+				"Softly peck target's tail",
+				"Tenderly kiss target's tail",
+				"Carefully press your lips to target's tail"
+			],
+			"neutral": [
+				"Kiss target's tail",
+				"Peck target's tail",
+				"Kiss target's tail",
+				"Press your lips to target's tail"
+			],
+			"hard": [
+				"Roughly kiss target's tail",
+				"Aggressively peck target's tail",
+				"Forcefully kiss target's tail",
+				"Roughly press your lips to target's tail"
+			],
+			"rough": [
+				"Aggressively kiss target's tail",
+				"Harshly peck target's tail",
+				"Forcefully kiss target's tail",
+				"Roughly press your lips to target's tail"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["tail"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 5,
+		"user_arousal": 2,
+		"target_arousal": 5
+	},
+	"Nibble Tail": {
+		"name": "Nibble Tail",
+		"description": "Nibble on target's tail",
+		"category": "Tail",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently nibbles on %TARGET%'s tail",
+				"%USER% softly bites %TARGET%'s tail",
+				"%USER% tenderly nibbles %TARGET%'s tail",
+				"%USER% carefully nips at %TARGET%'s tail"
+			],
+			"neutral": [
+				"%USER% nibbles on %TARGET%'s tail",
+				"%USER% bites %TARGET%'s tail",
+				"%USER% nibbles %TARGET%'s tail",
+				"%USER% nips at %TARGET%'s tail"
+			],
+			"hard": [
+				"%USER% roughly nibbles on %TARGET%'s tail",
+				"%USER% aggressively bites %TARGET%'s tail",
+				"%USER% forcefully nibbles %TARGET%'s tail",
+				"%USER% roughly nips at %TARGET%'s tail"
+			],
+			"rough": [
+				"%USER% aggressively nibbles on %TARGET%'s tail",
+				"%USER% harshly bites %TARGET%'s tail",
+				"%USER% forcefully nibbles %TARGET%'s tail",
+				"%USER% roughly nips at %TARGET%'s tail"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently nibble on target's tail",
+				"Softly bite target's tail",
+				"Tenderly nibble target's tail",
+				"Carefully nip at target's tail"
+			],
+			"neutral": [
+				"Nibble on target's tail",
+				"Bite target's tail",
+				"Nibble target's tail",
+				"Nip at target's tail"
+			],
+			"hard": [
+				"Roughly nibble on target's tail",
+				"Aggressively bite target's tail",
+				"Forcefully nibble target's tail",
+				"Roughly nip at target's tail"
+			],
+			"rough": [
+				"Aggressively nibble on target's tail",
+				"Harshly bite target's tail",
+				"Forcefully nibble target's tail",
+				"Roughly nip at target's tail"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["tail"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 5,
+		"user_arousal": 3,
+		"target_arousal": 5,
+		"target_pain": 1
+	},
+	"Bite Tail": {
+		"name": "Bite Tail",
+		"description": "Bite target's tail",
+		"category": "Tail",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently bites %TARGET%'s tail",
+				"%USER% softly sinks their teeth into %TARGET%'s tail",
+				"%USER% tenderly bites %TARGET%'s tail",
+				"%USER% carefully bites down on %TARGET%'s tail"
+			],
+			"neutral": [
+				"%USER% bites %TARGET%'s tail",
+				"%USER% sinks their teeth into %TARGET%'s tail",
+				"%USER% bites %TARGET%'s tail",
+				"%USER% bites down on %TARGET%'s tail"
+			],
+			"hard": [
+				"%USER% roughly bites %TARGET%'s tail",
+				"%USER% aggressively sinks their teeth into %TARGET%'s tail",
+				"%USER% forcefully bites %TARGET%'s tail",
+				"%USER% roughly bites down on %TARGET%'s tail"
+			],
+			"rough": [
+				"%USER% aggressively bites %TARGET%'s tail",
+				"%USER% harshly sinks their teeth into %TARGET%'s tail",
+				"%USER% forcefully bites %TARGET%'s tail",
+				"%USER% roughly bites down on %TARGET%'s tail"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently bite target's tail",
+				"Softly sink your teeth into target's tail",
+				"Tenderly bite target's tail",
+				"Carefully bite down on target's tail"
+			],
+			"neutral": [
+				"Bite target's tail",
+				"Sink your teeth into target's tail",
+				"Bite target's tail",
+				"Bite down on target's tail"
+			],
+			"hard": [
+				"Roughly bite target's tail",
+				"Aggressively sink your teeth into target's tail",
+				"Forcefully bite target's tail",
+				"Roughly bite down on target's tail"
+			],
+			"rough": [
+				"Aggressively bite target's tail",
+				"Harshly sink your teeth into target's tail",
+				"Forcefully bite target's tail",
+				"Roughly bite down on target's tail"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["tail"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 4,
+		"target_pleasure": 6,
+		"user_arousal": 4,
+		"target_arousal": 6,
+		"target_pain": 2
 	}
 }
 

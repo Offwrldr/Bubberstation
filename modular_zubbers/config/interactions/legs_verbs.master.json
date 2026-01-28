@@ -1,71 +1,206 @@
 {
-	"Kiss Legs": {
-		"name": "Kiss Legs",
-		"description": "Kiss target's legs",
+	"Kiss Thighs": {
+		"name": "Kiss Thighs",
+		"description": "Kiss target's thighs",
 		"category": "Legs",
 		"usage": "other",
 		"lewd": 1,
 		"message_by_attitude": {
 			"gentle": [
-				"%USER% gently kisses %TARGET%'s legs",
-				"%USER% softly caresses %TARGET%'s legs",
+				"%USER% gently kisses %TARGET%'s thighs",
+				"%USER% softly pecks %TARGET%'s inner thighs",
 				"%USER% tenderly kisses %TARGET%'s legs",
-				"%USER% carefully kisses along %TARGET%'s legs"
+				"%USER% carefully presses their lips to %TARGET%'s thighs"
 			],
 			"neutral": [
+				"%USER% kisses %TARGET%'s thighs",
+				"%USER% pecks %TARGET%'s inner thighs",
 				"%USER% kisses %TARGET%'s legs",
-				"%USER% caresses %TARGET%'s legs",
-				"%USER% kisses along %TARGET%'s legs",
-				"%USER% performs oral on %TARGET%'s legs"
+				"%USER% presses their lips to %TARGET%'s thighs"
 			],
 			"hard": [
-				"%USER% roughly kisses %TARGET%'s legs",
-				"%USER% aggressively caresses %TARGET%'s legs",
+				"%USER% roughly kisses %TARGET%'s thighs",
+				"%USER% aggressively pecks %TARGET%'s inner thighs",
 				"%USER% forcefully kisses %TARGET%'s legs",
-				"%USER% roughly kisses along %TARGET%'s legs"
+				"%USER% roughly presses their lips to %TARGET%'s thighs"
 			],
 			"rough": [
-				"%USER% aggressively kisses %TARGET%'s legs",
-				"%USER% harshly caresses %TARGET%'s legs",
+				"%USER% aggressively kisses %TARGET%'s thighs",
+				"%USER% harshly pecks %TARGET%'s inner thighs",
 				"%USER% forcefully kisses %TARGET%'s legs",
-				"%USER% roughly kisses along %TARGET%'s legs"
+				"%USER% roughly presses their lips to %TARGET%'s thighs"
 			]
 		},
 		"description_by_attitude": {
 			"gentle": [
-				"Gently kiss target's legs",
-				"Softly caress target's legs",
+				"Gently kiss target's thighs",
+				"Softly peck target's inner thighs",
 				"Tenderly kiss target's legs",
-				"Carefully kiss along target's legs"
+				"Carefully press your lips to target's thighs"
 			],
 			"neutral": [
+				"Kiss target's thighs",
+				"Peck target's inner thighs",
 				"Kiss target's legs",
-				"Caress target's legs",
-				"Kiss along target's legs",
-				"Perform oral on target's legs"
+				"Press your lips to target's thighs"
 			],
 			"hard": [
-				"Roughly kiss target's legs",
-				"Aggressively caress target's legs",
+				"Roughly kiss target's thighs",
+				"Aggressively peck target's inner thighs",
 				"Forcefully kiss target's legs",
-				"Roughly kiss along target's legs"
+				"Roughly press your lips to target's thighs"
 			],
 			"rough": [
-				"Aggressively kiss target's legs",
-				"Harshly caress target's legs",
+				"Aggressively kiss target's thighs",
+				"Harshly peck target's inner thighs",
 				"Forcefully kiss target's legs",
-				"Roughly kiss along target's legs"
+				"Roughly press your lips to target's thighs"
 			]
 		},
 		"user_required_parts": ["mouth"],
-		"target_required_parts": ["feet"],
+		"target_required_parts": [],
 		"category_depraved": 0,
 		"category_violent": 0,
 		"color": "blue",
 		"user_pleasure": 2,
-		"target_pleasure": 5,
+		"target_pleasure": 4,
 		"user_arousal": 2,
+		"target_arousal": 4
+	},
+	"Lick Thighs": {
+		"name": "Lick Thighs",
+		"description": "Lick target's thighs",
+		"category": "Legs",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently licks %TARGET%'s thighs",
+				"%USER% softly licks %TARGET%'s inner thighs",
+				"%USER% tenderly runs their tongue along %TARGET%'s thighs",
+				"%USER% carefully licks %TARGET%'s legs"
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s thighs",
+				"%USER% licks %TARGET%'s inner thighs",
+				"%USER% runs their tongue along %TARGET%'s thighs",
+				"%USER% performs oral on %TARGET%'s thighs"
+			],
+			"hard": [
+				"%USER% roughly licks %TARGET%'s thighs",
+				"%USER% aggressively licks %TARGET%'s inner thighs",
+				"%USER% forcefully runs their tongue along %TARGET%'s thighs",
+				"%USER% roughly performs oral on %TARGET%'s thighs"
+			],
+			"rough": [
+				"%USER% aggressively licks %TARGET%'s thighs",
+				"%USER% harshly licks %TARGET%'s inner thighs",
+				"%USER% forcefully runs their tongue along %TARGET%'s thighs",
+				"%USER% roughly performs oral on %TARGET%'s thighs"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently lick target's thighs",
+				"Softly lick target's inner thighs",
+				"Tenderly run your tongue along target's thighs",
+				"Carefully lick target's legs"
+			],
+			"neutral": [
+				"Lick target's thighs",
+				"Lick target's inner thighs",
+				"Run your tongue along target's thighs",
+				"Perform oral on target's thighs"
+			],
+			"hard": [
+				"Roughly lick target's thighs",
+				"Aggressively lick target's inner thighs",
+				"Forcefully run your tongue along target's thighs",
+				"Roughly perform oral on target's thighs"
+			],
+			"rough": [
+				"Aggressively lick target's thighs",
+				"Harshly lick target's inner thighs",
+				"Forcefully run your tongue along target's thighs",
+				"Roughly perform oral on target's thighs"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 5,
+		"user_arousal": 3,
 		"target_arousal": 5
+	},
+	"Nuzzle Thighs": {
+		"name": "Nuzzle Thighs",
+		"description": "Nuzzle target's thighs",
+		"category": "Legs",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently nuzzles %TARGET%'s thighs",
+				"%USER% softly rubs their face against %TARGET%'s inner thighs",
+				"%USER% tenderly nuzzles into %TARGET%'s thighs",
+				"%USER% carefully presses their face against %TARGET%'s thighs"
+			],
+			"neutral": [
+				"%USER% nuzzles %TARGET%'s thighs",
+				"%USER% rubs their face against %TARGET%'s inner thighs",
+				"%USER% nuzzles into %TARGET%'s thighs",
+				"%USER% presses their face against %TARGET%'s thighs"
+			],
+			"hard": [
+				"%USER% roughly nuzzles %TARGET%'s thighs",
+				"%USER% aggressively rubs their face against %TARGET%'s inner thighs",
+				"%USER% forcefully nuzzles into %TARGET%'s thighs",
+				"%USER% roughly presses their face against %TARGET%'s thighs"
+			],
+			"rough": [
+				"%USER% aggressively nuzzles %TARGET%'s thighs",
+				"%USER% harshly rubs their face against %TARGET%'s inner thighs",
+				"%USER% forcefully nuzzles into %TARGET%'s thighs",
+				"%USER% roughly presses their face against %TARGET%'s thighs"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently nuzzle target's thighs",
+				"Softly rub your face against target's inner thighs",
+				"Tenderly nuzzle into target's thighs",
+				"Carefully press your face against target's thighs"
+			],
+			"neutral": [
+				"Nuzzle target's thighs",
+				"Rub your face against target's inner thighs",
+				"Nuzzle into target's thighs",
+				"Press your face against target's thighs"
+			],
+			"hard": [
+				"Roughly nuzzle target's thighs",
+				"Aggressively rub your face against target's inner thighs",
+				"Forcefully nuzzle into target's thighs",
+				"Roughly press your face against target's thighs"
+			],
+			"rough": [
+				"Aggressively nuzzle target's thighs",
+				"Harshly rub your face against target's inner thighs",
+				"Forcefully nuzzle into target's thighs",
+				"Roughly press your face against target's thighs"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 4,
+		"user_arousal": 2,
+		"target_arousal": 4
 	}
 }
-

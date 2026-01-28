@@ -7,10 +7,10 @@
 		"lewd": 1,
 		"message_by_attitude": {
 			"gentle": [
-				"%USER% gently licks %TARGET%'s pussy",
-				"%USER% softly performs oral on %TARGET%",
-				"%USER% tenderly eats %TARGET% out",
-				"%USER% carefully licks %TARGET%'s vagina"
+				"%USER% gently licks %TARGET%'s pussy, showing loving devotion",
+				"%USER% softly performs oral on %TARGET%, lost in romantic passion",
+				"%USER% tenderly eats %TARGET% out, expressing deep affection",
+				"%USER% carefully licks %TARGET%'s vagina with loving care"
 			],
 			"neutral": [
 				"%USER% licks %TARGET%'s pussy",
@@ -31,12 +31,38 @@
 				"%USER% roughly licks %TARGET%'s vagina"
 			]
 		},
+		"message_by_attitude_submissive": {
+			"gentle": [
+				"%USER% almost shyly licks %TARGET%'s pussy, heat in their cheeks.",
+				"%USER% tentatively performs oral on %TARGET%, blushing softly.",
+				"%USER% nervously eats %TARGET% out, their face flushed with embarrassment.",
+				"%USER% hesitantly licks %TARGET%'s vagina, cheeks burning with shyness."
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s pussy, face flushed with submission.",
+				"%USER% performs oral on %TARGET%, eager to please.",
+				"%USER% eats %TARGET% out, their cheeks red with embarrassment.",
+				"%USER% licks %TARGET%'s vagina, submissively servicing them."
+			],
+			"hard": [
+				"%USER% desperately licks %TARGET%'s pussy, overwhelmed by submission.",
+				"%USER% frantically performs oral on %TARGET%, lost in servitude.",
+				"%USER% desperately eats %TARGET% out, completely submissive.",
+				"%USER% eagerly licks %TARGET%'s vagina, consumed by their need to please."
+			],
+			"rough": [
+				"%USER% frantically licks %TARGET%'s pussy, completely lost in submission.",
+				"%USER% desperately performs oral on %TARGET%, overwhelmed by servitude.",
+				"%USER% desperately eats %TARGET% out, consumed by submission.",
+				"%USER% frantically licks %TARGET%'s vagina, lost in their need to serve."
+			]
+		},
 		"description_by_attitude": {
 			"gentle": [
-				"Gently perform oral on target's vagina",
-				"Softly lick target's pussy",
-				"Tenderly eat target out",
-				"Carefully perform cunnilingus on target"
+				"Gently perform oral on target's vagina with loving devotion",
+				"Softly lick target's pussy, showing romantic passion",
+				"Tenderly eat target out, expressing deep affection",
+				"Carefully perform cunnilingus on target with loving care"
 			],
 			"neutral": [
 				"Perform oral on target's vagina",
@@ -99,6 +125,32 @@
 				"%USER% roughly penetrates %TARGET%'s pussy with their fingers"
 			]
 		},
+		"message_by_attitude_submissive": {
+			"gentle": [
+				"%USER% almost shyly fingers %TARGET%'s pussy, heat in their cheeks.",
+				"%USER% tentatively inserts fingers into %TARGET%'s vagina, blushing softly.",
+				"%USER% nervously fingers %TARGET%, their face flushed with embarrassment.",
+				"%USER% hesitantly penetrates %TARGET%'s pussy with their fingers, cheeks burning."
+			],
+			"neutral": [
+				"%USER% fingers %TARGET%'s pussy, face flushed with submission.",
+				"%USER% inserts fingers into %TARGET%'s vagina, eager to please.",
+				"%USER% fingers %TARGET%, their cheeks red with embarrassment.",
+				"%USER% penetrates %TARGET%'s pussy with their fingers, submissively servicing them."
+			],
+			"hard": [
+				"%USER% desperately fingers %TARGET%'s pussy, overwhelmed by submission.",
+				"%USER% frantically inserts fingers into %TARGET%'s vagina, lost in servitude.",
+				"%USER% desperately fingers %TARGET%, completely submissive.",
+				"%USER% eagerly penetrates %TARGET%'s pussy with their fingers, consumed by their need to please."
+			],
+			"rough": [
+				"%USER% frantically fingers %TARGET%'s pussy, completely lost in submission.",
+				"%USER% desperately inserts fingers into %TARGET%'s vagina, overwhelmed by servitude.",
+				"%USER% desperately fingers %TARGET%, consumed by submission.",
+				"%USER% frantically penetrates %TARGET%'s pussy with their fingers, lost in their need to serve."
+			]
+		},
 		"description_by_attitude": {
 			"gentle": [
 				"Gently finger target's vagina",
@@ -134,6 +186,699 @@
 		"target_pleasure": 12,
 		"user_arousal": 3,
 		"target_arousal": 12
+	},
+	"Sniff Pussy": {
+		"name": "Sniff Pussy",
+		"description": "Sniff target's vagina",
+		"category": "Pussy",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently sniffs %TARGET%'s pussy",
+				"%USER% softly inhales the scent of %TARGET%'s vagina",
+				"%USER% tenderly breathes in %TARGET%'s pussy scent",
+				"%USER% carefully takes in %TARGET%'s vagina scent"
+			],
+			"neutral": [
+				"%USER% sniffs %TARGET%'s pussy",
+				"%USER% inhales the scent of %TARGET%'s vagina",
+				"%USER% breathes in %TARGET%'s pussy scent",
+				"%USER% takes in %TARGET%'s vagina scent"
+			],
+			"hard": [
+				"%USER% roughly sniffs %TARGET%'s pussy",
+				"%USER% aggressively inhales the scent of %TARGET%'s vagina",
+				"%USER% forcefully breathes in %TARGET%'s pussy scent",
+				"%USER% roughly takes in %TARGET%'s vagina scent"
+			],
+			"rough": [
+				"%USER% aggressively sniffs %TARGET%'s pussy",
+				"%USER% harshly inhales the scent of %TARGET%'s vagina",
+				"%USER% forcefully breathes in %TARGET%'s pussy scent",
+				"%USER% roughly takes in %TARGET%'s vagina scent"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently sniff target's vagina",
+				"Softly inhale the scent of target's pussy",
+				"Tenderly breathe in target's vagina scent",
+				"Carefully take in target's pussy scent"
+			],
+			"neutral": [
+				"Sniff target's vagina",
+				"Inhale the scent of target's pussy",
+				"Breathe in target's vagina scent",
+				"Take in target's pussy scent"
+			],
+			"hard": [
+				"Roughly sniff target's vagina",
+				"Aggressively inhale the scent of target's pussy",
+				"Forcefully breathe in target's vagina scent",
+				"Roughly take in target's pussy scent"
+			],
+			"rough": [
+				"Aggressively sniff target's vagina",
+				"Harshly inhale the scent of target's pussy",
+				"Forcefully breathe in target's vagina scent",
+				"Roughly take in target's pussy scent"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["vagina"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 6,
+		"user_arousal": 3,
+		"target_arousal": 6
+	},
+	"Lick Pussy": {
+		"name": "Lick Pussy",
+		"description": "Lick target's vagina",
+		"category": "Pussy",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently licks %TARGET%'s pussy",
+				"%USER% softly licks %TARGET%'s clit",
+				"%USER% tenderly runs their tongue along %TARGET%'s pussy",
+				"%USER% carefully licks %TARGET%'s vagina"
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s pussy",
+				"%USER% licks %TARGET%'s clit",
+				"%USER% runs their tongue along %TARGET%'s pussy",
+				"%USER% performs oral on %TARGET%'s vagina"
+			],
+			"hard": [
+				"%USER% roughly licks %TARGET%'s pussy",
+				"%USER% aggressively licks %TARGET%'s clit",
+				"%USER% forcefully runs their tongue along %TARGET%'s pussy",
+				"%USER% roughly performs oral on %TARGET%'s vagina"
+			],
+			"rough": [
+				"%USER% aggressively licks %TARGET%'s pussy",
+				"%USER% harshly licks %TARGET%'s clit",
+				"%USER% forcefully runs their tongue along %TARGET%'s pussy",
+				"%USER% roughly performs oral on %TARGET%'s vagina"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently lick target's vagina",
+				"Softly lick target's clit",
+				"Tenderly run your tongue along target's pussy",
+				"Carefully lick target's pussy"
+			],
+			"neutral": [
+				"Lick target's vagina",
+				"Lick target's clit",
+				"Run your tongue along target's pussy",
+				"Perform oral on target's pussy"
+			],
+			"hard": [
+				"Roughly lick target's vagina",
+				"Aggressively lick target's clit",
+				"Forcefully run your tongue along target's pussy",
+				"Roughly perform oral on target's pussy"
+			],
+			"rough": [
+				"Aggressively lick target's vagina",
+				"Harshly lick target's clit",
+				"Forcefully run your tongue along target's pussy",
+				"Roughly perform oral on target's pussy"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["vagina"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 4,
+		"target_pleasure": 10,
+		"user_arousal": 4,
+		"target_arousal": 10
+	},
+	"Kiss Pussy": {
+		"name": "Kiss Pussy",
+		"description": "Kiss target's vagina",
+		"category": "Pussy",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently kisses %TARGET%'s pussy",
+				"%USER% softly pecks %TARGET%'s clit",
+				"%USER% tenderly kisses %TARGET%'s vagina",
+				"%USER% carefully presses their lips to %TARGET%'s pussy"
+			],
+			"neutral": [
+				"%USER% kisses %TARGET%'s pussy",
+				"%USER% pecks %TARGET%'s clit",
+				"%USER% kisses %TARGET%'s vagina",
+				"%USER% presses their lips to %TARGET%'s pussy"
+			],
+			"hard": [
+				"%USER% roughly kisses %TARGET%'s pussy",
+				"%USER% aggressively pecks %TARGET%'s clit",
+				"%USER% forcefully kisses %TARGET%'s vagina",
+				"%USER% roughly presses their lips to %TARGET%'s pussy"
+			],
+			"rough": [
+				"%USER% aggressively kisses %TARGET%'s pussy",
+				"%USER% harshly pecks %TARGET%'s clit",
+				"%USER% forcefully kisses %TARGET%'s vagina",
+				"%USER% roughly presses their lips to %TARGET%'s pussy"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently kiss target's vagina",
+				"Softly peck target's clit",
+				"Tenderly kiss target's pussy",
+				"Carefully press your lips to target's pussy"
+			],
+			"neutral": [
+				"Kiss target's vagina",
+				"Peck target's clit",
+				"Kiss target's pussy",
+				"Press your lips to target's pussy"
+			],
+			"hard": [
+				"Roughly kiss target's vagina",
+				"Aggressively peck target's clit",
+				"Forcefully kiss target's pussy",
+				"Roughly press your lips to target's pussy"
+			],
+			"rough": [
+				"Aggressively kiss target's vagina",
+				"Harshly peck target's clit",
+				"Forcefully kiss target's pussy",
+				"Roughly press your lips to target's pussy"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["vagina"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 8,
+		"user_arousal": 3,
+		"target_arousal": 8
+	},
+	"Nibble Pussy": {
+		"name": "Nibble Pussy",
+		"description": "Nibble on target's vagina",
+		"category": "Pussy",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently nibbles on %TARGET%'s pussy",
+				"%USER% softly bites %TARGET%'s clit",
+				"%USER% tenderly nibbles %TARGET%'s pussy",
+				"%USER% carefully nips at %TARGET%'s pussy"
+			],
+			"neutral": [
+				"%USER% nibbles on %TARGET%'s pussy",
+				"%USER% bites %TARGET%'s clit",
+				"%USER% nibbles %TARGET%'s pussy",
+				"%USER% nips at %TARGET%'s pussy"
+			],
+			"hard": [
+				"%USER% roughly nibbles on %TARGET%'s pussy",
+				"%USER% aggressively bites %TARGET%'s clit",
+				"%USER% forcefully nibbles %TARGET%'s pussy",
+				"%USER% roughly nips at %TARGET%'s pussy"
+			],
+			"rough": [
+				"%USER% aggressively nibbles on %TARGET%'s pussy",
+				"%USER% harshly bites %TARGET%'s clit",
+				"%USER% forcefully nibbles %TARGET%'s pussy",
+				"%USER% roughly nips at %TARGET%'s pussy"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently nibble on target's vagina",
+				"Softly bite target's clit",
+				"Tenderly nibble target's pussy",
+				"Carefully nip at target's pussy"
+			],
+			"neutral": [
+				"Nibble on target's vagina",
+				"Bite target's clit",
+				"Nibble target's pussy",
+				"Nip at target's pussy"
+			],
+			"hard": [
+				"Roughly nibble on target's vagina",
+				"Aggressively bite target's clit",
+				"Forcefully nibble target's pussy",
+				"Roughly nip at target's pussy"
+			],
+			"rough": [
+				"Aggressively nibble on target's vagina",
+				"Harshly bite target's clit",
+				"Forcefully nibble target's pussy",
+				"Roughly nip at target's pussy"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["vagina"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 4,
+		"target_pleasure": 9,
+		"user_arousal": 4,
+		"target_arousal": 9,
+		"target_pain": 1
+	},
+	"Bite Pussy": {
+		"name": "Bite Pussy",
+		"description": "Bite target's vagina",
+		"category": "Pussy",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently bites %TARGET%'s pussy",
+				"%USER% softly sinks their teeth into %TARGET%'s clit",
+				"%USER% tenderly bites %TARGET%'s pussy",
+				"%USER% carefully bites down on %TARGET%'s pussy"
+			],
+			"neutral": [
+				"%USER% bites %TARGET%'s pussy",
+				"%USER% sinks their teeth into %TARGET%'s clit",
+				"%USER% bites %TARGET%'s pussy",
+				"%USER% bites down on %TARGET%'s pussy"
+			],
+			"hard": [
+				"%USER% roughly bites %TARGET%'s pussy",
+				"%USER% aggressively sinks their teeth into %TARGET%'s clit",
+				"%USER% forcefully bites %TARGET%'s pussy",
+				"%USER% roughly bites down on %TARGET%'s pussy"
+			],
+			"rough": [
+				"%USER% aggressively bites %TARGET%'s pussy",
+				"%USER% harshly sinks their teeth into %TARGET%'s clit",
+				"%USER% forcefully bites %TARGET%'s pussy",
+				"%USER% roughly bites down on %TARGET%'s pussy"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently bite target's vagina",
+				"Softly sink your teeth into target's clit",
+				"Tenderly bite target's pussy",
+				"Carefully bite down on target's pussy"
+			],
+			"neutral": [
+				"Bite target's vagina",
+				"Sink your teeth into target's clit",
+				"Bite target's pussy",
+				"Bite down on target's pussy"
+			],
+			"hard": [
+				"Roughly bite target's vagina",
+				"Aggressively sink your teeth into target's clit",
+				"Forcefully bite target's pussy",
+				"Roughly bite down on target's pussy"
+			],
+			"rough": [
+				"Aggressively bite target's vagina",
+				"Harshly sink your teeth into target's clit",
+				"Forcefully bite target's pussy",
+				"Roughly bite down on target's pussy"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["vagina"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 5,
+		"target_pleasure": 10,
+		"user_arousal": 5,
+		"target_arousal": 10,
+		"target_pain": 2
+	},
+	"Fuck Pussy": {
+		"name": "Fuck Pussy",
+		"description": "Fuck target's vagina",
+		"category": "Pussy",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently fucks %TARGET%'s pussy",
+				"%USER% softly penetrates %TARGET%'s vagina",
+				"%USER% tenderly slides into %TARGET%",
+				"%USER% carefully fucks %TARGET%'s pussy"
+			],
+			"neutral": [
+				"%USER% fucks %TARGET%'s pussy",
+				"%USER% penetrates %TARGET%'s vagina",
+				"%USER% slides into %TARGET%",
+				"%USER% fucks %TARGET%"
+			],
+			"hard": [
+				"%USER% roughly fucks %TARGET%'s pussy",
+				"%USER% aggressively penetrates %TARGET%'s vagina",
+				"%USER% forcefully slides into %TARGET%",
+				"%USER% roughly fucks %TARGET%"
+			],
+			"rough": [
+				"%USER% aggressively fucks %TARGET%'s pussy",
+				"%USER% harshly penetrates %TARGET%'s vagina",
+				"%USER% forcefully slides into %TARGET%",
+				"%USER% roughly fucks %TARGET%"
+			]
+		},
+		"message_by_attitude_submissive": {
+			"gentle": [
+				"%USER% almost shyly fucks %TARGET%'s pussy, heat in their cheeks.",
+				"%USER% tentatively penetrates %TARGET%'s vagina, blushing softly.",
+				"%USER% nervously slides into %TARGET%, their face flushed with embarrassment.",
+				"%USER% hesitantly fucks %TARGET%'s pussy, cheeks burning with shyness."
+			],
+			"neutral": [
+				"%USER% fucks %TARGET%'s pussy, face flushed with submission.",
+				"%USER% penetrates %TARGET%'s vagina, eager to please.",
+				"%USER% slides into %TARGET%, their cheeks red with embarrassment.",
+				"%USER% fucks %TARGET%, submissively servicing them."
+			],
+			"hard": [
+				"%USER% desperately fucks %TARGET%'s pussy, overwhelmed by submission.",
+				"%USER% frantically penetrates %TARGET%'s vagina, lost in servitude.",
+				"%USER% desperately slides into %TARGET%, completely submissive.",
+				"%USER% eagerly fucks %TARGET%, consumed by their need to please."
+			],
+			"rough": [
+				"%USER% frantically fucks %TARGET%'s pussy, completely lost in submission.",
+				"%USER% desperately penetrates %TARGET%'s vagina, overwhelmed by servitude.",
+				"%USER% desperately slides into %TARGET%, consumed by submission.",
+				"%USER% frantically fucks %TARGET%, lost in their need to serve."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently fuck target's vagina",
+				"Softly penetrate target's pussy",
+				"Tenderly slide into target",
+				"Carefully fuck target's pussy"
+			],
+			"neutral": [
+				"Fuck target's vagina",
+				"Penetrate target's pussy",
+				"Slide into target",
+				"Fuck target"
+			],
+			"hard": [
+				"Roughly fuck target's vagina",
+				"Aggressively penetrate target's pussy",
+				"Forcefully slide into target",
+				"Roughly fuck target"
+			],
+			"rough": [
+				"Aggressively fuck target's vagina",
+				"Harshly penetrate target's pussy",
+				"Forcefully slide into target",
+				"Roughly fuck target"
+			]
+		},
+		"user_required_parts": ["penis"],
+		"target_required_parts": ["vagina"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 10,
+		"target_pleasure": 12,
+		"user_arousal": 10,
+		"target_arousal": 12
+	},
+	"Deep Fuck Pussy": {
+		"name": "Deep Fuck Pussy",
+		"description": "Deeply fuck target's vagina",
+		"category": "Pussy",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently deep fucks %TARGET%'s pussy",
+				"%USER% softly penetrates deep into %TARGET%'s vagina",
+				"%USER% tenderly slides deep into %TARGET%",
+				"%USER% carefully fucks %TARGET%'s pussy deeply"
+			],
+			"neutral": [
+				"%USER% deep fucks %TARGET%'s pussy",
+				"%USER% penetrates deep into %TARGET%'s vagina",
+				"%USER% slides deep into %TARGET%",
+				"%USER% fucks %TARGET% deeply"
+			],
+			"hard": [
+				"%USER% roughly deep fucks %TARGET%'s pussy",
+				"%USER% aggressively penetrates deep into %TARGET%'s vagina",
+				"%USER% forcefully slides deep into %TARGET%",
+				"%USER% roughly fucks %TARGET% deeply"
+			],
+			"rough": [
+				"%USER% aggressively deep fucks %TARGET%'s pussy",
+				"%USER% harshly penetrates deep into %TARGET%'s vagina",
+				"%USER% forcefully slides deep into %TARGET%",
+				"%USER% roughly fucks %TARGET% deeply"
+			]
+		},
+		"message_by_attitude_submissive": {
+			"gentle": [
+				"%USER% almost shyly deep fucks %TARGET%'s pussy, heat in their cheeks.",
+				"%USER% tentatively penetrates deep into %TARGET%'s vagina, blushing softly.",
+				"%USER% nervously slides deep into %TARGET%, their face flushed with embarrassment.",
+				"%USER% hesitantly fucks %TARGET%'s pussy deeply, cheeks burning with shyness."
+			],
+			"neutral": [
+				"%USER% deep fucks %TARGET%'s pussy, face flushed with submission.",
+				"%USER% penetrates deep into %TARGET%'s vagina, eager to please.",
+				"%USER% slides deep into %TARGET%, their cheeks red with embarrassment.",
+				"%USER% fucks %TARGET% deeply, submissively servicing them."
+			],
+			"hard": [
+				"%USER% desperately deep fucks %TARGET%'s pussy, overwhelmed by submission.",
+				"%USER% frantically penetrates deep into %TARGET%'s vagina, lost in servitude.",
+				"%USER% desperately slides deep into %TARGET%, completely submissive.",
+				"%USER% eagerly fucks %TARGET% deeply, consumed by their need to please."
+			],
+			"rough": [
+				"%USER% frantically deep fucks %TARGET%'s pussy, completely lost in submission.",
+				"%USER% desperately penetrates deep into %TARGET%'s vagina, overwhelmed by servitude.",
+				"%USER% desperately slides deep into %TARGET%, consumed by submission.",
+				"%USER% frantically fucks %TARGET% deeply, lost in their need to serve."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently deep fuck target's vagina",
+				"Softly penetrate deep into target's pussy",
+				"Tenderly slide deep into target",
+				"Carefully fuck target's pussy deeply"
+			],
+			"neutral": [
+				"Deep fuck target's vagina",
+				"Penetrate deep into target's pussy",
+				"Slide deep into target",
+				"Fuck target deeply"
+			],
+			"hard": [
+				"Roughly deep fuck target's vagina",
+				"Aggressively penetrate deep into target's pussy",
+				"Forcefully slide deep into target",
+				"Roughly fuck target deeply"
+			],
+			"rough": [
+				"Aggressively deep fuck target's vagina",
+				"Harshly penetrate deep into target's pussy",
+				"Forcefully slide deep into target",
+				"Roughly fuck target deeply"
+			]
+		},
+		"user_required_parts": ["penis"],
+		"target_required_parts": ["vagina"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 12,
+		"target_pleasure": 15,
+		"user_arousal": 12,
+		"target_arousal": 15
+	},
+	"Cervical Fuck": {
+		"name": "Cervical Fuck",
+		"description": "Fuck target's cervix",
+		"category": "Pussy",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently fucks %TARGET%'s cervix",
+				"%USER% softly penetrates %TARGET%'s cervical opening",
+				"%USER% tenderly slides into %TARGET%'s cervix",
+				"%USER% carefully fucks %TARGET%'s cervix"
+			],
+			"neutral": [
+				"%USER% fucks %TARGET%'s cervix",
+				"%USER% penetrates %TARGET%'s cervical opening",
+				"%USER% slides into %TARGET%'s cervix",
+				"%USER% fucks %TARGET%'s cervix"
+			],
+			"hard": [
+				"%USER% roughly fucks %TARGET%'s cervix",
+				"%USER% aggressively penetrates %TARGET%'s cervical opening",
+				"%USER% forcefully slides into %TARGET%'s cervix",
+				"%USER% roughly fucks %TARGET%'s cervix"
+			],
+			"rough": [
+				"%USER% aggressively fucks %TARGET%'s cervix",
+				"%USER% harshly penetrates %TARGET%'s cervical opening",
+				"%USER% forcefully slides into %TARGET%'s cervix",
+				"%USER% roughly fucks %TARGET%'s cervix"
+			]
+		},
+		"message_by_attitude_submissive": {
+			"gentle": [
+				"%USER% almost shyly fucks %TARGET%'s cervix, heat in their cheeks.",
+				"%USER% tentatively penetrates %TARGET%'s cervical opening, blushing softly.",
+				"%USER% nervously slides into %TARGET%'s cervix, their face flushed with embarrassment.",
+				"%USER% hesitantly fucks %TARGET%'s cervix, cheeks burning with shyness."
+			],
+			"neutral": [
+				"%USER% fucks %TARGET%'s cervix, face flushed with submission.",
+				"%USER% penetrates %TARGET%'s cervical opening, eager to please.",
+				"%USER% slides into %TARGET%'s cervix, their cheeks red with embarrassment.",
+				"%USER% fucks %TARGET%'s cervix, submissively servicing them."
+			],
+			"hard": [
+				"%USER% desperately fucks %TARGET%'s cervix, overwhelmed by submission.",
+				"%USER% frantically penetrates %TARGET%'s cervical opening, lost in servitude.",
+				"%USER% desperately slides into %TARGET%'s cervix, completely submissive.",
+				"%USER% eagerly fucks %TARGET%'s cervix, consumed by their need to please."
+			],
+			"rough": [
+				"%USER% frantically fucks %TARGET%'s cervix, completely lost in submission.",
+				"%USER% desperately penetrates %TARGET%'s cervical opening, overwhelmed by servitude.",
+				"%USER% desperately slides into %TARGET%'s cervix, consumed by submission.",
+				"%USER% frantically fucks %TARGET%'s cervix, lost in their need to serve."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently fuck target's cervix",
+				"Softly penetrate target's cervical opening",
+				"Tenderly slide into target's cervix",
+				"Carefully fuck target's cervix"
+			],
+			"neutral": [
+				"Fuck target's cervix",
+				"Penetrate target's cervical opening",
+				"Slide into target's cervix",
+				"Fuck target's cervix"
+			],
+			"hard": [
+				"Roughly fuck target's cervix",
+				"Aggressively penetrate target's cervical opening",
+				"Forcefully slide into target's cervix",
+				"Roughly fuck target's cervix"
+			],
+			"rough": [
+				"Aggressively fuck target's cervix",
+				"Harshly penetrate target's cervical opening",
+				"Forcefully slide into target's cervix",
+				"Roughly fuck target's cervix"
+			]
+		},
+		"user_required_parts": ["penis"],
+		"target_required_parts": ["vagina"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 15,
+		"target_pleasure": 18,
+		"user_arousal": 15,
+		"target_arousal": 18,
+		"target_pain": 3
+	},
+	"Nuzzle Pussy": {
+		"name": "Nuzzle Pussy",
+		"description": "Nuzzle target's vagina",
+		"category": "Pussy",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently nuzzles %TARGET%'s pussy",
+				"%USER% softly rubs their face against %TARGET%'s vagina",
+				"%USER% tenderly nuzzles into %TARGET%'s pussy",
+				"%USER% carefully presses their face against %TARGET%'s pussy"
+			],
+			"neutral": [
+				"%USER% nuzzles %TARGET%'s pussy",
+				"%USER% rubs their face against %TARGET%'s vagina",
+				"%USER% nuzzles into %TARGET%'s pussy",
+				"%USER% presses their face against %TARGET%'s pussy"
+			],
+			"hard": [
+				"%USER% roughly nuzzles %TARGET%'s pussy",
+				"%USER% aggressively rubs their face against %TARGET%'s vagina",
+				"%USER% forcefully nuzzles into %TARGET%'s pussy",
+				"%USER% roughly presses their face against %TARGET%'s pussy"
+			],
+			"rough": [
+				"%USER% aggressively nuzzles %TARGET%'s pussy",
+				"%USER% harshly rubs their face against %TARGET%'s vagina",
+				"%USER% forcefully nuzzles into %TARGET%'s pussy",
+				"%USER% roughly presses their face against %TARGET%'s pussy"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently nuzzle target's vagina",
+				"Softly rub your face against target's pussy",
+				"Tenderly nuzzle into target's pussy",
+				"Carefully press your face against target's pussy"
+			],
+			"neutral": [
+				"Nuzzle target's vagina",
+				"Rub your face against target's pussy",
+				"Nuzzle into target's pussy",
+				"Press your face against target's pussy"
+			],
+			"hard": [
+				"Roughly nuzzle target's vagina",
+				"Aggressively rub your face against target's pussy",
+				"Forcefully nuzzle into target's pussy",
+				"Roughly press your face against target's pussy"
+			],
+			"rough": [
+				"Aggressively nuzzle target's vagina",
+				"Harshly rub your face against target's pussy",
+				"Forcefully nuzzle into target's pussy",
+				"Roughly press your face against target's pussy"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["vagina"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 6,
+		"user_arousal": 3,
+		"target_arousal": 6
 	}
 }
 
