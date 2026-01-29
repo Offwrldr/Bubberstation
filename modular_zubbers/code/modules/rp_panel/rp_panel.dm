@@ -323,13 +323,23 @@
 				violent_status = get_preference_status(violent_choice)
 			selected_data["erp_status_violent_display"] = violent_status
 		else
-			selected_data["erp_status_display"] = "NO"
-			selected_data["hypno_status_display"] = "NO"
-			selected_data["vore_status_display"] = "NO"
-			selected_data["noncon_status_display"] = "NO"
-			selected_data["erp_mechanics_display"] = "NONE"
-			selected_data["erp_status_depraved_display"] = "NO"
-			selected_data["erp_status_violent_display"] = "NO"
+			// For blowup dolls (test dummies), set all preferences to "Yes"
+			if(istype(selected_participant, /mob/living/carbon/human/blowup_doll))
+				selected_data["erp_status_display"] = "YES"
+				selected_data["hypno_status_display"] = "YES"
+				selected_data["vore_status_display"] = "YES"
+				selected_data["noncon_status_display"] = "YES"
+				selected_data["erp_mechanics_display"] = "MECHANICAL AND ROLEPLAY"
+				selected_data["erp_status_depraved_display"] = "YES"
+				selected_data["erp_status_violent_display"] = "YES"
+			else
+				selected_data["erp_status_display"] = "NO"
+				selected_data["hypno_status_display"] = "NO"
+				selected_data["vore_status_display"] = "NO"
+				selected_data["noncon_status_display"] = "NO"
+				selected_data["erp_mechanics_display"] = "NONE"
+				selected_data["erp_status_depraved_display"] = "NO"
+				selected_data["erp_status_violent_display"] = "NO"
 
 		selected_data["details"] = details
 		data["selected_participant"] = selected_data
@@ -475,11 +485,15 @@
 						// Don't allow setting rough if holder's violent preference is not "Yes"
 						return
 					// Check selected participant's violent preference (if there is one and it's not self)
-					if(selected_participant && selected_participant != holder && selected_participant.client?.prefs)
-						var/partner_violent_pref = selected_participant.client.prefs.read_preference(/datum/preference/choiced/erp_status_violent) || "No"
-						if(partner_violent_pref != "Yes")
-							// Don't allow setting rough if partner's violent preference is not "Yes"
-							return
+					if(selected_participant && selected_participant != holder)
+						// Blowup dolls always allow rough mode
+						if(istype(selected_participant, /mob/living/carbon/human/blowup_doll))
+							// Allow rough for blowup dolls
+						else if(selected_participant.client?.prefs)
+							var/partner_violent_pref = selected_participant.client.prefs.read_preference(/datum/preference/choiced/erp_status_violent) || "No"
+							if(partner_violent_pref != "Yes")
+								// Don't allow setting rough if partner's violent preference is not "Yes"
+								return
 				approach_mode = new_approach
 				. = TRUE
 
@@ -800,12 +814,9 @@
 				to_chat(holder, span_warning("[target] doesn't have an interaction component."))
 				return
 
-			// Find the interaction
-			var/datum/interaction/found_interaction = null
-			for(var/datum/interaction/interaction in interaction_component.interactions)
-				if(interaction.name == interaction_name)
-					found_interaction = interaction
-					break
+			// Find the interaction from GLOB.interaction_instances (not filtered by target's preferences)
+			// This ensures we can find interactions even if the target doesn't have preferences set
+			var/datum/interaction/found_interaction = GLOB.interaction_instances[interaction_name]
 
 			if(!found_interaction)
 				to_chat(holder, span_warning("Interaction '[interaction_name]' not found."))
@@ -897,9 +908,9 @@
 			if(!target || QDELETED(target))
 				return
 
-			// Block simplemobs and pets, but allow cyborgs
+			// Block simplemobs and pets, but allow cyborgs and blowup dolls (test dummies)
 			if(isanimal(target) || istype(target, /mob/living/basic/pet))
-				if(!iscyborg(target))
+				if(!iscyborg(target) && !istype(target, /mob/living/carbon/human/blowup_doll))
 					to_chat(holder, span_warning("You cannot add simplemobs or station pets to the RP panel."))
 					return
 
@@ -1689,12 +1700,6 @@
 
 		// Filter Violent category verbs
 		if(interaction.category == "Violent" && violent_pref == "No")
-			continue
-
-		// Filter by category flags (for verbs that have the flag but aren't in those categories)
-		if(interaction.category_depraved && depraved_pref == "No")
-			continue
-		if(interaction.category_violent && violent_pref == "No")
 			continue
 
 		// Check if interaction has the selected attitude or a fallback attitude

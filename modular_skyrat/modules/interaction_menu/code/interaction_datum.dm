@@ -134,25 +134,30 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 		return
 
 	// Use attitude-based messages if available, otherwise fallback to regular message
+	// Check both dominant and submissive variations (submissive takes priority if both exist)
 	var/list/messages_to_use = message
-	if(message_by_attitude.len && message_by_attitude[approach_mode])
+	if(message_by_attitude_submissive.len && message_by_attitude_submissive[approach_mode])
+		messages_to_use = message_by_attitude_submissive[approach_mode]
+	else if(message_by_attitude.len && message_by_attitude[approach_mode])
 		messages_to_use = message_by_attitude[approach_mode]
 
-	if(!messages_to_use)
-		message_admins("Interaction had a null message list. '[name]'")
-		return
-	if(!islist(messages_to_use) && istext(messages_to_use))
-		message_admins("Deprecated message handling for '[name]'. Correct format is a list with one entry. This message will only show once.")
-		messages_to_use = list(messages_to_use)
-	var/msg = pick(messages_to_use)
-	if(!isnull(body_relay))
-		msg = replacetext(msg, "%TARGET%", "\the [body_relay.name]")
-	// We replace %USER% with nothing because manual_emote already prepends it.
-	msg = trim(replacetext(replacetext(msg, "%TARGET%", "[target]"), "%USER%", ""), INTERACTION_MAX_CHAR)
-	if(lewd)
-		user.emote("subtle", null, msg, TRUE)
+	// Display message if available (but don't prevent arousal from being applied if message is missing)
+	if(messages_to_use)
+		if(!islist(messages_to_use) && istext(messages_to_use))
+			message_admins("Deprecated message handling for '[name]'. Correct format is a list with one entry. This message will only show once.")
+			messages_to_use = list(messages_to_use)
+		var/msg = pick(messages_to_use)
+		if(!isnull(body_relay))
+			msg = replacetext(msg, "%TARGET%", "\the [body_relay.name]")
+		// We replace %USER% with nothing because manual_emote already prepends it.
+		msg = trim(replacetext(replacetext(msg, "%TARGET%", "[target]"), "%USER%", ""), INTERACTION_MAX_CHAR)
+		if(lewd)
+			user.emote("subtle", null, msg, TRUE)
+		else
+			user.manual_emote(msg)
 	else
-		user.manual_emote(msg)
+		// Warn if no message but don't prevent arousal from being applied
+		message_admins("Interaction had a null message list. '[name]'")
 	if(user_messages.len)
 		var/user_msg = pick(user_messages)
 		if(!isnull(body_relay))
@@ -379,6 +384,22 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 				for(var/attitude in list("gentle", "neutral", "hard", "rough"))
 					if(desc_attitude_data[attitude])
 						interaction.description_by_attitude[attitude] = sanitize_islist(desc_attitude_data[attitude], list())
+
+		// Load submissive attitude-based messages if present
+		if(ijson["message_by_attitude_submissive"])
+			var/list/submissive_attitude_data = ijson["message_by_attitude_submissive"]
+			if(islist(submissive_attitude_data))
+				for(var/attitude in list("gentle", "neutral", "hard", "rough"))
+					if(submissive_attitude_data[attitude])
+						interaction.message_by_attitude_submissive[attitude] = sanitize_islist(submissive_attitude_data[attitude], list())
+
+		// Load submissive attitude-based descriptions if present
+		if(ijson["description_by_attitude_submissive"])
+			var/list/submissive_desc_attitude_data = ijson["description_by_attitude_submissive"]
+			if(islist(submissive_desc_attitude_data))
+				for(var/attitude in list("gentle", "neutral", "hard", "rough"))
+					if(submissive_desc_attitude_data[attitude])
+						interaction.description_by_attitude_submissive[attitude] = sanitize_islist(submissive_desc_attitude_data[attitude], list())
 
 		// Load category flags
 		interaction.category_depraved = sanitize_integer(ijson["category_depraved"], 0, 1, 0)

@@ -9724,6 +9724,7 @@
 #include "modular_zubbers\code\modules\research\xenobiology\crossbreeding\prismatic.dm"
 #include "modular_zubbers\code\modules\rimpoint_newfeatures\code\umbrella.dm"
 #include "modular_zubbers\code\modules\rp_panel\rp_panel.dm"
+#include "modular_zubbers\code\modules\rp_panel\blowup_doll.dm"
 #include "modular_zubbers\code\modules\rr_opt_in\examine.dm"
 #include "modular_zubbers\code\modules\rr_opt_in\rr_opt_config.dm"
 #include "modular_zubbers\code\modules\rr_opt_in\rr_optin_preferences.dm"

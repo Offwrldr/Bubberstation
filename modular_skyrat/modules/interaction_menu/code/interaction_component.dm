@@ -23,9 +23,12 @@
 
 /datum/component/interactable/proc/build_interactions_list()
 	interactions = list()
+	// For blowup dolls (test dummies), allow all interactions without filtering
+	var/is_blowup_doll = istype(self, /mob/living/carbon/human/blowup_doll)
+	
 	for(var/iterating_interaction_id in GLOB.interaction_instances)
 		var/datum/interaction/interaction = GLOB.interaction_instances[iterating_interaction_id]
-		if(interaction.lewd)
+		if(interaction.lewd && !is_blowup_doll)
 			if(!self.client?.prefs?.read_preference(/datum/preference/toggle/erp))
 				continue
 			if(interaction.sexuality != "" && interaction.sexuality != self.client?.prefs?.read_preference(/datum/preference/choiced/erp_sexuality))
@@ -88,8 +91,16 @@
 					break
 				if(!has_feet)
 					return FALSE
-			if("arms", "armpits")
+			if("arms")
 				// Check if user has arms
+				var/has_arms = FALSE
+				for(var/obj/item/bodypart/arm/arm in user.bodyparts)
+					has_arms = TRUE
+					break
+				if(!has_arms)
+					return FALSE
+			if("armpits")
+				// Armpits are part of arms - check if user has arms
 				var/has_arms = FALSE
 				for(var/obj/item/bodypart/arm/arm in user.bodyparts)
 					has_arms = TRUE
@@ -155,9 +166,10 @@
 		// Check actor's ERP preference
 		if(!user.client?.prefs?.read_preference(/datum/preference/toggle/erp))
 			return FALSE
-		// Check target's ERP preference
-		if(!self.client?.prefs?.read_preference(/datum/preference/toggle/erp))
-			return FALSE
+		// Check target's ERP preference (skip for blowup dolls - they're test dummies)
+		if(!istype(self, /mob/living/carbon/human/blowup_doll))
+			if(!self.client?.prefs?.read_preference(/datum/preference/toggle/erp))
+				return FALSE
 	if(!interaction.distance_allowed && !user.Adjacent(self))
 		if(!body_relay || !user.Adjacent(body_relay))
 			return FALSE
