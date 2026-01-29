@@ -1,0 +1,72 @@
+{
+	"Rough Handling": {
+		"name": "Rough Handling",
+		"description": "Roughly handle target",
+		"category": "Violent",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently handles %TARGET% roughly",
+				"%USER% softly restrains %TARGET%",
+				"%USER% tenderly forces %TARGET%",
+				"%USER% carefully dominates %TARGET%"
+			],
+			"neutral": [
+				"%USER% handles %TARGET% roughly",
+				"%USER% restrains %TARGET%",
+				"%USER% forces %TARGET%",
+				"%USER% dominates %TARGET%"
+			],
+			"hard": [
+				"%USER% roughly handles %TARGET%",
+				"%USER% aggressively restrains %TARGET%",
+				"%USER% forcefully handles %TARGET%",
+				"%USER% roughly dominates %TARGET%"
+			],
+			"rough": [
+				"%USER% aggressively handles %TARGET%",
+				"%USER% harshly restrains %TARGET%",
+				"%USER% forcefully handles %TARGET%",
+				"%USER% roughly dominates %TARGET%"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently handle target roughly",
+				"Softly restrain target",
+				"Tenderly force target",
+				"Carefully dominate target"
+			],
+			"neutral": [
+				"Handle target roughly",
+				"Restrain target",
+				"Force target",
+				"Dominate target"
+			],
+			"hard": [
+				"Roughly handle target",
+				"Aggressively restrain target",
+				"Forcefully handle target",
+				"Roughly dominate target"
+			],
+			"rough": [
+				"Aggressively handle target",
+				"Harshly restrain target",
+				"Forcefully handle target",
+				"Roughly dominate target"
+			]
+		},
+		"user_required_parts": ["hands"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 1,
+		"color": "red",
+		"user_pleasure": 3,
+		"target_pleasure": 2,
+		"user_arousal": 3,
+		"target_arousal": 2,
+		"target_pain": 5
+	}
+}
+

@@ -1,0 +1,71 @@
+{
+	"Urethral Fuck": {
+		"name": "Urethral Fuck",
+		"description": "Fuck target's urethra",
+		"category": "Cock",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently fucks %TARGET%'s urethra",
+				"%USER% softly penetrates %TARGET%'s cock hole",
+				"%USER% tenderly slides into %TARGET%'s urethra",
+				"%USER% carefully fucks %TARGET%'s piss slit"
+			],
+			"neutral": [
+				"%USER% fucks %TARGET%'s urethra",
+				"%USER% penetrates %TARGET%'s cock hole",
+				"%USER% slides into %TARGET%'s urethra",
+				"%USER% fucks %TARGET%'s piss slit"
+			],
+			"hard": [
+				"%USER% roughly fucks %TARGET%'s urethra",
+				"%USER% aggressively penetrates %TARGET%'s cock hole",
+				"%USER% forcefully slides into %TARGET%'s urethra",
+				"%USER% roughly fucks %TARGET%'s piss slit"
+			],
+			"rough": [
+				"%USER% aggressively fucks %TARGET%'s urethra",
+				"%USER% harshly penetrates %TARGET%'s cock hole",
+				"%USER% forcefully slides into %TARGET%'s urethra",
+				"%USER% roughly fucks %TARGET%'s piss slit"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently fuck target's urethra",
+				"Softly penetrate target's cock hole",
+				"Tenderly slide into target's urethra",
+				"Carefully fuck target's piss slit"
+			],
+			"neutral": [
+				"Fuck target's urethra",
+				"Penetrate target's cock hole",
+				"Slide into target's urethra",
+				"Fuck target's piss slit"
+			],
+			"hard": [
+				"Roughly fuck target's urethra",
+				"Aggressively penetrate target's cock hole",
+				"Forcefully slide into target's urethra",
+				"Roughly fuck target's piss slit"
+			],
+			"rough": [
+				"Aggressively fuck target's urethra",
+				"Harshly penetrate target's cock hole",
+				"Forcefully slide into target's urethra",
+				"Roughly fuck target's piss slit"
+			]
+		},
+		"user_required_parts": ["penis"],
+		"target_required_parts": ["penis"],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 12,
+		"target_pleasure": 15,
+		"user_arousal": 12,
+		"target_arousal": 15,
+		"target_pain": 5
+	}
+}

@@ -10,6 +10,10 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 	var/distance_allowed = FALSE
 	/// A list of possible messages displayed loaded by the JSON.
 	var/list/message = list()
+	/// A list of possible messages by attitude (gentle, neutral, hard, rough) - 4 variations per attitude
+	var/list/message_by_attitude = list()
+	/// A list of possible messages by attitude for submissive mode (gentle, neutral, hard, rough) - 4 variations per attitude
+	var/list/message_by_attitude_submissive = list()
 	/// A list of possible messages displayed directly to the USER.
 	var/list/user_messages = list()
 	/// A list of possible messages displayed directly to the TARGET.
@@ -50,6 +54,34 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 	var/color = "blue"
 	/// What sexuality preference do we display for.
 	var/sexuality = ""
+	/// A list of possible descriptions by attitude (gentle, neutral, hard, rough) - 4 variations per attitude
+	var/list/description_by_attitude = list()
+	/// A list of possible descriptions by attitude for submissive mode (gentle, neutral, hard, rough) - 4 variations per attitude
+	var/list/description_by_attitude_submissive = list()
+	/// Is this interaction in the Depraved category?
+	var/category_depraved = FALSE
+	/// Is this interaction in the Violent category?
+	var/category_violent = FALSE
+
+/datum/interaction/proc/map_part_string_to_slot(part_string)
+	switch(lowertext(part_string))
+		if("mouth", "tongue")
+			return ORGAN_SLOT_TONGUE
+		if("penis", "cock")
+			return ORGAN_SLOT_PENIS
+		if("vagina", "pussy")
+			return ORGAN_SLOT_VAGINA
+		if("anus", "ass")
+			return ORGAN_SLOT_ANUS
+		if("breasts", "breast")
+			return ORGAN_SLOT_BREASTS
+		if("testicles", "balls")
+			return ORGAN_SLOT_TESTICLES
+		if("tail")
+			return ORGAN_SLOT_TAIL
+		else
+			// Return as-is if it's already an organ slot define
+			return part_string
 
 /datum/interaction/proc/allow_act(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(target == user && usage == INTERACTION_OTHER)
@@ -57,19 +89,33 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 
 	if(user_required_parts.len)
 		for(var/thing in user_required_parts)
-			var/obj/item/organ/genital/required_part = user.get_organ_slot(thing)
-			if(isnull(required_part))
-				return FALSE
-			if(!required_part.is_exposed())
-				return FALSE
+			var/part_slot = map_part_string_to_slot(thing)
+			// Handle special cases that don't have organ slots
+			switch(part_slot)
+				if("hands", "feet", "arms", "armpits", "belly")
+					// These are checked in can_interact, skip here
+					continue
+				else
+					var/obj/item/organ/genital/required_part = user.get_organ_slot(part_slot)
+					if(isnull(required_part))
+						return FALSE
+					if(!required_part.is_exposed())
+						return FALSE
 
 	if(target_required_parts.len)
 		for(var/thing in target_required_parts)
-			var/obj/item/organ/genital/required_part = target.get_organ_slot(thing)
-			if(isnull(required_part))
-				return FALSE
-			if(!required_part.is_exposed())
-				return FALSE
+			var/part_slot = map_part_string_to_slot(thing)
+			// Handle special cases that don't have organ slots
+			switch(part_slot)
+				if("hands", "feet", "arms", "armpits", "belly")
+					// These are checked in can_interact, skip here
+					continue
+				else
+					var/obj/item/organ/genital/required_part = target.get_organ_slot(part_slot)
+					if(isnull(required_part))
+						return FALSE
+					if(!required_part.is_exposed())
+						return FALSE
 
 	for(var/requirement in interaction_requires)
 		switch(requirement)
@@ -83,24 +129,35 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 				CRASH("Unimplemented interaction requirement '[requirement]'")
 	return TRUE
 
-/datum/interaction/proc/act(mob/living/carbon/human/user, mob/living/carbon/human/target, obj/body_relay = null)
+/datum/interaction/proc/act(mob/living/carbon/human/user, mob/living/carbon/human/target, obj/body_relay = null, approach_mode = "neutral")
 	if(!allow_act(user, target))
 		return
-	if(!message)
-		message_admins("Interaction had a null message list. '[name]'")
-		return
-	if(!islist(message) && istext(message))
-		message_admins("Deprecated message handling for '[name]'. Correct format is a list with one entry. This message will only show once.")
-		message = list(message)
-	var/msg = pick(message)
-	if(!isnull(body_relay))
-		msg = replacetext(msg, "%TARGET%", "\the [body_relay.name]")
-	// We replace %USER% with nothing because manual_emote already prepends it.
-	msg = trim(replacetext(replacetext(msg, "%TARGET%", "[target]"), "%USER%", ""), INTERACTION_MAX_CHAR)
-	if(lewd)
-		user.emote("subtle", null, msg, TRUE)
+
+	// Use attitude-based messages if available, otherwise fallback to regular message
+	// Check both dominant and submissive variations (submissive takes priority if both exist)
+	var/list/messages_to_use = message
+	if(message_by_attitude_submissive.len && message_by_attitude_submissive[approach_mode])
+		messages_to_use = message_by_attitude_submissive[approach_mode]
+	else if(message_by_attitude.len && message_by_attitude[approach_mode])
+		messages_to_use = message_by_attitude[approach_mode]
+
+	// Display message if available (but don't prevent arousal from being applied if message is missing)
+	if(messages_to_use)
+		if(!islist(messages_to_use) && istext(messages_to_use))
+			message_admins("Deprecated message handling for '[name]'. Correct format is a list with one entry. This message will only show once.")
+			messages_to_use = list(messages_to_use)
+		var/msg = pick(messages_to_use)
+		if(!isnull(body_relay))
+			msg = replacetext(msg, "%TARGET%", "\the [body_relay.name]")
+		// We replace %USER% with nothing because manual_emote already prepends it.
+		msg = trim(replacetext(replacetext(msg, "%TARGET%", "[target]"), "%USER%", ""), INTERACTION_MAX_CHAR)
+		if(lewd)
+			user.emote("subtle", null, msg, TRUE)
+		else
+			user.manual_emote(msg)
 	else
-		user.manual_emote(msg)
+		// Warn if no message but don't prevent arousal from being applied
+		message_admins("Interaction had a null message list. '[name]'")
 	if(user_messages.len)
 		var/user_msg = pick(user_messages)
 		if(!isnull(body_relay))
@@ -167,6 +224,43 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 	target_pain = sanitize_integer(json["target_pain"], 0, 100, 0)
 	lewd = sanitize_integer(json["lewd"], 0, 1, 0)
 	sexuality = sanitize_text(json["sexuality"])
+
+	// Load attitude-based messages if present
+	if(json["message_by_attitude"])
+		var/list/attitude_data = json["message_by_attitude"]
+		if(islist(attitude_data))
+			for(var/attitude in list("gentle", "neutral", "hard", "rough"))
+				if(attitude_data[attitude])
+					message_by_attitude[attitude] = sanitize_islist(attitude_data[attitude], list())
+
+	// Load submissive attitude-based messages if present
+	if(json["message_by_attitude_submissive"])
+		var/list/submissive_attitude_data = json["message_by_attitude_submissive"]
+		if(islist(submissive_attitude_data))
+			for(var/attitude in list("gentle", "neutral", "hard", "rough"))
+				if(submissive_attitude_data[attitude])
+					message_by_attitude_submissive[attitude] = sanitize_islist(submissive_attitude_data[attitude], list())
+
+	// Load attitude-based descriptions if present
+	if(json["description_by_attitude"])
+		var/list/desc_attitude_data = json["description_by_attitude"]
+		if(islist(desc_attitude_data))
+			for(var/attitude in list("gentle", "neutral", "hard", "rough"))
+				if(desc_attitude_data[attitude])
+					description_by_attitude[attitude] = sanitize_islist(desc_attitude_data[attitude], list())
+
+	// Load submissive attitude-based descriptions if present
+	if(json["description_by_attitude_submissive"])
+		var/list/submissive_desc_attitude_data = json["description_by_attitude_submissive"]
+		if(islist(submissive_desc_attitude_data))
+			for(var/attitude in list("gentle", "neutral", "hard", "rough"))
+				if(submissive_desc_attitude_data[attitude])
+					description_by_attitude_submissive[attitude] = sanitize_islist(submissive_desc_attitude_data[attitude], list())
+
+	// Load category flags
+	category_depraved = sanitize_integer(json["category_depraved"], 0, 1, 0)
+	category_violent = sanitize_integer(json["category_violent"], 0, 1, 0)
+
 	return TRUE
 
 /datum/interaction/proc/json_save(path)
@@ -197,6 +291,10 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 		"target_pain" = target_pain,
 		"lewd" = lewd,
 		"sexuality" = sexuality,
+		"message_by_attitude" = message_by_attitude,
+		"description_by_attitude" = description_by_attitude,
+		"category_depraved" = category_depraved,
+		"category_violent" = category_violent,
 	)
 	var/file = file(fpath)
 	WRITE_FILE(file, json_encode(json))
@@ -212,6 +310,7 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 		var/datum/interaction/interaction = new spath()
 		GLOB.interaction_instances[interaction.name] = interaction
 	populate_interaction_jsons(INTERACTION_JSON_FOLDER)
+	populate_interaction_jsons(INTERACTION_JSON_FOLDER_ZUBBERS)
 
 /proc/populate_interaction_jsons(directory)
 	for(var/file in flist(directory))
@@ -267,6 +366,44 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 		interaction.target_pain = sanitize_integer(ijson["target_pain"], 0, 100, 0)
 		interaction.lewd = sanitize_integer(ijson["lewd"], 0, 1, 0)
 		interaction.sexuality = sanitize_text(ijson["sexuality"])
+		interaction.name = sanitize_text(ijson["name"])
+		interaction.description = sanitize_text(ijson["description"])
+
+		// Load attitude-based messages if present
+		if(ijson["message_by_attitude"])
+			var/list/attitude_data = ijson["message_by_attitude"]
+			if(islist(attitude_data))
+				for(var/attitude in list("gentle", "neutral", "hard", "rough"))
+					if(attitude_data[attitude])
+						interaction.message_by_attitude[attitude] = sanitize_islist(attitude_data[attitude], list())
+
+		// Load attitude-based descriptions if present
+		if(ijson["description_by_attitude"])
+			var/list/desc_attitude_data = ijson["description_by_attitude"]
+			if(islist(desc_attitude_data))
+				for(var/attitude in list("gentle", "neutral", "hard", "rough"))
+					if(desc_attitude_data[attitude])
+						interaction.description_by_attitude[attitude] = sanitize_islist(desc_attitude_data[attitude], list())
+
+		// Load submissive attitude-based messages if present
+		if(ijson["message_by_attitude_submissive"])
+			var/list/submissive_attitude_data = ijson["message_by_attitude_submissive"]
+			if(islist(submissive_attitude_data))
+				for(var/attitude in list("gentle", "neutral", "hard", "rough"))
+					if(submissive_attitude_data[attitude])
+						interaction.message_by_attitude_submissive[attitude] = sanitize_islist(submissive_attitude_data[attitude], list())
+
+		// Load submissive attitude-based descriptions if present
+		if(ijson["description_by_attitude_submissive"])
+			var/list/submissive_desc_attitude_data = ijson["description_by_attitude_submissive"]
+			if(islist(submissive_desc_attitude_data))
+				for(var/attitude in list("gentle", "neutral", "hard", "rough"))
+					if(submissive_desc_attitude_data[attitude])
+						interaction.description_by_attitude_submissive[attitude] = sanitize_islist(submissive_desc_attitude_data[attitude], list())
+
+		// Load category flags
+		interaction.category_depraved = sanitize_integer(ijson["category_depraved"], 0, 1, 0)
+		interaction.category_violent = sanitize_integer(ijson["category_violent"], 0, 1, 0)
 
 		GLOB.interaction_instances[iname] = interaction
 

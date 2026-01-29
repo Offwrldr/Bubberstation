@@ -1,0 +1,575 @@
+{
+	"Blowjob": {
+		"name": "Blowjob",
+		"description": "Perform oral on target's penis",
+		"category": "Cock",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently takes %TARGET%'s cock into their mouth, showing loving devotion",
+				"%USER% softly sucks on %TARGET%'s penis with romantic passion",
+				"%USER% tenderly performs oral on %TARGET%, expressing deep affection",
+				"%USER% carefully deepthroats %TARGET%'s cock with loving care"
+			],
+			"neutral": [
+				"%USER% takes %TARGET%'s cock into their mouth",
+				"%USER% sucks on %TARGET%'s penis",
+				"%USER% performs oral on %TARGET%",
+				"%USER% deepthroats %TARGET%'s cock"
+			],
+			"hard": [
+				"%USER% roughly takes %TARGET%'s cock into their mouth",
+				"%USER% aggressively sucks on %TARGET%'s penis",
+				"%USER% forcefully performs oral on %TARGET%",
+				"%USER% roughly deepthroats %TARGET%'s cock"
+			],
+			"rough": [
+				"%USER% aggressively takes %TARGET%'s cock into their mouth",
+				"%USER% harshly sucks on %TARGET%'s penis",
+				"%USER% forcefully performs oral on %TARGET%",
+				"%USER% roughly deepthroats %TARGET%'s cock"
+			]
+		},
+		"message_by_attitude_submissive": {
+			"gentle": [
+				"%USER% almost shyly takes %TARGET%'s cock into their mouth, heat in their cheeks.",
+				"%USER% tentatively sucks on %TARGET%'s penis, blushing softly.",
+				"%USER% nervously performs oral on %TARGET%, their face flushed with embarrassment.",
+				"%USER% hesitantly deepthroats %TARGET%'s cock, cheeks burning with shyness."
+			],
+			"neutral": [
+				"%USER% takes %TARGET%'s cock into their mouth, face flushed with submission.",
+				"%USER% sucks on %TARGET%'s penis, eager to please.",
+				"%USER% performs oral on %TARGET%, their cheeks red with embarrassment.",
+				"%USER% deepthroats %TARGET%'s cock, submissively servicing them."
+			],
+			"hard": [
+				"%USER% desperately takes %TARGET%'s cock into their mouth, overwhelmed by submission.",
+				"%USER% frantically sucks on %TARGET%'s penis, lost in servitude.",
+				"%USER% desperately performs oral on %TARGET%, completely submissive.",
+				"%USER% eagerly deepthroats %TARGET%'s cock, consumed by their need to please."
+			],
+			"rough": [
+				"%USER% frantically takes %TARGET%'s cock into their mouth, completely lost in submission.",
+				"%USER% desperately sucks on %TARGET%'s penis, overwhelmed by servitude.",
+				"%USER% desperately performs oral on %TARGET%, consumed by submission.",
+				"%USER% frantically deepthroats %TARGET%'s cock, lost in their need to serve."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently perform oral on target's penis with loving devotion",
+				"Softly take target's cock into your mouth, showing romantic passion",
+				"Tenderly suck on target's penis, expressing deep affection",
+				"Carefully deepthroat target's cock with loving care"
+			],
+			"neutral": [
+				"Perform oral on target's penis",
+				"Take target's cock into your mouth",
+				"Suck on target's penis",
+				"Deepthroat target's cock"
+			],
+			"hard": [
+				"Roughly perform oral on target's penis",
+				"Aggressively take target's cock into your mouth",
+				"Forcefully suck on target's penis",
+				"Roughly deepthroat target's cock"
+			],
+			"rough": [
+				"Aggressively perform oral on target's penis",
+				"Harshly take target's cock into your mouth",
+				"Forcefully suck on target's penis",
+				"Roughly deepthroat target's cock"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["penis"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 5,
+		"target_pleasure": 15,
+		"user_arousal": 5,
+		"target_arousal": 15
+	},
+	"Handjob": {
+		"name": "Handjob",
+		"description": "Stroke target's penis with your hand",
+		"category": "Cock",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently strokes %TARGET%'s cock",
+				"%USER% softly jerks %TARGET% off",
+				"%USER% tenderly masturbates %TARGET%",
+				"%USER% carefully strokes %TARGET%'s penis"
+			],
+			"neutral": [
+				"%USER% strokes %TARGET%'s cock",
+				"%USER% jerks %TARGET% off",
+				"%USER% masturbates %TARGET%",
+				"%USER% strokes %TARGET%'s penis"
+			],
+			"hard": [
+				"%USER% roughly strokes %TARGET%'s cock",
+				"%USER% aggressively jerks %TARGET% off",
+				"%USER% forcefully masturbates %TARGET%",
+				"%USER% roughly strokes %TARGET%'s penis"
+			],
+			"rough": [
+				"%USER% aggressively strokes %TARGET%'s cock",
+				"%USER% harshly jerks %TARGET% off",
+				"%USER% forcefully masturbates %TARGET%",
+				"%USER% roughly strokes %TARGET%'s penis"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently stroke target's penis",
+				"Softly jerk target off",
+				"Tenderly masturbate target",
+				"Carefully stroke target's cock"
+			],
+			"neutral": [
+				"Stroke target's penis",
+				"Jerk target off",
+				"Masturbate target",
+				"Stroke target's cock"
+			],
+			"hard": [
+				"Roughly stroke target's penis",
+				"Aggressively jerk target off",
+				"Forcefully masturbate target",
+				"Roughly stroke target's cock"
+			],
+			"rough": [
+				"Aggressively stroke target's penis",
+				"Harshly jerk target off",
+				"Forcefully masturbate target",
+				"Roughly stroke target's cock"
+			]
+		},
+		"user_required_parts": ["hands"],
+		"target_required_parts": ["penis"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 12,
+		"user_arousal": 3,
+		"target_arousal": 12
+	},
+	"Sniff Cock": {
+		"name": "Sniff Cock",
+		"description": "Sniff target's penis",
+		"category": "Cock",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently sniffs %TARGET%'s cock",
+				"%USER% softly inhales the scent of %TARGET%'s penis",
+				"%USER% tenderly breathes in %TARGET%'s cock scent",
+				"%USER% carefully takes in %TARGET%'s penis scent"
+			],
+			"neutral": [
+				"%USER% sniffs %TARGET%'s cock",
+				"%USER% inhales the scent of %TARGET%'s penis",
+				"%USER% breathes in %TARGET%'s cock scent",
+				"%USER% takes in %TARGET%'s penis scent"
+			],
+			"hard": [
+				"%USER% roughly sniffs %TARGET%'s cock",
+				"%USER% aggressively inhales the scent of %TARGET%'s penis",
+				"%USER% forcefully breathes in %TARGET%'s cock scent",
+				"%USER% roughly takes in %TARGET%'s penis scent"
+			],
+			"rough": [
+				"%USER% aggressively sniffs %TARGET%'s cock",
+				"%USER% harshly inhales the scent of %TARGET%'s penis",
+				"%USER% forcefully breathes in %TARGET%'s cock scent",
+				"%USER% roughly takes in %TARGET%'s penis scent"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently sniff target's penis",
+				"Softly inhale the scent of target's cock",
+				"Tenderly breathe in target's penis scent",
+				"Carefully take in target's cock scent"
+			],
+			"neutral": [
+				"Sniff target's penis",
+				"Inhale the scent of target's cock",
+				"Breathe in target's penis scent",
+				"Take in target's cock scent"
+			],
+			"hard": [
+				"Roughly sniff target's penis",
+				"Aggressively inhale the scent of target's cock",
+				"Forcefully breathe in target's penis scent",
+				"Roughly take in target's cock scent"
+			],
+			"rough": [
+				"Aggressively sniff target's penis",
+				"Harshly inhale the scent of target's cock",
+				"Forcefully breathe in target's penis scent",
+				"Roughly take in target's cock scent"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["penis"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 6,
+		"user_arousal": 3,
+		"target_arousal": 6
+	},
+	"Lick Cock": {
+		"name": "Lick Cock",
+		"description": "Lick target's penis",
+		"category": "Cock",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently licks %TARGET%'s cock",
+				"%USER% softly licks %TARGET%'s shaft",
+				"%USER% tenderly runs their tongue along %TARGET%'s penis",
+				"%USER% carefully licks %TARGET%'s cockhead"
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s cock",
+				"%USER% licks %TARGET%'s shaft",
+				"%USER% runs their tongue along %TARGET%'s penis",
+				"%USER% performs oral on %TARGET%'s cock"
+			],
+			"hard": [
+				"%USER% roughly licks %TARGET%'s cock",
+				"%USER% aggressively licks %TARGET%'s shaft",
+				"%USER% forcefully runs their tongue along %TARGET%'s penis",
+				"%USER% roughly performs oral on %TARGET%'s cock"
+			],
+			"rough": [
+				"%USER% aggressively licks %TARGET%'s cock",
+				"%USER% harshly licks %TARGET%'s shaft",
+				"%USER% forcefully runs their tongue along %TARGET%'s penis",
+				"%USER% roughly performs oral on %TARGET%'s cock"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently lick target's penis",
+				"Softly lick target's shaft",
+				"Tenderly run your tongue along target's cock",
+				"Carefully lick target's cockhead"
+			],
+			"neutral": [
+				"Lick target's penis",
+				"Lick target's shaft",
+				"Run your tongue along target's cock",
+				"Perform oral on target's cock"
+			],
+			"hard": [
+				"Roughly lick target's penis",
+				"Aggressively lick target's shaft",
+				"Forcefully run your tongue along target's cock",
+				"Roughly perform oral on target's cock"
+			],
+			"rough": [
+				"Aggressively lick target's penis",
+				"Harshly lick target's shaft",
+				"Forcefully run your tongue along target's cock",
+				"Roughly perform oral on target's cock"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["penis"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 4,
+		"target_pleasure": 10,
+		"user_arousal": 4,
+		"target_arousal": 10
+	},
+	"Kiss Cock": {
+		"name": "Kiss Cock",
+		"description": "Kiss target's penis",
+		"category": "Cock",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently kisses %TARGET%'s cock",
+				"%USER% softly pecks %TARGET%'s cockhead",
+				"%USER% tenderly kisses %TARGET%'s penis",
+				"%USER% carefully presses their lips to %TARGET%'s cock"
+			],
+			"neutral": [
+				"%USER% kisses %TARGET%'s cock",
+				"%USER% pecks %TARGET%'s cockhead",
+				"%USER% kisses %TARGET%'s penis",
+				"%USER% presses their lips to %TARGET%'s cock"
+			],
+			"hard": [
+				"%USER% roughly kisses %TARGET%'s cock",
+				"%USER% aggressively pecks %TARGET%'s cockhead",
+				"%USER% forcefully kisses %TARGET%'s penis",
+				"%USER% roughly presses their lips to %TARGET%'s cock"
+			],
+			"rough": [
+				"%USER% aggressively kisses %TARGET%'s cock",
+				"%USER% harshly pecks %TARGET%'s cockhead",
+				"%USER% forcefully kisses %TARGET%'s penis",
+				"%USER% roughly presses their lips to %TARGET%'s cock"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently kiss target's penis",
+				"Softly peck target's cockhead",
+				"Tenderly kiss target's cock",
+				"Carefully press your lips to target's cock"
+			],
+			"neutral": [
+				"Kiss target's penis",
+				"Peck target's cockhead",
+				"Kiss target's cock",
+				"Press your lips to target's cock"
+			],
+			"hard": [
+				"Roughly kiss target's penis",
+				"Aggressively peck target's cockhead",
+				"Forcefully kiss target's cock",
+				"Roughly press your lips to target's cock"
+			],
+			"rough": [
+				"Aggressively kiss target's penis",
+				"Harshly peck target's cockhead",
+				"Forcefully kiss target's cock",
+				"Roughly press your lips to target's cock"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["penis"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 8,
+		"user_arousal": 3,
+		"target_arousal": 8
+	},
+	"Nibble Cock": {
+		"name": "Nibble Cock",
+		"description": "Nibble on target's penis",
+		"category": "Cock",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently nibbles on %TARGET%'s cock",
+				"%USER% softly bites %TARGET%'s cockhead",
+				"%USER% tenderly nibbles %TARGET%'s penis",
+				"%USER% carefully nips at %TARGET%'s cock"
+			],
+			"neutral": [
+				"%USER% nibbles on %TARGET%'s cock",
+				"%USER% bites %TARGET%'s cockhead",
+				"%USER% nibbles %TARGET%'s penis",
+				"%USER% nips at %TARGET%'s cock"
+			],
+			"hard": [
+				"%USER% roughly nibbles on %TARGET%'s cock",
+				"%USER% aggressively bites %TARGET%'s cockhead",
+				"%USER% forcefully nibbles %TARGET%'s penis",
+				"%USER% roughly nips at %TARGET%'s cock"
+			],
+			"rough": [
+				"%USER% aggressively nibbles on %TARGET%'s cock",
+				"%USER% harshly bites %TARGET%'s cockhead",
+				"%USER% forcefully nibbles %TARGET%'s penis",
+				"%USER% roughly nips at %TARGET%'s cock"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently nibble on target's penis",
+				"Softly bite target's cockhead",
+				"Tenderly nibble target's cock",
+				"Carefully nip at target's cock"
+			],
+			"neutral": [
+				"Nibble on target's penis",
+				"Bite target's cockhead",
+				"Nibble target's cock",
+				"Nip at target's cock"
+			],
+			"hard": [
+				"Roughly nibble on target's penis",
+				"Aggressively bite target's cockhead",
+				"Forcefully nibble target's cock",
+				"Roughly nip at target's cock"
+			],
+			"rough": [
+				"Aggressively nibble on target's penis",
+				"Harshly bite target's cockhead",
+				"Forcefully nibble target's cock",
+				"Roughly nip at target's cock"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["penis"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 4,
+		"target_pleasure": 9,
+		"user_arousal": 4,
+		"target_arousal": 9,
+		"target_pain": 1
+	},
+	"Bite Cock": {
+		"name": "Bite Cock",
+		"description": "Bite target's penis",
+		"category": "Cock",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently bites %TARGET%'s cock",
+				"%USER% softly sinks their teeth into %TARGET%'s cockhead",
+				"%USER% tenderly bites %TARGET%'s penis",
+				"%USER% carefully bites down on %TARGET%'s cock"
+			],
+			"neutral": [
+				"%USER% bites %TARGET%'s cock",
+				"%USER% sinks their teeth into %TARGET%'s cockhead",
+				"%USER% bites %TARGET%'s penis",
+				"%USER% bites down on %TARGET%'s cock"
+			],
+			"hard": [
+				"%USER% roughly bites %TARGET%'s cock",
+				"%USER% aggressively sinks their teeth into %TARGET%'s cockhead",
+				"%USER% forcefully bites %TARGET%'s penis",
+				"%USER% roughly bites down on %TARGET%'s cock"
+			],
+			"rough": [
+				"%USER% aggressively bites %TARGET%'s cock",
+				"%USER% harshly sinks their teeth into %TARGET%'s cockhead",
+				"%USER% forcefully bites %TARGET%'s penis",
+				"%USER% roughly bites down on %TARGET%'s cock"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently bite target's penis",
+				"Softly sink your teeth into target's cockhead",
+				"Tenderly bite target's cock",
+				"Carefully bite down on target's cock"
+			],
+			"neutral": [
+				"Bite target's penis",
+				"Sink your teeth into target's cockhead",
+				"Bite target's cock",
+				"Bite down on target's cock"
+			],
+			"hard": [
+				"Roughly bite target's penis",
+				"Aggressively sink your teeth into target's cockhead",
+				"Forcefully bite target's cock",
+				"Roughly bite down on target's cock"
+			],
+			"rough": [
+				"Aggressively bite target's penis",
+				"Harshly sink your teeth into target's cockhead",
+				"Forcefully bite target's cock",
+				"Roughly bite down on target's cock"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["penis"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 5,
+		"target_pleasure": 10,
+		"user_arousal": 5,
+		"target_arousal": 10,
+		"target_pain": 2
+	},
+	"Nuzzle Cock": {
+		"name": "Nuzzle Cock",
+		"description": "Nuzzle target's penis",
+		"category": "Cock",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently nuzzles %TARGET%'s cock",
+				"%USER% softly rubs their face against %TARGET%'s penis",
+				"%USER% tenderly nuzzles into %TARGET%'s cock",
+				"%USER% carefully presses their face against %TARGET%'s cock"
+			],
+			"neutral": [
+				"%USER% nuzzles %TARGET%'s cock",
+				"%USER% rubs their face against %TARGET%'s penis",
+				"%USER% nuzzles into %TARGET%'s cock",
+				"%USER% presses their face against %TARGET%'s cock"
+			],
+			"hard": [
+				"%USER% roughly nuzzles %TARGET%'s cock",
+				"%USER% aggressively rubs their face against %TARGET%'s penis",
+				"%USER% forcefully nuzzles into %TARGET%'s cock",
+				"%USER% roughly presses their face against %TARGET%'s cock"
+			],
+			"rough": [
+				"%USER% aggressively nuzzles %TARGET%'s cock",
+				"%USER% harshly rubs their face against %TARGET%'s penis",
+				"%USER% forcefully nuzzles into %TARGET%'s cock",
+				"%USER% roughly presses their face against %TARGET%'s cock"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently nuzzle target's penis",
+				"Softly rub your face against target's cock",
+				"Tenderly nuzzle into target's cock",
+				"Carefully press your face against target's cock"
+			],
+			"neutral": [
+				"Nuzzle target's penis",
+				"Rub your face against target's cock",
+				"Nuzzle into target's cock",
+				"Press your face against target's cock"
+			],
+			"hard": [
+				"Roughly nuzzle target's penis",
+				"Aggressively rub your face against target's cock",
+				"Forcefully nuzzle into target's cock",
+				"Roughly press your face against target's cock"
+			],
+			"rough": [
+				"Aggressively nuzzle target's penis",
+				"Harshly rub your face against target's cock",
+				"Forcefully nuzzle into target's cock",
+				"Roughly press your face against target's cock"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["penis"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 6,
+		"user_arousal": 3,
+		"target_arousal": 6
+	}
+}
+

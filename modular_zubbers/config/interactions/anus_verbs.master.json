@@ -1,0 +1,203 @@
+{
+	"Rimjob": {
+		"name": "Rimjob",
+		"description": "Perform oral on target's anus",
+		"category": "Anus",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently licks %TARGET%'s anus, intimate and slow.",
+				"%USER% softly performs oral on %TARGET%'s hole with doting care.",
+				"%USER% tenderly rims %TARGET%, their tongue tracing the grooves.",
+				"%USER% carefully licks %TARGET%'s ass, soft and sweet."
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s anus, warm and inviting.",
+				"%USER% performs oral on %TARGET%'s asshole, hungry and eager.",
+				"%USER% rims %TARGET%, detailing the contours with precision.",
+				"%USER% licks %TARGET%'s ass, eagerly eating their hole."
+			],
+			"hard": [
+				"%USER% roughly licks %TARGET%'s anus, urgent and forceful.",
+				"%USER% aggressively delves into %TARGET%'s asshole with their tongue.",
+				"%USER% forcefully rims %TARGET%, their tongue probing every inch.",
+				"%USER% demandingly licks %TARGET%'s ass, staking a claim."
+			]
+		},
+		"message_by_attitude_submissive": {
+			"gentle": [
+				"%USER% almost shyly licks %TARGET%'s anus, heat in their cheeks.",
+				"%USER% tentatively performs oral on %TARGET%'s hole, blushing softly.",
+				"%USER% nervously rims %TARGET%, their face flushed with embarrassment.",
+				"%USER% hesitantly licks %TARGET%'s ass, cheeks burning with shyness."
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s anus, face flushed with submission.",
+				"%USER% performs oral on %TARGET%'s asshole, eager to please.",
+				"%USER% rims %TARGET%, their cheeks red with embarrassment.",
+				"%USER% licks %TARGET%'s ass, submissively servicing their hole."
+			],
+			"hard": [
+				"%USER% desperately licks %TARGET%'s anus, overwhelmed by submission.",
+				"%USER% frantically performs oral on %TARGET%'s asshole, lost in servitude.",
+				"%USER% desperately rims %TARGET%, completely submissive.",
+				"%USER% eagerly licks %TARGET%'s ass, consumed by their need to please."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently perform oral on target's anus",
+				"Softly lick target's asshole",
+				"Tenderly rim target",
+				"Carefully lick target's ass"
+			],
+			"neutral": [
+				"Perform oral on target's anus",
+				"Lick target's asshole",
+				"Rim target",
+				"Lick target's ass"
+			],
+			"hard": [
+				"Roughly perform oral on target's anus",
+				"Aggressively lick target's asshole",
+				"Forcefully rim target",
+				"Roughly lick target's ass"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["anus"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 5,
+		"target_pleasure": 10,
+		"user_arousal": 5,
+		"target_arousal": 10
+	},
+	"Finger Ass": {
+		"name": "Finger Ass",
+		"description": "Finger target's anus",
+		"category": "Anus",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% slowly pumps their fingers %TARGET%'s rear.",
+				"%USER% softly inserts their fingers into %TARGET%'s anus.",
+				"%USER% tenderly fingers %TARGET%'s hole.",
+				"%USER% carefully penetrates %TARGET%'s anus with their fingers."
+			],
+			"neutral": [
+				"%USER% fingers %TARGET%'s ass smoothly.",
+				"%USER% inserts fingers into %TARGET%'s anus at a steady pace.",
+				"%USER% fingers %TARGET%'s asshole with ease.",
+				"%USER% penetrates %TARGET%'s anus with their fingers."
+			],
+			"hard": [
+				"%USER% roughly fingers %TARGET%'s ass, pumping them hard.",
+				"%USER% aggressively jabs their fingers into %TARGET%'s anus, drilling them deep.",
+				"%USER% forcefully fingers %TARGET%'s asshole, probing every inch.",
+				"%USER% roughly penetrates %TARGET%'s anus with their fingers, urgent and forceful."
+			],
+			"rough": [
+				"%USER% aggressively fingers %TARGET%'s ass, squeezing in hard. It hurts!",
+				"%USER% harshly inserts fingers into %TARGET%'s anus, deep and unforgiving!",
+				"%USER% forcefully fingers %TARGET%'s asshole, pushing them to the limit!",
+				"%USER% roughly penetrates %TARGET%'s anus with their fingers, powerful and relentless!"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently finger target's anus",
+				"Softly insert fingers into target's ass",
+				"Tenderly finger target's asshole",
+				"Carefully penetrate target's anus with your fingers"
+			],
+			"neutral": [
+				"Finger target's anus",
+				"Insert fingers into target's ass",
+				"Finger target's asshole",
+				"Penetrate target's anus with your fingers"
+			],
+			"hard": [
+				"Roughly finger target's anus",
+				"Aggressively insert fingers into target's ass",
+				"Forcefully finger target's asshole",
+				"Roughly penetrate target's anus with your fingers"
+			],
+			"rough": [
+				"Aggressively finger target's anus",
+				"Harshly insert fingers into target's ass",
+				"Forcefully finger target's asshole",
+				"Roughly penetrate target's anus with your fingers"
+			]
+		},
+		"user_required_parts": ["hands"],
+		"target_required_parts": ["anus"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 10,
+		"user_arousal": 3,
+		"target_arousal": 10
+	},
+	"Sniff Anus": {
+		"name": "Sniff Anus",
+		"description": "Sniff target's anus",
+		"category": "Anus",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% sniffs at %TARGET%'s anus softly, savoring their scent.",
+				"%USER% breathes in the scent of %TARGET%'s rear, welcoming it into their lungs.",
+				"%USER% tenderly breathes in %TARGET%'s anal scent, enjoying them.",
+				"%USER% softly takes in %TARGET%'s scent, their nose pressed against their hole."
+			],
+			"neutral": [
+				"%USER% sniffs %TARGET%'s rim, taking in their scent.",
+				"%USER% inhales the scent of %TARGET%'s asshole, taking it in deeply.",
+				"%USER% breathes in the scent of %TARGET%'s star, letting it fill their lungs.",
+				"%USER% takes in %TARGET%'s asshole scent, breathing it in deeply."
+			],
+			"hard": [
+				"%USER% deeply sniffs %TARGET%'s anus, primally intense.",
+				"%USER% inhales the scent of %TARGET%'s asshole, greedy and voracious.",
+				"%USER% breathes in %TARGET%'s anal scent, hunger in their eyes.",
+				"%USER% takes in %TARGET%'s asshole scent, drinking them down like a beast."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently sniff target's anus",
+				"Softly inhale the scent of target's asshole",
+				"Tenderly breathe in target's anus scent",
+				"Carefully take in target's asshole scent"
+			],
+			"neutral": [
+				"Sniff target's anus",
+				"Inhale the scent of target's asshole",
+				"Breathe in target's anus scent",
+				"Take in target's asshole scent"
+			],
+			"hard": [
+				"Roughly sniff target's anus",
+				"Aggressively inhale the scent of target's asshole",
+				"Forcefully breathe in target's anus scent",
+				"Roughly take in target's asshole scent"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["anus"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 5,
+		"user_arousal": 3,
+		"target_arousal": 5
+	}
+}
+

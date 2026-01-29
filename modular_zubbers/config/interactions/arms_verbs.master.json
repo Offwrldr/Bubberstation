@@ -1,0 +1,47 @@
+{
+	"Kiss Arms": {
+		"name": "Kiss Arms",
+		"description": "Kiss target's arms",
+		"category": "Arms",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently kisses %TARGET%'s arms",
+				"%USER% softly caresses %TARGET%'s arms",
+				"%USER% tenderly kisses %TARGET%'s arms",
+				"%USER% carefully kisses along %TARGET%'s arms"
+			],
+			"neutral": [
+				"%USER% kisses %TARGET%'s arms",
+				"%USER% caresses %TARGET%'s arms",
+				"%USER% kisses along %TARGET%'s arms",
+				"%USER% performs oral on %TARGET%'s arms"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently kiss target's arms",
+				"Softly caress target's arms",
+				"Tenderly kiss target's arms",
+				"Carefully kiss along target's arms"
+			],
+			"neutral": [
+				"Kiss target's arms",
+				"Caress target's arms",
+				"Kiss along target's arms",
+				"Perform oral on target's arms"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["arms"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 5,
+		"user_arousal": 2,
+		"target_arousal": 5
+	}
+}
+
