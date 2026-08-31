@@ -1,0 +1,413 @@
+{
+	"Hold Hands": {
+		"name": "Hold Hands",
+		"description": "Hold target's hands",
+		"category": "Hands",
+		"usage": "other",
+		"lewd": 0,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently holds %TARGET%'s hands",
+				"%USER% softly interlaces fingers with %TARGET%",
+				"%USER% tenderly holds %TARGET%'s hands",
+				"%USER% carefully clasps %TARGET%'s hands"
+			],
+			"neutral": [
+				"%USER% holds %TARGET%'s hands",
+				"%USER% interlaces fingers with %TARGET%",
+				"%USER% clasps %TARGET%'s hands",
+				"%USER% takes %TARGET%'s hands"
+			],
+			"hard": [
+				"%USER% roughly holds %TARGET%'s hands",
+				"%USER% aggressively interlaces fingers with %TARGET%",
+				"%USER% forcefully clasps %TARGET%'s hands",
+				"%USER% roughly takes %TARGET%'s hands"
+			],
+			"rough": [
+				"%USER% aggressively holds %TARGET%'s hands",
+				"%USER% harshly interlaces fingers with %TARGET%",
+				"%USER% forcefully clasps %TARGET%'s hands",
+				"%USER% roughly takes %TARGET%'s hands"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently hold target's hands",
+				"Softly interlace fingers with target",
+				"Tenderly hold target's hands",
+				"Carefully clasp target's hands"
+			],
+			"neutral": [
+				"Hold target's hands",
+				"Interlace fingers with target",
+				"Clasp target's hands",
+				"Take target's hands"
+			],
+			"hard": [
+				"Roughly hold target's hands",
+				"Aggressively interlace fingers with target",
+				"Forcefully clasp target's hands",
+				"Roughly take target's hands"
+			],
+			"rough": [
+				"Aggressively hold target's hands",
+				"Harshly interlace fingers with target",
+				"Forcefully clasp target's hands",
+				"Roughly take target's hands"
+			]
+		},
+		"user_required_parts": ["hands"],
+		"target_required_parts": ["hands"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "green",
+		"user_pleasure": 1,
+		"target_pleasure": 1,
+		"user_arousal": 1,
+		"target_arousal": 1
+	},
+	"Sniff Hands": {
+		"name": "Sniff Hands",
+		"description": "Sniff target's hands",
+		"category": "Hands",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently sniffs %TARGET%'s hands",
+				"%USER% softly inhales the scent of %TARGET%'s hands",
+				"%USER% tenderly breathes in %TARGET%'s hand scent",
+				"%USER% carefully takes in %TARGET%'s hands scent"
+			],
+			"neutral": [
+				"%USER% sniffs %TARGET%'s hands",
+				"%USER% inhales the scent of %TARGET%'s hands",
+				"%USER% breathes in %TARGET%'s hand scent",
+				"%USER% takes in %TARGET%'s hands scent"
+			],
+			"hard": [
+				"%USER% roughly sniffs %TARGET%'s hands",
+				"%USER% aggressively inhales the scent of %TARGET%'s hands",
+				"%USER% forcefully breathes in %TARGET%'s hand scent",
+				"%USER% roughly takes in %TARGET%'s hands scent"
+			],
+			"rough": [
+				"%USER% aggressively sniffs %TARGET%'s hands",
+				"%USER% harshly inhales the scent of %TARGET%'s hands",
+				"%USER% forcefully breathes in %TARGET%'s hand scent",
+				"%USER% roughly takes in %TARGET%'s hands scent"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently sniff target's hands",
+				"Softly inhale the scent of target's hands",
+				"Tenderly breathe in target's hand scent",
+				"Carefully take in target's hands scent"
+			],
+			"neutral": [
+				"Sniff target's hands",
+				"Inhale the scent of target's hands",
+				"Breathe in target's hand scent",
+				"Take in target's hands scent"
+			],
+			"hard": [
+				"Roughly sniff target's hands",
+				"Aggressively inhale the scent of target's hands",
+				"Forcefully breathe in target's hand scent",
+				"Roughly take in target's hands scent"
+			],
+			"rough": [
+				"Aggressively sniff target's hands",
+				"Harshly inhale the scent of target's hands",
+				"Forcefully breathe in target's hand scent",
+				"Roughly take in target's hands scent"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["hands"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 3,
+		"user_arousal": 2,
+		"target_arousal": 3
+	},
+	"Lick Hands": {
+		"name": "Lick Hands",
+		"description": "Lick target's hands",
+		"category": "Hands",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently licks %TARGET%'s hands",
+				"%USER% softly licks %TARGET%'s fingers",
+				"%USER% tenderly runs their tongue along %TARGET%'s hands",
+				"%USER% carefully licks %TARGET%'s palms"
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s hands",
+				"%USER% licks %TARGET%'s fingers",
+				"%USER% runs their tongue along %TARGET%'s hands",
+				"%USER% performs oral on %TARGET%'s hands"
+			],
+			"hard": [
+				"%USER% roughly licks %TARGET%'s hands",
+				"%USER% aggressively licks %TARGET%'s fingers",
+				"%USER% forcefully runs their tongue along %TARGET%'s hands",
+				"%USER% roughly performs oral on %TARGET%'s hands"
+			],
+			"rough": [
+				"%USER% aggressively licks %TARGET%'s hands",
+				"%USER% harshly licks %TARGET%'s fingers",
+				"%USER% forcefully runs their tongue along %TARGET%'s hands",
+				"%USER% roughly performs oral on %TARGET%'s hands"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently lick target's hands",
+				"Softly lick target's fingers",
+				"Tenderly run your tongue along target's hands",
+				"Carefully lick target's palms"
+			],
+			"neutral": [
+				"Lick target's hands",
+				"Lick target's fingers",
+				"Run your tongue along target's hands",
+				"Perform oral on target's hands"
+			],
+			"hard": [
+				"Roughly lick target's hands",
+				"Aggressively lick target's fingers",
+				"Forcefully run your tongue along target's hands",
+				"Roughly perform oral on target's hands"
+			],
+			"rough": [
+				"Aggressively lick target's hands",
+				"Harshly lick target's fingers",
+				"Forcefully run your tongue along target's hands",
+				"Roughly perform oral on target's hands"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["hands"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 5,
+		"user_arousal": 3,
+		"target_arousal": 5
+	},
+	"Kiss Hands": {
+		"name": "Kiss Hands",
+		"description": "Kiss target's hands",
+		"category": "Hands",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently kisses %TARGET%'s hands",
+				"%USER% softly pecks %TARGET%'s fingers",
+				"%USER% tenderly kisses %TARGET%'s palms",
+				"%USER% carefully presses their lips to %TARGET%'s hands"
+			],
+			"neutral": [
+				"%USER% kisses %TARGET%'s hands",
+				"%USER% pecks %TARGET%'s fingers",
+				"%USER% kisses %TARGET%'s palms",
+				"%USER% presses their lips to %TARGET%'s hands"
+			],
+			"hard": [
+				"%USER% roughly kisses %TARGET%'s hands",
+				"%USER% aggressively pecks %TARGET%'s fingers",
+				"%USER% forcefully kisses %TARGET%'s palms",
+				"%USER% roughly presses their lips to %TARGET%'s hands"
+			],
+			"rough": [
+				"%USER% aggressively kisses %TARGET%'s hands",
+				"%USER% harshly pecks %TARGET%'s fingers",
+				"%USER% forcefully kisses %TARGET%'s palms",
+				"%USER% roughly presses their lips to %TARGET%'s hands"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently kiss target's hands",
+				"Softly peck target's fingers",
+				"Tenderly kiss target's palms",
+				"Carefully press your lips to target's hands"
+			],
+			"neutral": [
+				"Kiss target's hands",
+				"Peck target's fingers",
+				"Kiss target's palms",
+				"Press your lips to target's hands"
+			],
+			"hard": [
+				"Roughly kiss target's hands",
+				"Aggressively peck target's fingers",
+				"Forcefully kiss target's palms",
+				"Roughly press your lips to target's hands"
+			],
+			"rough": [
+				"Aggressively kiss target's hands",
+				"Harshly peck target's fingers",
+				"Forcefully kiss target's palms",
+				"Roughly press your lips to target's hands"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["hands"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 4,
+		"user_arousal": 2,
+		"target_arousal": 4
+	},
+	"Nibble Hands": {
+		"name": "Nibble Hands",
+		"description": "Nibble on target's hands",
+		"category": "Hands",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently nibbles on %TARGET%'s hands",
+				"%USER% softly bites %TARGET%'s fingers",
+				"%USER% tenderly nibbles %TARGET%'s hands",
+				"%USER% carefully nips at %TARGET%'s hands"
+			],
+			"neutral": [
+				"%USER% nibbles on %TARGET%'s hands",
+				"%USER% bites %TARGET%'s fingers",
+				"%USER% nibbles %TARGET%'s hands",
+				"%USER% nips at %TARGET%'s hands"
+			],
+			"hard": [
+				"%USER% roughly nibbles on %TARGET%'s hands",
+				"%USER% aggressively bites %TARGET%'s fingers",
+				"%USER% forcefully nibbles %TARGET%'s hands",
+				"%USER% roughly nips at %TARGET%'s hands"
+			],
+			"rough": [
+				"%USER% aggressively nibbles on %TARGET%'s hands",
+				"%USER% harshly bites %TARGET%'s fingers",
+				"%USER% forcefully nibbles %TARGET%'s hands",
+				"%USER% roughly nips at %TARGET%'s hands"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently nibble on target's hands",
+				"Softly bite target's fingers",
+				"Tenderly nibble target's hands",
+				"Carefully nip at target's hands"
+			],
+			"neutral": [
+				"Nibble on target's hands",
+				"Bite target's fingers",
+				"Nibble target's hands",
+				"Nip at target's hands"
+			],
+			"hard": [
+				"Roughly nibble on target's hands",
+				"Aggressively bite target's fingers",
+				"Forcefully nibble target's hands",
+				"Roughly nip at target's hands"
+			],
+			"rough": [
+				"Aggressively nibble on target's hands",
+				"Harshly bite target's fingers",
+				"Forcefully nibble target's hands",
+				"Roughly nip at target's hands"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["hands"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 5,
+		"user_arousal": 3,
+		"target_arousal": 5,
+		"target_pain": 1
+	},
+	"Bite Hands": {
+		"name": "Bite Hands",
+		"description": "Bite target's hands",
+		"category": "Hands",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently bites %TARGET%'s hands",
+				"%USER% softly sinks their teeth into %TARGET%'s fingers",
+				"%USER% tenderly bites %TARGET%'s hands",
+				"%USER% carefully bites down on %TARGET%'s hands"
+			],
+			"neutral": [
+				"%USER% bites %TARGET%'s hands",
+				"%USER% sinks their teeth into %TARGET%'s fingers",
+				"%USER% bites %TARGET%'s hands",
+				"%USER% bites down on %TARGET%'s hands"
+			],
+			"hard": [
+				"%USER% roughly bites %TARGET%'s hands",
+				"%USER% aggressively sinks their teeth into %TARGET%'s fingers",
+				"%USER% forcefully bites %TARGET%'s hands",
+				"%USER% roughly bites down on %TARGET%'s hands"
+			],
+			"rough": [
+				"%USER% aggressively bites %TARGET%'s hands",
+				"%USER% harshly sinks their teeth into %TARGET%'s fingers",
+				"%USER% forcefully bites %TARGET%'s hands",
+				"%USER% roughly bites down on %TARGET%'s hands"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently bite target's hands",
+				"Softly sink your teeth into target's fingers",
+				"Tenderly bite target's hands",
+				"Carefully bite down on target's hands"
+			],
+			"neutral": [
+				"Bite target's hands",
+				"Sink your teeth into target's fingers",
+				"Bite target's hands",
+				"Bite down on target's hands"
+			],
+			"hard": [
+				"Roughly bite target's hands",
+				"Aggressively sink your teeth into target's fingers",
+				"Forcefully bite target's hands",
+				"Roughly bite down on target's hands"
+			],
+			"rough": [
+				"Aggressively bite target's hands",
+				"Harshly sink your teeth into target's fingers",
+				"Forcefully bite target's hands",
+				"Roughly bite down on target's hands"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["hands"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 4,
+		"target_pleasure": 6,
+		"user_arousal": 4,
+		"target_arousal": 6,
+		"target_pain": 2
+	}
+}
+

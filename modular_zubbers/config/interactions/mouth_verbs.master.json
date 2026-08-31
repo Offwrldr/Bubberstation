@@ -1,0 +1,343 @@
+{
+	"French Kiss": {
+		"name": "French Kiss",
+		"description": "Deeply kiss target with tongue",
+		"category": "Mouth",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently French kisses %TARGET%, lost in romantic passion",
+				"%USER% softly deepens the kiss with %TARGET%, showing loving devotion",
+				"%USER% tenderly explores %TARGET%'s mouth with their tongue, expressing deep affection",
+				"%USER% carefully deepens the kiss with %TARGET% with loving care"
+			],
+			"neutral": [
+				"%USER% French kisses %TARGET%",
+				"%USER% deepens the kiss with %TARGET%",
+				"%USER% explores %TARGET%'s mouth with their tongue",
+				"%USER% passionately kisses %TARGET%"
+			],
+			"hard": [
+				"%USER% roughly French kisses %TARGET%",
+				"%USER% aggressively deepens the kiss with %TARGET%",
+				"%USER% forcefully explores %TARGET%'s mouth with their tongue",
+				"%USER% roughly deepens the kiss with %TARGET%"
+			],
+			"rough": [
+				"%USER% aggressively French kisses %TARGET%",
+				"%USER% harshly deepens the kiss with %TARGET%",
+				"%USER% forcefully explores %TARGET%'s mouth with their tongue",
+				"%USER% roughly deepens the kiss with %TARGET%"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently French kiss target, lost in romantic passion",
+				"Softly deepen the kiss with target, showing loving devotion",
+				"Tenderly explore target's mouth with your tongue, expressing deep affection",
+				"Carefully deepen the kiss with target with loving care"
+			],
+			"neutral": [
+				"French kiss target",
+				"Deepen the kiss with target",
+				"Explore target's mouth with your tongue",
+				"Passionately kiss target"
+			],
+			"hard": [
+				"Roughly French kiss target",
+				"Aggressively deepen the kiss with target",
+				"Forcefully explore target's mouth with your tongue",
+				"Roughly deepen the kiss with target"
+			],
+			"rough": [
+				"Aggressively French kiss target",
+				"Harshly deepen the kiss with target",
+				"Forcefully explore target's mouth with your tongue",
+				"Roughly deepen the kiss with target"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["mouth"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 8,
+		"target_pleasure": 8,
+		"user_arousal": 8,
+		"target_arousal": 8
+	},
+	"Suck Tongue": {
+		"name": "Suck Tongue",
+		"description": "Suck on target's tongue",
+		"category": "Mouth",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently sucks on %TARGET%'s tongue with loving devotion",
+				"%USER% softly takes %TARGET%'s tongue into their mouth, showing romantic passion",
+				"%USER% tenderly sucks on %TARGET%'s tongue, expressing deep affection",
+				"%USER% carefully draws %TARGET%'s tongue into their mouth"
+			],
+			"neutral": [
+				"%USER% sucks on %TARGET%'s tongue",
+				"%USER% takes %TARGET%'s tongue into their mouth",
+				"%USER% draws %TARGET%'s tongue into their mouth",
+				"%USER% performs oral on %TARGET%'s tongue"
+			],
+			"hard": [
+				"%USER% roughly sucks on %TARGET%'s tongue",
+				"%USER% aggressively takes %TARGET%'s tongue into their mouth",
+				"%USER% forcefully sucks on %TARGET%'s tongue",
+				"%USER% roughly draws %TARGET%'s tongue into their mouth"
+			],
+			"rough": [
+				"%USER% aggressively sucks on %TARGET%'s tongue",
+				"%USER% harshly takes %TARGET%'s tongue into their mouth",
+				"%USER% forcefully sucks on %TARGET%'s tongue",
+				"%USER% roughly draws %TARGET%'s tongue into their mouth"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently suck on target's tongue",
+				"Softly take target's tongue into your mouth",
+				"Tenderly suck on target's tongue",
+				"Carefully draw target's tongue into your mouth"
+			],
+			"neutral": [
+				"Suck on target's tongue",
+				"Take target's tongue into your mouth",
+				"Draw target's tongue into your mouth",
+				"Perform oral on target's tongue"
+			],
+			"hard": [
+				"Roughly suck on target's tongue",
+				"Aggressively take target's tongue into your mouth",
+				"Forcefully suck on target's tongue",
+				"Roughly draw target's tongue into your mouth"
+			],
+			"rough": [
+				"Aggressively suck on target's tongue",
+				"Harshly take target's tongue into your mouth",
+				"Forcefully suck on target's tongue",
+				"Roughly draw target's tongue into your mouth"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["mouth"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 6,
+		"target_pleasure": 6,
+		"user_arousal": 6,
+		"target_arousal": 6
+	},
+	"Spit in Mouth": {
+		"name": "Spit in Mouth",
+		"description": "Spit into target's mouth",
+		"category": "Mouth",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently spits into %TARGET%'s mouth",
+				"%USER% softly transfers saliva to %TARGET%",
+				"%USER% tenderly spits into %TARGET%'s mouth",
+				"%USER% carefully spits into %TARGET%"
+			],
+			"neutral": [
+				"%USER% spits into %TARGET%'s mouth",
+				"%USER% transfers saliva to %TARGET%",
+				"%USER% spits into %TARGET%",
+				"%USER% spits into %TARGET%'s mouth"
+			],
+			"hard": [
+				"%USER% roughly spits into %TARGET%'s mouth",
+				"%USER% aggressively transfers saliva to %TARGET%",
+				"%USER% forcefully spits into %TARGET%",
+				"%USER% roughly spits into %TARGET%'s mouth"
+			],
+			"rough": [
+				"%USER% aggressively spits into %TARGET%'s mouth",
+				"%USER% harshly transfers saliva to %TARGET%",
+				"%USER% forcefully spits into %TARGET%",
+				"%USER% roughly spits into %TARGET%'s mouth"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently spit into target's mouth",
+				"Softly transfer saliva to target",
+				"Tenderly spit into target's mouth",
+				"Carefully spit into target"
+			],
+			"neutral": [
+				"Spit into target's mouth",
+				"Transfer saliva to target",
+				"Spit into target",
+				"Spit into target's mouth"
+			],
+			"hard": [
+				"Roughly spit into target's mouth",
+				"Aggressively transfer saliva to target",
+				"Forcefully spit into target",
+				"Roughly spit into target's mouth"
+			],
+			"rough": [
+				"Aggressively spit into target's mouth",
+				"Harshly transfer saliva to target",
+				"Forcefully spit into target",
+				"Roughly spit into target's mouth"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["mouth"],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 4,
+		"target_pleasure": 5,
+		"user_arousal": 4,
+		"target_arousal": 5
+	},
+	"Spit on Face": {
+		"name": "Spit on Face",
+		"description": "Spit on target's face",
+		"category": "Mouth",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently spits on %TARGET%'s face",
+				"%USER% softly spits on %TARGET%'s face",
+				"%USER% tenderly spits on %TARGET%",
+				"%USER% carefully spits on %TARGET%'s face"
+			],
+			"neutral": [
+				"%USER% spits on %TARGET%'s face",
+				"%USER% spits on %TARGET%",
+				"%USER% spits on %TARGET%'s face",
+				"%USER% spits on %TARGET%'s face"
+			],
+			"hard": [
+				"%USER% roughly spits on %TARGET%'s face",
+				"%USER% aggressively spits on %TARGET%",
+				"%USER% forcefully spits on %TARGET%'s face",
+				"%USER% roughly spits on %TARGET%'s face"
+			],
+			"rough": [
+				"%USER% aggressively spits on %TARGET%'s face",
+				"%USER% harshly spits on %TARGET%",
+				"%USER% forcefully spits on %TARGET%'s face",
+				"%USER% roughly spits on %TARGET%'s face"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently spit on target's face",
+				"Softly spit on target's face",
+				"Tenderly spit on target",
+				"Carefully spit on target's face"
+			],
+			"neutral": [
+				"Spit on target's face",
+				"Spit on target",
+				"Spit on target's face",
+				"Spit on target's face"
+			],
+			"hard": [
+				"Roughly spit on target's face",
+				"Aggressively spit on target",
+				"Forcefully spit on target's face",
+				"Roughly spit on target's face"
+			],
+			"rough": [
+				"Aggressively spit on target's face",
+				"Harshly spit on target",
+				"Forcefully spit on target's face",
+				"Roughly spit on target's face"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 3,
+		"target_pleasure": 4,
+		"user_arousal": 3,
+		"target_arousal": 4
+	},
+	"Spit on Entrance": {
+		"name": "Spit on Entrance",
+		"description": "Spit on target's genitals",
+		"category": "Mouth",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently spits on %TARGET%'s entrance",
+				"%USER% softly spits on %TARGET%'s genitals",
+				"%USER% tenderly spits on %TARGET%'s pussy",
+				"%USER% carefully spits on %TARGET%'s cock"
+			],
+			"neutral": [
+				"%USER% spits on %TARGET%'s entrance",
+				"%USER% spits on %TARGET%'s genitals",
+				"%USER% spits on %TARGET%'s pussy",
+				"%USER% spits on %TARGET%'s cock"
+			],
+			"hard": [
+				"%USER% roughly spits on %TARGET%'s entrance",
+				"%USER% aggressively spits on %TARGET%'s genitals",
+				"%USER% forcefully spits on %TARGET%'s pussy",
+				"%USER% roughly spits on %TARGET%'s cock"
+			],
+			"rough": [
+				"%USER% aggressively spits on %TARGET%'s entrance",
+				"%USER% harshly spits on %TARGET%'s genitals",
+				"%USER% forcefully spits on %TARGET%'s pussy",
+				"%USER% roughly spits on %TARGET%'s cock"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently spit on target's genitals",
+				"Softly spit on target's entrance",
+				"Tenderly spit on target's pussy",
+				"Carefully spit on target's cock"
+			],
+			"neutral": [
+				"Spit on target's genitals",
+				"Spit on target's entrance",
+				"Spit on target's pussy",
+				"Spit on target's cock"
+			],
+			"hard": [
+				"Roughly spit on target's genitals",
+				"Aggressively spit on target's entrance",
+				"Forcefully spit on target's pussy",
+				"Roughly spit on target's cock"
+			],
+			"rough": [
+				"Aggressively spit on target's genitals",
+				"Harshly spit on target's entrance",
+				"Forcefully spit on target's pussy",
+				"Roughly spit on target's cock"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 4,
+		"target_pleasure": 6,
+		"user_arousal": 4,
+		"target_arousal": 6
+	}
+}
+

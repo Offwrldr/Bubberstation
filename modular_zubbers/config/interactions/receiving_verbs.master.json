@@ -1,0 +1,378 @@
+{
+	"Ride Cock": {
+		"name": "Ride Cock",
+		"description": "Ride target's penis",
+		"category": "Sex",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently lowers themselves onto %TARGET%'s cock, taking it slowly.",
+				"%USER% softly rides %TARGET%'s penis, moving with tender care.",
+				"%USER% tenderly bounces on %TARGET%'s cock, showing loving devotion.",
+				"%USER% carefully sinks down onto %TARGET%'s penis, intimate and slow."
+			],
+			"neutral": [
+				"%USER% lowers themselves onto %TARGET%'s cock, taking it in.",
+				"%USER% rides %TARGET%'s penis, moving with steady rhythm.",
+				"%USER% bounces on %TARGET%'s cock, grinding against them.",
+				"%USER% sinks down onto %TARGET%'s penis, riding them eagerly."
+			],
+			"hard": [
+				"%USER% roughly lowers themselves onto %TARGET%'s cock, taking it forcefully.",
+				"%USER% aggressively rides %TARGET%'s penis, moving with urgent need.",
+				"%USER% forcefully bounces on %TARGET%'s cock, demanding more.",
+				"%USER% roughly sinks down onto %TARGET%'s penis, riding them hard."
+			],
+			"rough": [
+				"%USER% aggressively lowers themselves onto %TARGET%'s cock, taking it harshly.",
+				"%USER% harshly rides %TARGET%'s penis, moving with desperate need.",
+				"%USER% forcefully bounces on %TARGET%'s cock, completely lost in the moment.",
+				"%USER% roughly sinks down onto %TARGET%'s penis, riding them with wild abandon."
+			]
+		},
+		"message_by_attitude_submissive": {
+			"gentle": [
+				"%USER% almost shyly lowers themselves onto %TARGET%'s cock, heat in their cheeks.",
+				"%USER% tentatively rides %TARGET%'s penis, blushing softly as they move.",
+				"%USER% nervously bounces on %TARGET%'s cock, their face flushed with embarrassment.",
+				"%USER% hesitantly sinks down onto %TARGET%'s penis, cheeks burning with shyness."
+			],
+			"neutral": [
+				"%USER% lowers themselves onto %TARGET%'s cock, face flushed with submission.",
+				"%USER% rides %TARGET%'s penis, eager to please as they move.",
+				"%USER% bounces on %TARGET%'s cock, their cheeks red with embarrassment.",
+				"%USER% sinks down onto %TARGET%'s penis, submissively riding them."
+			],
+			"hard": [
+				"%USER% desperately lowers themselves onto %TARGET%'s cock, overwhelmed by submission.",
+				"%USER% frantically rides %TARGET%'s penis, lost in servitude.",
+				"%USER% desperately bounces on %TARGET%'s cock, completely submissive.",
+				"%USER% eagerly sinks down onto %TARGET%'s penis, consumed by their need to please."
+			],
+			"rough": [
+				"%USER% frantically lowers themselves onto %TARGET%'s cock, completely lost in submission.",
+				"%USER% desperately rides %TARGET%'s penis, overwhelmed by servitude.",
+				"%USER% desperately bounces on %TARGET%'s cock, consumed by submission.",
+				"%USER% frantically sinks down onto %TARGET%'s penis, lost in their need to serve."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently ride target's penis",
+				"Softly lower yourself onto target's cock",
+				"Tenderly bounce on target's penis",
+				"Carefully ride target's cock"
+			],
+			"neutral": [
+				"Ride target's penis",
+				"Lower yourself onto target's cock",
+				"Bounce on target's penis",
+				"Ride target's cock"
+			],
+			"hard": [
+				"Roughly ride target's penis",
+				"Aggressively lower yourself onto target's cock",
+				"Forcefully bounce on target's penis",
+				"Roughly ride target's cock"
+			],
+			"rough": [
+				"Aggressively ride target's penis",
+				"Harshly lower yourself onto target's cock",
+				"Forcefully bounce on target's penis",
+				"Roughly ride target's cock"
+			]
+		},
+		"user_required_parts": ["vagina"],
+		"target_required_parts": ["penis"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 12,
+		"target_pleasure": 10,
+		"user_arousal": 12,
+		"target_arousal": 10
+	},
+	"Ride Pussy": {
+		"name": "Ride Pussy",
+		"description": "Ride target's vagina with your penis",
+		"category": "Sex",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently lowers themselves onto %TARGET%'s pussy, taking it slowly.",
+				"%USER% softly rides %TARGET%'s vagina, moving with tender care.",
+				"%USER% tenderly thrusts into %TARGET%'s pussy, showing loving devotion.",
+				"%USER% carefully sinks down onto %TARGET%'s vagina, intimate and slow."
+			],
+			"neutral": [
+				"%USER% lowers themselves onto %TARGET%'s pussy, taking it in.",
+				"%USER% rides %TARGET%'s vagina, moving with steady rhythm.",
+				"%USER% thrusts into %TARGET%'s pussy, grinding against them.",
+				"%USER% sinks down onto %TARGET%'s vagina, riding them eagerly."
+			],
+			"hard": [
+				"%USER% roughly lowers themselves onto %TARGET%'s pussy, taking it forcefully.",
+				"%USER% aggressively rides %TARGET%'s vagina, moving with urgent need.",
+				"%USER% forcefully thrusts into %TARGET%'s pussy, demanding more.",
+				"%USER% roughly sinks down onto %TARGET%'s vagina, riding them hard."
+			],
+			"rough": [
+				"%USER% aggressively lowers themselves onto %TARGET%'s pussy, taking it harshly.",
+				"%USER% harshly rides %TARGET%'s vagina, moving with desperate need.",
+				"%USER% forcefully thrusts into %TARGET%'s pussy, completely lost in the moment.",
+				"%USER% roughly sinks down onto %TARGET%'s vagina, riding them with wild abandon."
+			]
+		},
+		"message_by_attitude_submissive": {
+			"gentle": [
+				"%USER% almost shyly lowers themselves onto %TARGET%'s pussy, heat in their cheeks.",
+				"%USER% tentatively rides %TARGET%'s vagina, blushing softly as they move.",
+				"%USER% nervously thrusts into %TARGET%'s pussy, their face flushed with embarrassment.",
+				"%USER% hesitantly sinks down onto %TARGET%'s vagina, cheeks burning with shyness."
+			],
+			"neutral": [
+				"%USER% lowers themselves onto %TARGET%'s pussy, face flushed with submission.",
+				"%USER% rides %TARGET%'s vagina, eager to please as they move.",
+				"%USER% thrusts into %TARGET%'s pussy, their cheeks red with embarrassment.",
+				"%USER% sinks down onto %TARGET%'s vagina, submissively riding them."
+			],
+			"hard": [
+				"%USER% desperately lowers themselves onto %TARGET%'s pussy, overwhelmed by submission.",
+				"%USER% frantically rides %TARGET%'s vagina, lost in servitude.",
+				"%USER% desperately thrusts into %TARGET%'s pussy, completely submissive.",
+				"%USER% eagerly sinks down onto %TARGET%'s vagina, consumed by their need to please."
+			],
+			"rough": [
+				"%USER% frantically lowers themselves onto %TARGET%'s pussy, completely lost in submission.",
+				"%USER% desperately rides %TARGET%'s vagina, overwhelmed by servitude.",
+				"%USER% desperately thrusts into %TARGET%'s pussy, consumed by submission.",
+				"%USER% frantically sinks down onto %TARGET%'s vagina, lost in their need to serve."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently ride target's vagina",
+				"Softly lower yourself onto target's pussy",
+				"Tenderly thrust into target's vagina",
+				"Carefully ride target's pussy"
+			],
+			"neutral": [
+				"Ride target's vagina",
+				"Lower yourself onto target's pussy",
+				"Thrust into target's vagina",
+				"Ride target's pussy"
+			],
+			"hard": [
+				"Roughly ride target's vagina",
+				"Aggressively lower yourself onto target's pussy",
+				"Forcefully thrust into target's vagina",
+				"Roughly ride target's pussy"
+			],
+			"rough": [
+				"Aggressively ride target's vagina",
+				"Harshly lower yourself onto target's pussy",
+				"Forcefully thrust into target's vagina",
+				"Roughly ride target's pussy"
+			]
+		},
+		"user_required_parts": ["penis"],
+		"target_required_parts": ["vagina"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 12,
+		"target_pleasure": 10,
+		"user_arousal": 12,
+		"target_arousal": 10
+	},
+	"Ride Ass": {
+		"name": "Ride Ass",
+		"description": "Ride target's anus with your penis",
+		"category": "Anus",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently lowers themselves onto %TARGET%'s ass, taking it slowly.",
+				"%USER% softly rides %TARGET%'s anus, moving with tender care.",
+				"%USER% tenderly thrusts into %TARGET%'s ass, showing loving devotion.",
+				"%USER% carefully sinks down onto %TARGET%'s anus, intimate and slow."
+			],
+			"neutral": [
+				"%USER% lowers themselves onto %TARGET%'s ass, taking it in.",
+				"%USER% rides %TARGET%'s anus, moving with steady rhythm.",
+				"%USER% thrusts into %TARGET%'s ass, grinding against them.",
+				"%USER% sinks down onto %TARGET%'s anus, riding them eagerly."
+			],
+			"hard": [
+				"%USER% roughly lowers themselves onto %TARGET%'s ass, taking it forcefully.",
+				"%USER% aggressively rides %TARGET%'s anus, moving with urgent need.",
+				"%USER% forcefully thrusts into %TARGET%'s ass, demanding more.",
+				"%USER% roughly sinks down onto %TARGET%'s anus, riding them hard."
+			],
+			"rough": [
+				"%USER% aggressively lowers themselves onto %TARGET%'s ass, taking it harshly.",
+				"%USER% harshly rides %TARGET%'s anus, moving with desperate need.",
+				"%USER% forcefully thrusts into %TARGET%'s ass, completely lost in the moment.",
+				"%USER% roughly sinks down onto %TARGET%'s anus, riding them with wild abandon."
+			]
+		},
+		"message_by_attitude_submissive": {
+			"gentle": [
+				"%USER% almost shyly lowers themselves onto %TARGET%'s ass, heat in their cheeks.",
+				"%USER% tentatively rides %TARGET%'s anus, blushing softly as they move.",
+				"%USER% nervously thrusts into %TARGET%'s ass, their face flushed with embarrassment.",
+				"%USER% hesitantly sinks down onto %TARGET%'s anus, cheeks burning with shyness."
+			],
+			"neutral": [
+				"%USER% lowers themselves onto %TARGET%'s ass, face flushed with submission.",
+				"%USER% rides %TARGET%'s anus, eager to please as they move.",
+				"%USER% thrusts into %TARGET%'s ass, their cheeks red with embarrassment.",
+				"%USER% sinks down onto %TARGET%'s anus, submissively riding them."
+			],
+			"hard": [
+				"%USER% desperately lowers themselves onto %TARGET%'s ass, overwhelmed by submission.",
+				"%USER% frantically rides %TARGET%'s anus, lost in servitude.",
+				"%USER% desperately thrusts into %TARGET%'s ass, completely submissive.",
+				"%USER% eagerly sinks down onto %TARGET%'s anus, consumed by their need to please."
+			],
+			"rough": [
+				"%USER% frantically lowers themselves onto %TARGET%'s ass, completely lost in submission.",
+				"%USER% desperately rides %TARGET%'s anus, overwhelmed by servitude.",
+				"%USER% desperately thrusts into %TARGET%'s ass, consumed by submission.",
+				"%USER% frantically sinks down onto %TARGET%'s anus, lost in their need to serve."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently ride target's anus",
+				"Softly lower yourself onto target's ass",
+				"Tenderly thrust into target's anus",
+				"Carefully ride target's ass"
+			],
+			"neutral": [
+				"Ride target's anus",
+				"Lower yourself onto target's ass",
+				"Thrust into target's anus",
+				"Ride target's ass"
+			],
+			"hard": [
+				"Roughly ride target's anus",
+				"Aggressively lower yourself onto target's ass",
+				"Forcefully thrust into target's anus",
+				"Roughly ride target's ass"
+			],
+			"rough": [
+				"Aggressively ride target's anus",
+				"Harshly lower yourself onto target's ass",
+				"Forcefully thrust into target's anus",
+				"Roughly ride target's ass"
+			]
+		},
+		"user_required_parts": ["penis"],
+		"target_required_parts": ["anus"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 12,
+		"target_pleasure": 10,
+		"user_arousal": 12,
+		"target_arousal": 10
+	},
+	"Get Fucked": {
+		"name": "Get Fucked",
+		"description": "Receive penetration from target",
+		"category": "Sex",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently spreads their legs for %TARGET%, ready to receive them.",
+				"%USER% softly positions themselves for %TARGET%, showing loving trust.",
+				"%USER% tenderly opens up to %TARGET%, ready to be taken.",
+				"%USER% carefully presents themselves to %TARGET%, intimate and vulnerable."
+			],
+			"neutral": [
+				"%USER% spreads their legs for %TARGET%, ready to receive them.",
+				"%USER% positions themselves for %TARGET%, eager and willing.",
+				"%USER% opens up to %TARGET%, ready to be taken.",
+				"%USER% presents themselves to %TARGET%, ready for penetration."
+			],
+			"hard": [
+				"%USER% roughly spreads their legs for %TARGET%, desperate for them.",
+				"%USER% aggressively positions themselves for %TARGET%, urgent and needy.",
+				"%USER% forcefully opens up to %TARGET%, demanding to be taken.",
+				"%USER% roughly presents themselves to %TARGET%, desperate for penetration."
+			],
+			"rough": [
+				"%USER% aggressively spreads their legs for %TARGET%, completely lost in need.",
+				"%USER% harshly positions themselves for %TARGET%, desperate and wild.",
+				"%USER% forcefully opens up to %TARGET%, completely consumed by desire.",
+				"%USER% roughly presents themselves to %TARGET%, lost in their need to be taken."
+			]
+		},
+		"message_by_attitude_submissive": {
+			"gentle": [
+				"%USER% almost shyly spreads their legs for %TARGET%, heat in their cheeks.",
+				"%USER% tentatively positions themselves for %TARGET%, blushing softly.",
+				"%USER% nervously opens up to %TARGET%, their face flushed with embarrassment.",
+				"%USER% hesitantly presents themselves to %TARGET%, cheeks burning with shyness."
+			],
+			"neutral": [
+				"%USER% spreads their legs for %TARGET%, face flushed with submission.",
+				"%USER% positions themselves for %TARGET%, eager to please.",
+				"%USER% opens up to %TARGET%, their cheeks red with embarrassment.",
+				"%USER% presents themselves to %TARGET%, submissively ready for them."
+			],
+			"hard": [
+				"%USER% desperately spreads their legs for %TARGET%, overwhelmed by submission.",
+				"%USER% frantically positions themselves for %TARGET%, lost in servitude.",
+				"%USER% desperately opens up to %TARGET%, completely submissive.",
+				"%USER% eagerly presents themselves to %TARGET%, consumed by their need to please."
+			],
+			"rough": [
+				"%USER% frantically spreads their legs for %TARGET%, completely lost in submission.",
+				"%USER% desperately positions themselves for %TARGET%, overwhelmed by servitude.",
+				"%USER% desperately opens up to %TARGET%, consumed by submission.",
+				"%USER% frantically presents themselves to %TARGET%, lost in their need to serve."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently spread your legs for target",
+				"Softly position yourself for target",
+				"Tenderly open up to target",
+				"Carefully present yourself to target"
+			],
+			"neutral": [
+				"Spread your legs for target",
+				"Position yourself for target",
+				"Open up to target",
+				"Present yourself to target"
+			],
+			"hard": [
+				"Roughly spread your legs for target",
+				"Aggressively position yourself for target",
+				"Forcefully open up to target",
+				"Roughly present yourself to target"
+			],
+			"rough": [
+				"Aggressively spread your legs for target",
+				"Harshly position yourself for target",
+				"Forcefully open up to target",
+				"Roughly present yourself to target"
+			]
+		},
+		"user_required_parts": ["vagina"],
+		"target_required_parts": ["penis"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 10,
+		"target_pleasure": 5,
+		"user_arousal": 10,
+		"target_arousal": 5
+	}
+}
