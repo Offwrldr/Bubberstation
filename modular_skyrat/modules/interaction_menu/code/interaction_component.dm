@@ -23,12 +23,13 @@
 
 /datum/component/interactable/proc/build_interactions_list()
 	interactions = list()
+	var/is_blowup_doll = istype(self, /mob/living/carbon/human/blowup_doll)
 	for(var/iterating_interaction_id in GLOB.interaction_instances)
 		var/datum/interaction/interaction = GLOB.interaction_instances[iterating_interaction_id]
 		if(interaction.lewd)
-			if(!self.client?.prefs?.read_preference(/datum/preference/toggle/erp))
+			if(!is_blowup_doll && !self.client?.prefs?.read_preference(/datum/preference/toggle/erp))
 				continue
-			if(interaction.sexuality != "" && interaction.sexuality != self.client?.prefs?.read_preference(/datum/preference/choiced/erp_sexuality))
+			if(!is_blowup_doll && interaction.sexuality != "" && interaction.sexuality != self.client?.prefs?.read_preference(/datum/preference/choiced/erp_sexuality))
 				continue
 		interactions.Add(interaction)
 
@@ -52,7 +53,11 @@
 /datum/component/interactable/proc/can_interact(datum/interaction/interaction, mob/living/carbon/human/target)
 	if(!interaction.allow_act(target, self))
 		return FALSE
-	if(interaction.lewd && !target.client?.prefs?.read_preference(/datum/preference/toggle/erp))
+	var/self_is_blowup = istype(self, /mob/living/carbon/human/blowup_doll)
+	var/actor_is_blowup = istype(target, /mob/living/carbon/human/blowup_doll)
+	if(interaction.lewd && !actor_is_blowup && !target.client?.prefs?.read_preference(/datum/preference/toggle/erp))
+		return FALSE
+	if(interaction.lewd && !self_is_blowup && !self.client?.prefs?.read_preference(/datum/preference/toggle/erp))
 		return FALSE
 	if(!interaction.distance_allowed && !target.Adjacent(self))
 		if(!body_relay || !target.Adjacent(body_relay))
