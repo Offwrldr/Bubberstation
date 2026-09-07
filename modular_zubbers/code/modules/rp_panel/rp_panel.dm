@@ -40,12 +40,19 @@
 	var/volume_message = 50
 	var/volume_join = 50
 	var/volume_leave = 50
+	/// Log appearance settings for this panel owner
+	var/show_avatars = TRUE
+	var/avatar_size = 64
+	var/log_font = "Verdana"
+	var/log_font_size = 100
+	var/log_line_spacing = 1.35
 
 /datum/rp_panel/New(mob/living/new_holder)
 	. = ..()
 	holder = new_holder
 	pending_invites = list()
 	location = get_area_name(holder) || "Unknown"
+	load_appearance_prefs()
 	// Register signals to capture external say/emote
 	RegisterSignal(holder, COMSIG_MOB_SAY, PROC_REF(on_say))
 	RegisterSignal(holder, COMSIG_MOB_EMOTE, PROC_REF(on_emote))
@@ -67,7 +74,36 @@
 // Hook to set up message capture when holder logs in
 /datum/rp_panel/proc/on_login()
 	SIGNAL_HANDLER
-	// Message capture is handled via to_chat hook - see on_to_chat proc
+	load_appearance_prefs()
+
+/datum/rp_panel/proc/load_appearance_prefs()
+	var/datum/preferences/prefs = holder?.client?.prefs
+	if(!prefs)
+		return
+	show_avatars = prefs.read_preference(/datum/preference/toggle/scene_assistant_show_avatars)
+	avatar_size = prefs.read_preference(/datum/preference/numeric/scene_assistant_avatar_size)
+	log_font = prefs.read_preference(/datum/preference/text/scene_assistant_font)
+	log_font_size = prefs.read_preference(/datum/preference/numeric/scene_assistant_font_size)
+	log_line_spacing = prefs.read_preference(/datum/preference/numeric/scene_assistant_line_spacing)
+
+/datum/rp_panel/proc/save_appearance_prefs()
+	var/datum/preferences/prefs = holder?.client?.prefs
+	if(!prefs)
+		return
+	var/list/prefs_to_write = list(
+		/datum/preference/toggle/scene_assistant_show_avatars = show_avatars,
+		/datum/preference/numeric/scene_assistant_avatar_size = avatar_size,
+		/datum/preference/text/scene_assistant_font = log_font,
+		/datum/preference/numeric/scene_assistant_font_size = log_font_size,
+		/datum/preference/numeric/scene_assistant_line_spacing = log_line_spacing,
+	)
+	for(var/pref_type in prefs_to_write)
+		var/datum/preference/preference_entry = GLOB.preference_entries[pref_type]
+		if(!preference_entry)
+			continue
+		if(prefs.write_preference(preference_entry, prefs_to_write[pref_type]))
+			prefs.recently_updated_keys |= preference_entry.type
+	prefs.save_preferences()
 
 /datum/rp_panel/ui_state(mob/user)
 	// Allow access even when sleeping (for debugging/admin purposes)
@@ -371,6 +407,11 @@
 	data["volume_message"] = volume_message
 	data["volume_join"] = volume_join
 	data["volume_leave"] = volume_leave
+	data["show_avatars"] = show_avatars
+	data["avatar_size"] = avatar_size
+	data["log_font"] = log_font
+	data["log_font_size"] = log_font_size
+	data["log_line_spacing"] = log_line_spacing
 
 	// Get interaction data for participants (verb mode)
 	data["verb_mode_data"] = get_verb_mode_data(user)
@@ -579,6 +620,39 @@
 			var/new_volume = text2num(params["volume"])
 			if(isnum(new_volume) && new_volume >= 0 && new_volume <= 100)
 				volume_leave = new_volume
+			. = TRUE
+
+		if("set_show_avatars")
+			show_avatars = !show_avatars
+			save_appearance_prefs()
+			. = TRUE
+
+		if("set_avatar_size")
+			var/new_size = text2num(params["size"])
+			if(new_size in list(32, 48, 64, 96, 128))
+				avatar_size = new_size
+				save_appearance_prefs()
+			. = TRUE
+
+		if("set_log_font")
+			var/new_font = sanitize_scene_assistant_font(params["font"])
+			if(new_font)
+				log_font = new_font
+				save_appearance_prefs()
+			. = TRUE
+
+		if("set_log_font_size")
+			var/new_size = text2num(params["size"])
+			if(isnum(new_size) && new_size >= 80 && new_size <= 160)
+				log_font_size = new_size
+				save_appearance_prefs()
+			. = TRUE
+
+		if("set_log_line_spacing")
+			var/new_spacing = text2num(params["spacing"])
+			if(isnum(new_spacing) && new_spacing >= 1 && new_spacing <= 2)
+				log_line_spacing = new_spacing
+				save_appearance_prefs()
 			. = TRUE
 
 		if("set_self_preference")
@@ -1440,7 +1514,7 @@
 
 			// Check for undershirt
 			if(human.undershirt != "Nude" && !(human.underwear_visibility & UNDERWEAR_HIDE_SHIRT))
-				var/datum/sprite_accessory/undershirt/worn_undershirt = SSaccessories.undershirt_list[human.undershirt]
+				var/datum/sprite_accessory/clothing/undershirt/worn_undershirt = SSaccessories.undershirt_list[human.undershirt]
 				if(worn_undershirt)
 					if(genital.genital_location == CHEST)
 						return FALSE
@@ -1449,7 +1523,7 @@
 
 			// Check for underwear
 			if(human.underwear != "Nude" && !(human.underwear_visibility & UNDERWEAR_HIDE_UNDIES))
-				var/datum/sprite_accessory/underwear/worn_underwear = SSaccessories.underwear_list[human.underwear]
+				var/datum/sprite_accessory/clothing/underwear/worn_underwear = SSaccessories.underwear_list[human.underwear]
 				if(worn_underwear)
 					if(genital.genital_location == GROIN)
 						return FALSE

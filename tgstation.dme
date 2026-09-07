@@ -9761,6 +9761,7 @@
 #include "modular_zubbers\code\modules\client\preferences\limb_alpha.dm"
 #include "modular_zubbers\code\modules\client\preferences\permanent_limp.dm"
 #include "modular_zubbers\code\modules\client\preferences\player_panel.dm"
+#include "modular_zubbers\code\modules\client\preferences\scene_assistant.dm"
 #include "modular_zubbers\code\modules\client\preferences\screen.dm"
 #include "modular_zubbers\code\modules\client\preferences\sounds.dm"
 #include "modular_zubbers\code\modules\client\preferences\unique_blood_color.dm"

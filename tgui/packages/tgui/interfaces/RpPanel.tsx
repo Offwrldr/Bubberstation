@@ -86,7 +86,6 @@ type SelectedParticipant = {
 type RpPanelData = {
   emote_mode: string;
   emote_modes: Record<string, string>;
-  location?: string;
   scene_details?: string;
   participants: Participant[];
   available_players: Participant[];
@@ -118,16 +117,31 @@ type RpPanelData = {
   volume_message?: number;
   volume_join?: number;
   volume_leave?: number;
+  show_avatars?: boolean;
+  avatar_size?: number;
+  log_font?: string;
+  log_font_size?: number;
+  log_line_spacing?: number;
 };
 
 const MAX_MESSAGE_LENGTH = 2000;
+
+const PRESET_LOG_FONTS = [
+  'Verdana',
+  'Arial',
+  'Tahoma',
+  'Trebuchet MS',
+  'Times New Roman',
+  'Courier New',
+  'Comic Sans MS',
+  'Georgia',
+];
 
 export const RpPanel = (props) => {
   const { act, data } = useBackend<RpPanelData>();
   const {
     emote_mode,
     emote_modes,
-    location = '',
     scene_details = '',
     participants = [],
     available_players = [],
@@ -144,6 +158,11 @@ export const RpPanel = (props) => {
     volume_join = 50,
     volume_leave = 50,
     autocum_enabled = false,
+    show_avatars = true,
+    avatar_size = 64,
+    log_font = 'Verdana',
+    log_font_size = 100,
+    log_line_spacing = 1.35,
   } = data;
 
   // Fix dropdown z-index and backdrop overlay when Manage Self modal is open
@@ -310,6 +329,18 @@ export const RpPanel = (props) => {
   const [showParticipantManagement, setShowParticipantManagement] =
     useState(false);
   const [showManageSelf, setShowManageSelf] = useState(false);
+  const fontIsCustom = !PRESET_LOG_FONTS.includes(log_font);
+  const [customFontDraft, setCustomFontDraft] = useState(
+    fontIsCustom ? log_font : '',
+  );
+  const [pickingCustomFont, setPickingCustomFont] = useState(fontIsCustom);
+
+  useEffect(() => {
+    if (!PRESET_LOG_FONTS.includes(log_font)) {
+      setCustomFontDraft(log_font);
+      setPickingCustomFont(true);
+    }
+  }, [log_font]);
 
   const [messageInput, setMessageInput] = useState('');
   const inputRef = useRef(null);
@@ -323,59 +354,24 @@ export const RpPanel = (props) => {
     }
   }, []);
 
-  // Autoscroll when new messages arrive (only if user is at bottom)
-  const chatContainerRef = useRef(null);
-  const [isAtBottom, setIsAtBottom] = useState(true);
-
+  // Autoscroll the log to the newest message
   useEffect(() => {
-    // Find the scrollable container (Section's scrollable content)
-    const findScrollableContainer = () => {
-      if (messagesEndRef.current) {
-        let parent = messagesEndRef.current.parentElement;
-        while (parent) {
-          if (
-            parent.classList.contains('Section__content') ||
-            parent.scrollHeight > parent.clientHeight
-          ) {
-            chatContainerRef.current = parent;
-            return parent;
-          }
-          parent = parent.parentElement;
-        }
-      }
-      return null;
-    };
-
-    const container = findScrollableContainer();
-    if (!container) return;
-
-    const handleScroll = () => {
-      const { scrollTop, scrollHeight, clientHeight } = container;
-      const threshold = 50; // Allow 50px threshold
-      setIsAtBottom(scrollHeight - scrollTop - clientHeight < threshold);
-    };
-
-    container.addEventListener('scroll', handleScroll);
-    // Check initial state
-    handleScroll();
-    return () => container.removeEventListener('scroll', handleScroll);
-  }, [messages.length]);
-
-  const prevMessagesLength = useRef(messages.length);
-  useEffect(() => {
-    if (
-      messages.length > prevMessagesLength.current &&
-      isAtBottom &&
-      messagesEndRef.current
-    ) {
-      setTimeout(() => {
-        if (messagesEndRef.current) {
-          messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 0);
+    const anchor = messagesEndRef.current;
+    if (!anchor) {
+      return;
     }
-    prevMessagesLength.current = messages.length;
-  }, [messages.length, isAtBottom]);
+    const frame = requestAnimationFrame(() => {
+      let node = anchor.parentElement as HTMLElement | null;
+      while (node) {
+        if (node.scrollHeight - node.clientHeight > 8) {
+          node.scrollTop = node.scrollHeight;
+          break;
+        }
+        node = node.parentElement;
+      }
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [messages]);
 
   // Handle typing indicator
   useEffect(() => {
@@ -504,8 +500,8 @@ export const RpPanel = (props) => {
   return (
     <>
       {showSettings && (
-        <Modal width="500px" style={{ zIndex: 1000 }}>
-          <Section title="Settings">
+        <Modal width="500px" style={{ zIndex: 1000, maxHeight: '80vh' }}>
+          <Section title="Settings" scrollable>
             <Stack fill vertical>
               <Stack.Item>
                 <Section title="Sound Settings">
@@ -630,7 +626,143 @@ export const RpPanel = (props) => {
                   </Stack>
                 </Section>
               </Stack.Item>
+              <Stack.Item>
+                <Section title="Log Appearance">
+                  <Stack fill vertical>
+                    <Stack.Item>
+                      <Button.Checkbox
+                        fluid
+                        checked={show_avatars}
+                        onClick={() => act('set_show_avatars')}
+                      >
+                        Show Avatars
+                      </Button.Checkbox>
+                    </Stack.Item>
+                    <Stack.Item>
+                      <Stack align="center">
+                        <Stack.Item basis="140px">Avatar Size:</Stack.Item>
+                        <Stack.Item grow>
+                          <Dropdown
+                            width="100%"
+                            disabled={!show_avatars}
+                            selected={String(avatar_size)}
+                            options={[
+                              { value: '32', displayText: 'Small' },
+                              { value: '48', displayText: 'Compact' },
+                              { value: '64', displayText: 'Medium' },
+                              { value: '96', displayText: 'Large' },
+                              { value: '128', displayText: 'Huge' },
+                            ]}
+                            onSelected={(value) =>
+                              act('set_avatar_size', {
+                                size: parseInt(value, 10),
+                              })
+                            }
+                          />
+                        </Stack.Item>
+                      </Stack>
+                    </Stack.Item>
+                    <Stack.Item>
+                      <Stack align="center">
+                        <Stack.Item basis="140px">Font:</Stack.Item>
+                        <Stack.Item grow>
+                          <Dropdown
+                            width="100%"
+                            selected={
+                              pickingCustomFont || fontIsCustom
+                                ? 'Custom'
+                                : log_font
+                            }
+                            options={[...PRESET_LOG_FONTS, 'Custom']}
+                            onSelected={(value) => {
+                              if (value === 'Custom') {
+                                setPickingCustomFont(true);
+                                return;
+                              }
+                              setPickingCustomFont(false);
+                              act('set_log_font', { font: value });
+                            }}
+                          />
+                        </Stack.Item>
+                      </Stack>
+                    </Stack.Item>
+                    {(pickingCustomFont || fontIsCustom) && (
+                      <Stack.Item>
+                        <Stack align="center">
+                          <Stack.Item basis="140px">Custom Font:</Stack.Item>
+                          <Stack.Item grow>
+                            <Input
+                              fluid
+                              value={customFontDraft}
+                              placeholder="Font family name, e.g. Segoe UI"
+                              onChange={(value) => {
+                                setCustomFontDraft(value);
+                                if (value && value.trim()) {
+                                  act('set_log_font', { font: value });
+                                }
+                              }}
+                            />
+                          </Stack.Item>
+                        </Stack>
+                      </Stack.Item>
+                    )}
+                    <Stack.Item>
+                      <Stack align="center">
+                        <Stack.Item basis="140px">Font Size:</Stack.Item>
+                        <Stack.Item grow>
+                          <Dropdown
+                            width="100%"
+                            selected={String(log_font_size)}
+                            options={[
+                              { value: '80', displayText: 'Small' },
+                              { value: '90', displayText: 'Slightly Small' },
+                              { value: '100', displayText: 'Normal' },
+                              { value: '110', displayText: 'Slightly Large' },
+                              { value: '125', displayText: 'Large' },
+                              { value: '150', displayText: 'Very Large' },
+                            ]}
+                            onSelected={(value) =>
+                              act('set_log_font_size', {
+                                size: parseInt(value, 10),
+                              })
+                            }
+                          />
+                        </Stack.Item>
+                      </Stack>
+                    </Stack.Item>
+                    <Stack.Item>
+                      <Stack align="center">
+                        <Stack.Item basis="140px">Line Spacing:</Stack.Item>
+                        <Stack.Item grow>
+                          <Dropdown
+                            width="100%"
+                            selected={String(log_line_spacing)}
+                            options={[
+                              { value: '1', displayText: 'Tight' },
+                              { value: '1.15', displayText: 'Compact' },
+                              { value: '1.35', displayText: 'Normal' },
+                              { value: '1.5', displayText: 'Relaxed' },
+                              { value: '1.75', displayText: 'Loose' },
+                              { value: '2', displayText: 'Very Loose' },
+                            ]}
+                            onSelected={(value) =>
+                              act('set_log_line_spacing', {
+                                spacing: parseFloat(value),
+                              })
+                            }
+                          />
+                        </Stack.Item>
+                      </Stack>
+                    </Stack.Item>
+                  </Stack>
+                </Section>
+              </Stack.Item>
               <Stack.Item />
+              <Stack.Item>
+                <Box color="label" fontSize="0.85em">
+                  Log appearance is saved to your client.
+                </Box>
+              </Stack.Item>
               <Stack.Item>
                 <Button fluid onClick={() => setShowSettings(false)}>
                   Close
@@ -1000,35 +1132,12 @@ export const RpPanel = (props) => {
 
                     {/* Scene context */}
                     <Stack.Item>
-                      <Section title="Location">
-                        <Stack>
-                          <Stack.Item grow>
-                            <Input
-                              fluid
-                              value={location}
-                              placeholder="Where is this scene taking place?"
-                              onChange={(value) =>
-                                act('set_location', { location: value })
-                              }
-                            />
-                          </Stack.Item>
-                          <Stack.Item>
-                            <Button
-                              icon="location-arrow"
-                              tooltip="Use current area"
-                              onClick={() => act('refresh_location')}
-                            />
-                          </Stack.Item>
-                        </Stack>
-                      </Section>
-                    </Stack.Item>
-                    <Stack.Item>
                       <Section title="Scene Details">
                         <TextArea
                           fluid
                           height={5}
                           value={scene_details}
-                          placeholder="What's going on in this scene?"
+                          placeholder="Type anything notable about your character, the environment, positioning or other elements here!"
                           onChange={(value) =>
                             act('set_scene_details', { details: value })
                           }
@@ -1504,16 +1613,9 @@ export const RpPanel = (props) => {
                     {/* Chat area */}
                     <Stack.Item grow>
                       <Section title="Log" fill scrollable>
-                        {(location || scene_details) && (
+                        {scene_details && (
                           <NoticeBox info>
-                            {location && (
-                              <Box bold>Location: {location}</Box>
-                            )}
-                            {scene_details && (
-                              <Box mt={location ? 0.5 : 0} preserveWhitespace>
-                                {scene_details}
-                              </Box>
-                            )}
+                            <Box preserveWhitespace>{scene_details}</Box>
                           </NoticeBox>
                         )}
                         {messages.length === 0 ? (
@@ -1527,7 +1629,15 @@ export const RpPanel = (props) => {
                             No messages yet. Send an emote to start!
                           </Box>
                         ) : (
-                          <Stack fill vertical>
+                          <Stack
+                            fill
+                            vertical
+                            style={{
+                              'font-family': `"${String(log_font || 'Verdana').replace(/[<>"]/g, '')}"`,
+                              'font-size': `${log_font_size}%`,
+                              'line-height': log_line_spacing,
+                            }}
+                          >
                             {messages.map((msg, index) => (
                               <Stack.Item key={index}>
                                 <Box
@@ -1548,7 +1658,7 @@ export const RpPanel = (props) => {
                                   }}
                                 >
                                   <Stack>
-                                    {msg.headshot && (
+                                    {show_avatars && msg.headshot && (
                                       <Stack.Item>
                                         <Stack vertical>
                                           <Stack.Item>
@@ -1563,8 +1673,8 @@ export const RpPanel = (props) => {
                                                 }
                                               }}
                                               style={{
-                                                width: '64px',
-                                                height: '64px',
+                                                width: `${avatar_size}px`,
+                                                height: `${avatar_size}px`,
                                                 'object-fit': 'cover',
                                                 'border-radius': '4px',
                                                 'margin-right': '8px',
