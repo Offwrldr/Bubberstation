@@ -1,0 +1,614 @@
+{
+	"Hug": {
+		"name": "Hug",
+		"description": "Hug target",
+		"category": "Romance",
+		"usage": "other",
+		"lewd": 0,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently hugs %TARGET%",
+				"%USER% softly wraps their arms around %TARGET%",
+				"%USER% tenderly embraces %TARGET%",
+				"%USER% carefully holds %TARGET% close"
+			],
+			"neutral": [
+				"%USER% hugs %TARGET%",
+				"%USER% wraps their arms around %TARGET%",
+				"%USER% embraces %TARGET%",
+				"%USER% holds %TARGET% close"
+			],
+			"hard": [
+				"%USER% roughly hugs %TARGET%",
+				"%USER% aggressively wraps their arms around %TARGET%",
+				"%USER% forcefully embraces %TARGET%",
+				"%USER% roughly holds %TARGET% close"
+			],
+			"rough": [
+				"%USER% aggressively hugs %TARGET%",
+				"%USER% harshly wraps their arms around %TARGET%",
+				"%USER% forcefully embraces %TARGET%",
+				"%USER% roughly holds %TARGET% close"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently hug target",
+				"Softly wrap your arms around target",
+				"Tenderly embrace target",
+				"Carefully hold target close"
+			],
+			"neutral": [
+				"Hug target",
+				"Wrap your arms around target",
+				"Embrace target",
+				"Hold target close"
+			],
+			"hard": [
+				"Roughly hug target",
+				"Aggressively wrap your arms around target",
+				"Forcefully embrace target",
+				"Roughly hold target close"
+			],
+			"rough": [
+				"Aggressively hug target",
+				"Harshly wrap your arms around target",
+				"Forcefully embrace target",
+				"Roughly hold target close"
+			]
+		},
+		"user_required_parts": ["arms"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "pink",
+		"user_pleasure": 2,
+		"target_pleasure": 2,
+		"user_arousal": 1,
+		"target_arousal": 1
+	},
+	"Cuddle": {
+		"name": "Cuddle",
+		"description": "Cuddle with target",
+		"category": "Romance",
+		"usage": "other",
+		"lewd": 0,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently cuddles with %TARGET%",
+				"%USER% softly snuggles up to %TARGET%",
+				"%USER% tenderly cuddles %TARGET%",
+				"%USER% carefully nestles against %TARGET%"
+			],
+			"neutral": [
+				"%USER% cuddles with %TARGET%",
+				"%USER% snuggles up to %TARGET%",
+				"%USER% cuddles %TARGET%",
+				"%USER% nestles against %TARGET%"
+			],
+			"hard": [
+				"%USER% roughly cuddles with %TARGET%",
+				"%USER% aggressively snuggles up to %TARGET%",
+				"%USER% forcefully cuddles %TARGET%",
+				"%USER% roughly nestles against %TARGET%"
+			],
+			"rough": [
+				"%USER% aggressively cuddles with %TARGET%",
+				"%USER% harshly snuggles up to %TARGET%",
+				"%USER% forcefully cuddles %TARGET%",
+				"%USER% roughly nestles against %TARGET%"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently cuddle with target",
+				"Softly snuggle up to target",
+				"Tenderly cuddle target",
+				"Carefully nestle against target"
+			],
+			"neutral": [
+				"Cuddle with target",
+				"Snuggle up to target",
+				"Cuddle target",
+				"Nestle against target"
+			],
+			"hard": [
+				"Roughly cuddle with target",
+				"Aggressively snuggle up to target",
+				"Forcefully cuddle target",
+				"Roughly nestle against target"
+			],
+			"rough": [
+				"Aggressively cuddle with target",
+				"Harshly snuggle up to target",
+				"Forcefully cuddle target",
+				"Roughly nestle against target"
+			]
+		},
+		"user_required_parts": ["arms"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "pink",
+		"user_pleasure": 3,
+		"target_pleasure": 3,
+		"user_arousal": 2,
+		"target_arousal": 2
+	},
+	"Kiss": {
+		"name": "Kiss",
+		"description": "Kiss target",
+		"category": "Romance",
+		"usage": "other",
+		"lewd": 0,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently kisses %TARGET%",
+				"%USER% softly presses their lips to %TARGET%",
+				"%USER% tenderly kisses %TARGET%",
+				"%USER% carefully pecks %TARGET%"
+			],
+			"neutral": [
+				"%USER% kisses %TARGET%",
+				"%USER% presses their lips to %TARGET%",
+				"%USER% kisses %TARGET%",
+				"%USER% pecks %TARGET%"
+			],
+			"hard": [
+				"%USER% roughly kisses %TARGET%",
+				"%USER% aggressively presses their lips to %TARGET%",
+				"%USER% forcefully kisses %TARGET%",
+				"%USER% roughly pecks %TARGET%"
+			],
+			"rough": [
+				"%USER% aggressively kisses %TARGET%",
+				"%USER% harshly presses their lips to %TARGET%",
+				"%USER% forcefully kisses %TARGET%",
+				"%USER% roughly pecks %TARGET%"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently kiss target",
+				"Softly press your lips to target",
+				"Tenderly kiss target",
+				"Carefully peck target"
+			],
+			"neutral": [
+				"Kiss target",
+				"Press your lips to target",
+				"Kiss target",
+				"Peck target"
+			],
+			"hard": [
+				"Roughly kiss target",
+				"Aggressively press your lips to target",
+				"Forcefully kiss target",
+				"Roughly peck target"
+			],
+			"rough": [
+				"Aggressively kiss target",
+				"Harshly press your lips to target",
+				"Forcefully kiss target",
+				"Roughly peck target"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "pink",
+		"user_pleasure": 2,
+		"target_pleasure": 2,
+		"user_arousal": 1,
+		"target_arousal": 1
+	},
+	"Smooch": {
+		"name": "Smooch",
+		"description": "Smooch target",
+		"category": "Romance",
+		"usage": "other",
+		"lewd": 0,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently smooches %TARGET%",
+				"%USER% softly gives %TARGET% a smooch",
+				"%USER% tenderly smooches %TARGET%",
+				"%USER% carefully plants a smooch on %TARGET%"
+			],
+			"neutral": [
+				"%USER% smooches %TARGET%",
+				"%USER% gives %TARGET% a smooch",
+				"%USER% smooches %TARGET%",
+				"%USER% plants a smooch on %TARGET%"
+			],
+			"hard": [
+				"%USER% roughly smooches %TARGET%",
+				"%USER% aggressively gives %TARGET% a smooch",
+				"%USER% forcefully smooches %TARGET%",
+				"%USER% roughly plants a smooch on %TARGET%"
+			],
+			"rough": [
+				"%USER% aggressively smooches %TARGET%",
+				"%USER% harshly gives %TARGET% a smooch",
+				"%USER% forcefully smooches %TARGET%",
+				"%USER% roughly plants a smooch on %TARGET%"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently smooch target",
+				"Softly give target a smooch",
+				"Tenderly smooch target",
+				"Carefully plant a smooch on target"
+			],
+			"neutral": [
+				"Smooch target",
+				"Give target a smooch",
+				"Smooch target",
+				"Plant a smooch on target"
+			],
+			"hard": [
+				"Roughly smooch target",
+				"Aggressively give target a smooch",
+				"Forcefully smooch target",
+				"Roughly plant a smooch on target"
+			],
+			"rough": [
+				"Aggressively smooch target",
+				"Harshly give target a smooch",
+				"Forcefully smooch target",
+				"Roughly plant a smooch on target"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "pink",
+		"user_pleasure": 2,
+		"target_pleasure": 2,
+		"user_arousal": 1,
+		"target_arousal": 1
+	},
+	"Peck": {
+		"name": "Peck",
+		"description": "Peck target",
+		"category": "Romance",
+		"usage": "other",
+		"lewd": 0,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently pecks %TARGET%",
+				"%USER% softly gives %TARGET% a quick peck",
+				"%USER% tenderly pecks %TARGET%",
+				"%USER% carefully plants a peck on %TARGET%"
+			],
+			"neutral": [
+				"%USER% pecks %TARGET%",
+				"%USER% gives %TARGET% a quick peck",
+				"%USER% pecks %TARGET%",
+				"%USER% plants a peck on %TARGET%"
+			],
+			"hard": [
+				"%USER% roughly pecks %TARGET%",
+				"%USER% aggressively gives %TARGET% a quick peck",
+				"%USER% forcefully pecks %TARGET%",
+				"%USER% roughly plants a peck on %TARGET%"
+			],
+			"rough": [
+				"%USER% aggressively pecks %TARGET%",
+				"%USER% harshly gives %TARGET% a quick peck",
+				"%USER% forcefully pecks %TARGET%",
+				"%USER% roughly plants a peck on %TARGET%"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently peck target",
+				"Softly give target a quick peck",
+				"Tenderly peck target",
+				"Carefully plant a peck on target"
+			],
+			"neutral": [
+				"Peck target",
+				"Give target a quick peck",
+				"Peck target",
+				"Plant a peck on target"
+			],
+			"hard": [
+				"Roughly peck target",
+				"Aggressively give target a quick peck",
+				"Forcefully peck target",
+				"Roughly plant a peck on target"
+			],
+			"rough": [
+				"Aggressively peck target",
+				"Harshly give target a quick peck",
+				"Forcefully peck target",
+				"Roughly plant a peck on target"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "pink",
+		"user_pleasure": 1,
+		"target_pleasure": 1,
+		"user_arousal": 1,
+		"target_arousal": 1
+	},
+	"Nuzzle": {
+		"name": "Nuzzle",
+		"description": "Nuzzle target",
+		"category": "Romance",
+		"usage": "other",
+		"lewd": 0,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently nuzzles %TARGET%",
+				"%USER% softly rubs their face against %TARGET%",
+				"%USER% tenderly nuzzles into %TARGET%",
+				"%USER% carefully presses their face against %TARGET%"
+			],
+			"neutral": [
+				"%USER% nuzzles %TARGET%",
+				"%USER% rubs their face against %TARGET%",
+				"%USER% nuzzles into %TARGET%",
+				"%USER% presses their face against %TARGET%"
+			],
+			"hard": [
+				"%USER% roughly nuzzles %TARGET%",
+				"%USER% aggressively rubs their face against %TARGET%",
+				"%USER% forcefully nuzzles into %TARGET%",
+				"%USER% roughly presses their face against %TARGET%"
+			],
+			"rough": [
+				"%USER% aggressively nuzzles %TARGET%",
+				"%USER% harshly rubs their face against %TARGET%",
+				"%USER% forcefully nuzzles into %TARGET%",
+				"%USER% roughly presses their face against %TARGET%"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently nuzzle target",
+				"Softly rub your face against target",
+				"Tenderly nuzzle into target",
+				"Carefully press your face against target"
+			],
+			"neutral": [
+				"Nuzzle target",
+				"Rub your face against target",
+				"Nuzzle into target",
+				"Press your face against target"
+			],
+			"hard": [
+				"Roughly nuzzle target",
+				"Aggressively rub your face against target",
+				"Forcefully nuzzle into target",
+				"Roughly press your face against target"
+			],
+			"rough": [
+				"Aggressively nuzzle target",
+				"Harshly rub your face against target",
+				"Forcefully nuzzle into target",
+				"Roughly press your face against target"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "pink",
+		"user_pleasure": 2,
+		"target_pleasure": 2,
+		"user_arousal": 1,
+		"target_arousal": 1
+	},
+	"Hold": {
+		"name": "Hold",
+		"description": "Hold target",
+		"category": "Romance",
+		"usage": "other",
+		"lewd": 0,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently holds %TARGET%",
+				"%USER% softly wraps their arms around %TARGET%",
+				"%USER% tenderly holds %TARGET% close",
+				"%USER% carefully embraces %TARGET%"
+			],
+			"neutral": [
+				"%USER% holds %TARGET%",
+				"%USER% wraps their arms around %TARGET%",
+				"%USER% holds %TARGET% close",
+				"%USER% embraces %TARGET%"
+			],
+			"hard": [
+				"%USER% roughly holds %TARGET%",
+				"%USER% aggressively wraps their arms around %TARGET%",
+				"%USER% forcefully holds %TARGET% close",
+				"%USER% roughly embraces %TARGET%"
+			],
+			"rough": [
+				"%USER% aggressively holds %TARGET%",
+				"%USER% harshly wraps their arms around %TARGET%",
+				"%USER% forcefully holds %TARGET% close",
+				"%USER% roughly embraces %TARGET%"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently hold target",
+				"Softly wrap your arms around target",
+				"Tenderly hold target close",
+				"Carefully embrace target"
+			],
+			"neutral": [
+				"Hold target",
+				"Wrap your arms around target",
+				"Hold target close",
+				"Embrace target"
+			],
+			"hard": [
+				"Roughly hold target",
+				"Aggressively wrap your arms around target",
+				"Forcefully hold target close",
+				"Roughly embrace target"
+			],
+			"rough": [
+				"Aggressively hold target",
+				"Harshly wrap your arms around target",
+				"Forcefully hold target close",
+				"Roughly embrace target"
+			]
+		},
+		"user_required_parts": ["arms"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "pink",
+		"user_pleasure": 2,
+		"target_pleasure": 2,
+		"user_arousal": 1,
+		"target_arousal": 1
+	},
+	"Brush": {
+		"name": "Brush",
+		"description": "Brush target",
+		"category": "Romance",
+		"usage": "other",
+		"lewd": 0,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently brushes %TARGET%",
+				"%USER% softly runs their hand through %TARGET%'s hair",
+				"%USER% tenderly brushes %TARGET%",
+				"%USER% carefully strokes %TARGET%"
+			],
+			"neutral": [
+				"%USER% brushes %TARGET%",
+				"%USER% runs their hand through %TARGET%'s hair",
+				"%USER% brushes %TARGET%",
+				"%USER% strokes %TARGET%"
+			],
+			"hard": [
+				"%USER% roughly brushes %TARGET%",
+				"%USER% aggressively runs their hand through %TARGET%'s hair",
+				"%USER% forcefully brushes %TARGET%",
+				"%USER% roughly strokes %TARGET%"
+			],
+			"rough": [
+				"%USER% aggressively brushes %TARGET%",
+				"%USER% harshly runs their hand through %TARGET%'s hair",
+				"%USER% forcefully brushes %TARGET%",
+				"%USER% roughly strokes %TARGET%"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently brush target",
+				"Softly run your hand through target's hair",
+				"Tenderly brush target",
+				"Carefully stroke target"
+			],
+			"neutral": [
+				"Brush target",
+				"Run your hand through target's hair",
+				"Brush target",
+				"Stroke target"
+			],
+			"hard": [
+				"Roughly brush target",
+				"Aggressively run your hand through target's hair",
+				"Forcefully brush target",
+				"Roughly stroke target"
+			],
+			"rough": [
+				"Aggressively brush target",
+				"Harshly run your hand through target's hair",
+				"Forcefully brush target",
+				"Roughly stroke target"
+			]
+		},
+		"user_required_parts": ["hands"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "pink",
+		"user_pleasure": 2,
+		"target_pleasure": 2,
+		"user_arousal": 1,
+		"target_arousal": 1
+	},
+	"Rub": {
+		"name": "Rub",
+		"description": "Rub target",
+		"category": "Romance",
+		"usage": "other",
+		"lewd": 0,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently rubs %TARGET%",
+				"%USER% softly massages %TARGET%",
+				"%USER% tenderly rubs %TARGET%",
+				"%USER% carefully caresses %TARGET%"
+			],
+			"neutral": [
+				"%USER% rubs %TARGET%",
+				"%USER% massages %TARGET%",
+				"%USER% rubs %TARGET%",
+				"%USER% caresses %TARGET%"
+			],
+			"hard": [
+				"%USER% roughly rubs %TARGET%",
+				"%USER% aggressively massages %TARGET%",
+				"%USER% forcefully rubs %TARGET%",
+				"%USER% roughly caresses %TARGET%"
+			],
+			"rough": [
+				"%USER% aggressively rubs %TARGET%",
+				"%USER% harshly massages %TARGET%",
+				"%USER% forcefully rubs %TARGET%",
+				"%USER% roughly caresses %TARGET%"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently rub target",
+				"Softly massage target",
+				"Tenderly rub target",
+				"Carefully caress target"
+			],
+			"neutral": [
+				"Rub target",
+				"Massage target",
+				"Rub target",
+				"Caress target"
+			],
+			"hard": [
+				"Roughly rub target",
+				"Aggressively massage target",
+				"Forcefully rub target",
+				"Roughly caress target"
+			],
+			"rough": [
+				"Aggressively rub target",
+				"Harshly massage target",
+				"Forcefully rub target",
+				"Roughly caress target"
+			]
+		},
+		"user_required_parts": ["hands"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "pink",
+		"user_pleasure": 2,
+		"target_pleasure": 2,
+		"user_arousal": 1,
+		"target_arousal": 1
+	}
+}

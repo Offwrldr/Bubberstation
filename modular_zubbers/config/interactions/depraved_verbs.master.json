@@ -1,0 +1,750 @@
+{
+	"Pee on Partner": {
+		"name": "Pee on Partner",
+		"description": "Pee on target",
+		"category": "Depraved",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently pees on %TARGET%, marking them with loving devotion",
+				"%USER% softly relieves their bladder on %TARGET%, showing twisted affection",
+				"%USER% tenderly lets loose a stream of urine onto %TARGET%, lost in depraved passion",
+				"%USER% carefully marks %TARGET% with their urine, expressing dark devotion"
+			],
+			"neutral": [
+				"%USER% pees on %TARGET%.",
+				"%USER% relieves their bladder on %TARGET%.",
+				"%USER% lets loose a stream of urine onto %TARGET%.",
+				"%USER% marks %TARGET% with their urine."
+			],
+			"hard": [
+				"%USER% roughly pees on %TARGET%, asserting dominance.",
+				"%USER% aggressively drenches %TARGET% in their hot urine without mercy.",
+				"%USER% forcefully marks %TARGET% like territory, pissing all over them.",
+				"%USER% roughly degrades %TARGET% by covering them in their piss."
+			],
+			"rough": [
+				"%USER% aggressively pees on %TARGET%, asserting dominance.",
+				"%USER% harshly drenches %TARGET% in their hot urine without mercy.",
+				"%USER% forcefully marks %TARGET% like territory, pissing all over them.",
+				"%USER% roughly degrades %TARGET% by covering them in their piss."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently relieve yourself on your partner with twisted devotion",
+				"Softly mark your partner with your urine, showing perverse affection",
+				"Tenderly pee on your partner, lost in depraved passion",
+				"Carefully cover your partner in your piss with dark devotion"
+			],
+			"neutral": [
+				"Relieve yourself on your partner.",
+				"Mark your partner with your urine.",
+				"Pee on your partner.",
+				"Cover your partner in your piss."
+			],
+			"rough": [
+				"Forcefully piss on your partner to assert dominance.",
+				"Drench your partner in your hot urine.",
+				"Mark your partner like territory.",
+				"Degrade your partner by covering them in your piss."
+			],
+			"hard": [
+				"Roughly piss on your partner to assert dominance.",
+				"Aggressively drench your partner in your hot urine.",
+				"Forcefully mark your partner like territory.",
+				"Roughly degrade your partner by covering them in your piss."
+			]
+		},
+		"user_required_parts": ["penis"],
+		"target_required_parts": [],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 5,
+		"target_pleasure": 5,
+		"user_arousal": 5,
+		"target_arousal": 5
+	},
+	"Pee in Partner's Mouth": {
+		"name": "Pee in Partner's Mouth",
+		"description": "Pee into target's mouth",
+		"category": "Depraved",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently pees into %TARGET%'s mouth, sharing their golden nectar with loving devotion",
+				"%USER% softly directs their stream of urine into %TARGET%'s open mouth, showing twisted affection",
+				"%USER% tenderly fills %TARGET%'s mouth with their piss, lost in depraved passion",
+				"%USER% carefully lets %TARGET% drink their urine, expressing dark devotion"
+			],
+			"neutral": [
+				"%USER% pees into %TARGET%'s mouth.",
+				"%USER% directs their stream of urine into %TARGET%'s open mouth.",
+				"%USER% fills %TARGET%'s mouth with their piss.",
+				"%USER% lets %TARGET% drink their urine."
+			],
+			"hard": [
+				"%USER% roughly pisses into %TARGET%'s mouth, making them choke.",
+				"%USER% aggressively shoves their cock into %TARGET%'s mouth and unleashes their piss.",
+				"%USER% forcefully forces %TARGET% to drink their hot urine.",
+				"%USER% roughly degrades %TARGET% by filling their mouth with piss."
+			],
+			"rough": [
+				"%USER% aggressively pisses into %TARGET%'s mouth, making them choke.",
+				"%USER% harshly shoves their cock into %TARGET%'s mouth and unleashes their piss.",
+				"%USER% forcefully forces %TARGET% to drink their hot urine.",
+				"%USER% roughly degrades %TARGET% by filling their mouth with piss."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently pee into your partner's mouth with twisted devotion",
+				"Softly let your partner drink your urine, showing perverse affection",
+				"Tenderly fill your partner's mouth with your piss, lost in depraved passion",
+				"Carefully direct your stream into your partner's mouth with dark devotion"
+			],
+			"neutral": [
+				"Pee into your partner's mouth.",
+				"Let your partner drink your urine.",
+				"Fill your partner's mouth with your piss.",
+				"Direct your stream into your partner's mouth."
+			],
+			"rough": [
+				"Forcefully piss into your partner's mouth.",
+				"Make your partner choke on your hot urine.",
+				"Force your partner to drink your piss.",
+				"Degrade your partner by filling their mouth."
+			],
+			"hard": [
+				"Roughly piss into your partner's mouth.",
+				"Aggressively make your partner choke on your hot urine.",
+				"Forcefully force your partner to drink your piss.",
+				"Roughly degrade your partner by filling their mouth."
+			]
+		},
+		"user_required_parts": ["penis"],
+		"target_required_parts": ["mouth"],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 6,
+		"target_pleasure": 5,
+		"user_arousal": 6,
+		"target_arousal": 5
+	},
+	"Pee in Partner's Pussy": {
+		"name": "Pee in Partner's Pussy",
+		"description": "Pee into target's pussy",
+		"category": "Depraved",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently pees into %TARGET%'s pussy, filling them with loving devotion",
+				"%USER% softly directs their stream of urine into %TARGET%'s wet pussy, showing twisted affection",
+				"%USER% tenderly fills %TARGET%'s pussy with their piss, lost in depraved passion",
+				"%USER% carefully lets their golden stream flow into %TARGET%'s entrance, expressing dark devotion"
+			],
+			"neutral": [
+				"%USER% pees into %TARGET%'s pussy.",
+				"%USER% directs their stream of urine into %TARGET%'s wet pussy.",
+				"%USER% fills %TARGET%'s pussy with their piss.",
+				"%USER% lets their golden stream flow into %TARGET%'s entrance."
+			],
+			"hard": [
+				"%USER% roughly pisses into %TARGET%'s pussy, making them gasp.",
+				"%USER% aggressively shoves their cock into %TARGET%'s pussy and unleashes their piss.",
+				"%USER% forcefully fills %TARGET%'s pussy with their hot urine without mercy.",
+				"%USER% roughly degrades %TARGET% by flooding their pussy with piss."
+			],
+			"rough": [
+				"%USER% aggressively pisses into %TARGET%'s pussy, making them gasp.",
+				"%USER% harshly shoves their cock into %TARGET%'s pussy and unleashes their piss.",
+				"%USER% forcefully fills %TARGET%'s pussy with their hot urine without mercy.",
+				"%USER% roughly degrades %TARGET% by flooding their pussy with piss."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently pee into your partner's pussy with twisted devotion",
+				"Softly fill your partner's pussy with your urine, showing perverse affection",
+				"Tenderly direct your stream into your partner's entrance, lost in depraved passion",
+				"Carefully let your golden stream flow into your partner's pussy with dark devotion"
+			],
+			"neutral": [
+				"Pee into your partner's pussy.",
+				"Fill your partner's pussy with your urine.",
+				"Direct your stream into your partner's entrance.",
+				"Let your golden stream flow into your partner's pussy."
+			],
+			"rough": [
+				"Forcefully piss into your partner's pussy.",
+				"Make your partner gasp from your hot urine.",
+				"Flood your partner's pussy with your piss.",
+				"Degrade your partner by filling their pussy."
+			],
+			"hard": [
+				"Roughly piss into your partner's pussy.",
+				"Aggressively make your partner gasp from your hot urine.",
+				"Forcefully flood your partner's pussy with your piss.",
+				"Roughly degrade your partner by filling their pussy."
+			]
+		},
+		"user_required_parts": ["penis"],
+		"target_required_parts": ["vagina"],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 6,
+		"target_pleasure": 6,
+		"user_arousal": 6,
+		"target_arousal": 6
+	},
+	"Pee in Partner's Ass": {
+		"name": "Pee in Partner's Ass",
+		"description": "Pee into target's ass",
+		"category": "Depraved",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently pees into %TARGET%'s ass, filling them with loving devotion",
+				"%USER% softly directs their stream of urine into %TARGET%'s tight asshole, showing twisted affection",
+				"%USER% tenderly fills %TARGET%'s ass with their piss, lost in depraved passion",
+				"%USER% carefully lets their golden stream flow into %TARGET%'s anus, expressing dark devotion"
+			],
+			"neutral": [
+				"%USER% pees into %TARGET%'s ass.",
+				"%USER% directs their stream of urine into %TARGET%'s tight asshole.",
+				"%USER% fills %TARGET%'s ass with their piss.",
+				"%USER% lets their golden stream flow into %TARGET%'s anus."
+			],
+			"hard": [
+				"%USER% roughly pisses into %TARGET%'s ass, making them gasp.",
+				"%USER% aggressively shoves their cock into %TARGET%'s ass and unleashes their piss.",
+				"%USER% forcefully fills %TARGET%'s ass with their hot urine without mercy.",
+				"%USER% roughly degrades %TARGET% by flooding their ass with piss."
+			],
+			"rough": [
+				"%USER% aggressively pisses into %TARGET%'s ass, making them gasp.",
+				"%USER% harshly shoves their cock into %TARGET%'s ass and unleashes their piss.",
+				"%USER% forcefully fills %TARGET%'s ass with their hot urine without mercy.",
+				"%USER% roughly degrades %TARGET% by flooding their ass with piss."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently pee into your partner's ass with twisted devotion",
+				"Softly fill your partner's ass with your urine, showing perverse affection",
+				"Tenderly direct your stream into your partner's anus, lost in depraved passion",
+				"Carefully let your golden stream flow into your partner's ass with dark devotion"
+			],
+			"neutral": [
+				"Pee into your partner's ass.",
+				"Fill your partner's ass with your urine.",
+				"Direct your stream into your partner's anus.",
+				"Let your golden stream flow into your partner's ass."
+			],
+			"rough": [
+				"Forcefully piss into your partner's ass.",
+				"Make your partner gasp from your hot urine.",
+				"Flood your partner's ass with your piss.",
+				"Degrade your partner by filling their ass."
+			],
+			"hard": [
+				"Roughly piss into your partner's ass.",
+				"Aggressively make your partner gasp from your hot urine.",
+				"Forcefully flood your partner's ass with your piss.",
+				"Roughly degrade your partner by filling their ass."
+			]
+		},
+		"user_required_parts": ["penis"],
+		"target_required_parts": ["anus"],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 6,
+		"target_pleasure": 6,
+		"user_arousal": 6,
+		"target_arousal": 6
+	},
+	"Poop on Partner": {
+		"name": "Poop on Partner",
+		"description": "Shit on target",
+		"category": "Depraved",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently shits on %TARGET%, marking them with loving devotion",
+				"%USER% softly relieves their bowels on %TARGET%, showing twisted affection",
+				"%USER% tenderly lets loose their waste onto %TARGET%, lost in depraved passion",
+				"%USER% carefully marks %TARGET% with their filth, expressing dark devotion"
+			],
+			"neutral": [
+				"%USER% shits on %TARGET%.",
+				"%USER% relieves their bowels on %TARGET%.",
+				"%USER% lets loose their waste onto %TARGET%.",
+				"%USER% marks %TARGET% with their filth."
+			],
+			"hard": [
+				"%USER% roughly shits on %TARGET%, asserting dominance.",
+				"%USER% aggressively drenches %TARGET% in their hot waste without mercy.",
+				"%USER% forcefully marks %TARGET% like territory, shitting all over them.",
+				"%USER% roughly degrades %TARGET% by covering them in their filth."
+			],
+			"rough": [
+				"%USER% aggressively shits on %TARGET%, asserting dominance.",
+				"%USER% harshly drenches %TARGET% in their hot waste without mercy.",
+				"%USER% forcefully marks %TARGET% like territory, shitting all over them.",
+				"%USER% roughly degrades %TARGET% by covering them in their filth."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently relieve your bowels on your partner with twisted devotion",
+				"Softly mark your partner with your waste, showing perverse affection",
+				"Tenderly shit on your partner, lost in depraved passion",
+				"Carefully cover your partner in your filth with dark devotion"
+			],
+			"neutral": [
+				"Relieve your bowels on your partner.",
+				"Mark your partner with your waste.",
+				"Shit on your partner.",
+				"Cover your partner in your filth."
+			],
+			"rough": [
+				"Forcefully shit on your partner to assert dominance.",
+				"Drench your partner in your hot waste.",
+				"Mark your partner like territory.",
+				"Degrade your partner by covering them in your filth."
+			],
+			"hard": [
+				"Roughly shit on your partner to assert dominance.",
+				"Aggressively drench your partner in your hot waste.",
+				"Forcefully mark your partner like territory.",
+				"Roughly degrade your partner by covering them in your filth."
+			]
+		},
+		"user_required_parts": ["anus"],
+		"target_required_parts": [],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 5,
+		"target_pleasure": 5,
+		"user_arousal": 5,
+		"target_arousal": 5
+	},
+	"Poop in Partner's Mouth": {
+		"name": "Poop in Partner's Mouth",
+		"description": "Shit into target's mouth",
+		"category": "Depraved",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently shits into %TARGET%'s mouth, sharing their waste with loving devotion",
+				"%USER% softly directs their waste into %TARGET%'s open mouth, showing twisted affection",
+				"%USER% tenderly fills %TARGET%'s mouth with their filth, lost in depraved passion",
+				"%USER% carefully lets %TARGET% taste their waste, expressing dark devotion"
+			],
+			"neutral": [
+				"%USER% shits into %TARGET%'s mouth.",
+				"%USER% directs their waste into %TARGET%'s open mouth.",
+				"%USER% fills %TARGET%'s mouth with their filth.",
+				"%USER% lets %TARGET% taste their waste."
+			],
+			"hard": [
+				"%USER% roughly shits into %TARGET%'s mouth, making them choke.",
+				"%USER% aggressively forces %TARGET% to taste their hot waste.",
+				"%USER% forcefully degrades %TARGET% by filling their mouth with filth.",
+				"%USER% roughly makes %TARGET% swallow their waste."
+			],
+			"rough": [
+				"%USER% aggressively shits into %TARGET%'s mouth, making them choke.",
+				"%USER% harshly forces %TARGET% to taste their hot waste.",
+				"%USER% forcefully degrades %TARGET% by filling their mouth with filth.",
+				"%USER% roughly makes %TARGET% swallow their waste."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently shit into your partner's mouth with twisted devotion",
+				"Softly let your partner taste your waste, showing perverse affection",
+				"Tenderly fill your partner's mouth with your filth, lost in depraved passion",
+				"Carefully direct your waste into your partner's mouth with dark devotion"
+			],
+			"neutral": [
+				"Shit into your partner's mouth.",
+				"Let your partner taste your waste.",
+				"Fill your partner's mouth with your filth.",
+				"Direct your waste into your partner's mouth."
+			],
+			"rough": [
+				"Forcefully shit into your partner's mouth.",
+				"Make your partner choke on your hot waste.",
+				"Force your partner to taste your filth.",
+				"Degrade your partner by filling their mouth."
+			],
+			"hard": [
+				"Roughly shit into your partner's mouth.",
+				"Aggressively make your partner choke on your hot waste.",
+				"Forcefully force your partner to taste your filth.",
+				"Roughly degrade your partner by filling their mouth."
+			]
+		},
+		"user_required_parts": ["anus"],
+		"target_required_parts": ["mouth"],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 6,
+		"target_pleasure": 5,
+		"user_arousal": 6,
+		"target_arousal": 5
+	},
+	"Sniff Partner's Sweat": {
+		"name": "Sniff Partner's Sweat",
+		"description": "Sniff target's sweaty body",
+		"category": "Depraved",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently sniffs %TARGET%'s sweaty body, breathing in their intoxicating musk with loving devotion",
+				"%USER% softly inhales %TARGET%'s musky scent, showing twisted affection",
+				"%USER% tenderly takes in %TARGET%'s body odor, lost in depraved passion",
+				"%USER% carefully breathes in %TARGET%'s sweat, expressing dark devotion"
+			],
+			"neutral": [
+				"%USER% sniffs %TARGET%'s sweaty body.",
+				"%USER% inhales %TARGET%'s musky scent.",
+				"%USER% takes in %TARGET%'s body odor.",
+				"%USER% breathes in %TARGET%'s sweat."
+			],
+			"hard": [
+				"%USER% roughly sniffs %TARGET%'s sweaty body, asserting dominance.",
+				"%USER% aggressively inhales %TARGET%'s musk, marking territory.",
+				"%USER% forcefully breathes in %TARGET%'s body odor without mercy.",
+				"%USER% roughly degrades %TARGET% by inhaling their sweat."
+			],
+			"rough": [
+				"%USER% aggressively sniffs %TARGET%'s sweaty body, asserting dominance.",
+				"%USER% harshly inhales %TARGET%'s musk, marking territory.",
+				"%USER% forcefully breathes in %TARGET%'s body odor without mercy.",
+				"%USER% roughly degrades %TARGET% by inhaling their sweat."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently sniff your partner's sweaty body with twisted devotion",
+				"Softly inhale your partner's musky scent, showing perverse affection",
+				"Tenderly take in your partner's body odor, lost in depraved passion",
+				"Carefully breathe in your partner's sweat with dark devotion"
+			],
+			"neutral": [
+				"Sniff your partner's sweaty body.",
+				"Inhale your partner's musky scent.",
+				"Take in your partner's body odor.",
+				"Breathe in your partner's sweat."
+			],
+			"rough": [
+				"Forcefully sniff your partner's sweaty body.",
+				"Inhale your partner's musk aggressively.",
+				"Breathe in your partner's body odor.",
+				"Degrade your partner by inhaling their sweat."
+			],
+			"hard": [
+				"Roughly sniff your partner's sweaty body.",
+				"Aggressively inhale your partner's musk.",
+				"Forcefully breathe in your partner's body odor.",
+				"Roughly degrade your partner by inhaling their sweat."
+			]
+		},
+		"user_required_parts": ["nose"],
+		"target_required_parts": [],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 3,
+		"target_pleasure": 4,
+		"user_arousal": 3,
+		"target_arousal": 4
+	},
+	"Lick Partner's Sweat": {
+		"name": "Lick Partner's Sweat",
+		"description": "Lick target's sweaty body",
+		"category": "Depraved",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently licks %TARGET%'s sweaty body, savoring their natural taste with loving devotion",
+				"%USER% softly tastes %TARGET%'s musky sweat, showing twisted affection",
+				"%USER% tenderly runs their tongue over %TARGET%'s sweaty skin, lost in depraved passion",
+				"%USER% carefully drinks in %TARGET%'s body odor with their tongue, expressing dark devotion"
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s sweaty body.",
+				"%USER% tastes %TARGET%'s musky sweat.",
+				"%USER% runs their tongue over %TARGET%'s sweaty skin.",
+				"%USER% drinks in %TARGET%'s body odor with their tongue."
+			],
+			"hard": [
+				"%USER% roughly licks %TARGET%'s sweaty body, asserting dominance.",
+				"%USER% aggressively tastes %TARGET%'s musk, marking territory.",
+				"%USER% forcefully runs their tongue over %TARGET%'s sweat without mercy.",
+				"%USER% roughly degrades %TARGET% by licking their sweaty body."
+			],
+			"rough": [
+				"%USER% aggressively licks %TARGET%'s sweaty body, asserting dominance.",
+				"%USER% harshly tastes %TARGET%'s musk, marking territory.",
+				"%USER% forcefully runs their tongue over %TARGET%'s sweat without mercy.",
+				"%USER% roughly degrades %TARGET% by licking their sweaty body."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently lick your partner's sweaty body with twisted devotion",
+				"Softly taste your partner's musky sweat, showing perverse affection",
+				"Tenderly run your tongue over your partner's sweaty skin, lost in depraved passion",
+				"Carefully drink in your partner's body odor with dark devotion"
+			],
+			"neutral": [
+				"Lick your partner's sweaty body.",
+				"Taste your partner's musky sweat.",
+				"Run your tongue over your partner's sweaty skin.",
+				"Drink in your partner's body odor."
+			],
+			"rough": [
+				"Forcefully lick your partner's sweaty body.",
+				"Taste your partner's musk aggressively.",
+				"Run your tongue over your partner's sweat.",
+				"Degrade your partner by licking their sweaty body."
+			],
+			"hard": [
+				"Roughly lick your partner's sweaty body.",
+				"Aggressively taste your partner's musk.",
+				"Forcefully run your tongue over your partner's sweat.",
+				"Roughly degrade your partner by licking their sweaty body."
+			]
+		},
+		"user_required_parts": ["tongue"],
+		"target_required_parts": [],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 4,
+		"target_pleasure": 5,
+		"user_arousal": 4,
+		"target_arousal": 5
+	},
+	"Sniff Partner's Armpit": {
+		"name": "Sniff Partner's Armpit",
+		"description": "Sniff target's armpit",
+		"category": "Depraved",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently sniffs %TARGET%'s armpit, breathing in their intoxicating musk with loving devotion",
+				"%USER% softly inhales %TARGET%'s musky armpit scent, showing twisted affection",
+				"%USER% tenderly takes in %TARGET%'s armpit odor, lost in depraved passion",
+				"%USER% carefully breathes in %TARGET%'s armpit musk, expressing dark devotion"
+			],
+			"neutral": [
+				"%USER% sniffs %TARGET%'s armpit.",
+				"%USER% inhales %TARGET%'s musky armpit scent.",
+				"%USER% takes in %TARGET%'s armpit odor.",
+				"%USER% breathes in %TARGET%'s armpit musk."
+			],
+			"hard": [
+				"%USER% roughly sniffs %TARGET%'s armpit, asserting dominance.",
+				"%USER% aggressively inhales %TARGET%'s armpit musk, marking territory.",
+				"%USER% forcefully breathes in %TARGET%'s armpit odor without mercy.",
+				"%USER% roughly degrades %TARGET% by inhaling their armpit musk."
+			],
+			"rough": [
+				"%USER% aggressively sniffs %TARGET%'s armpit, asserting dominance.",
+				"%USER% harshly inhales %TARGET%'s armpit musk, marking territory.",
+				"%USER% forcefully breathes in %TARGET%'s armpit odor without mercy.",
+				"%USER% roughly degrades %TARGET% by inhaling their armpit musk."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently sniff your partner's armpit with twisted devotion",
+				"Softly inhale your partner's musky armpit scent, showing perverse affection",
+				"Tenderly take in your partner's armpit odor, lost in depraved passion",
+				"Carefully breathe in your partner's armpit musk with dark devotion"
+			],
+			"neutral": [
+				"Sniff your partner's armpit.",
+				"Inhale your partner's musky armpit scent.",
+				"Take in your partner's armpit odor.",
+				"Breathe in your partner's armpit musk."
+			],
+			"rough": [
+				"Forcefully sniff your partner's armpit.",
+				"Inhale your partner's armpit musk aggressively.",
+				"Breathe in your partner's armpit odor.",
+				"Degrade your partner by inhaling their armpit musk."
+			],
+			"hard": [
+				"Roughly sniff your partner's armpit.",
+				"Aggressively inhale your partner's armpit musk.",
+				"Forcefully breathe in your partner's armpit odor.",
+				"Roughly degrade your partner by inhaling their armpit musk."
+			]
+		},
+		"user_required_parts": ["nose"],
+		"target_required_parts": ["armpit"],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 3,
+		"target_pleasure": 4,
+		"user_arousal": 3,
+		"target_arousal": 4
+	},
+	"Lick Partner's Armpit": {
+		"name": "Lick Partner's Armpit",
+		"description": "Lick target's armpit",
+		"category": "Depraved",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently licks %TARGET%'s armpit, savoring their natural taste with loving devotion",
+				"%USER% softly tastes %TARGET%'s musky armpit sweat, showing twisted affection",
+				"%USER% tenderly runs their tongue over %TARGET%'s armpit, lost in depraved passion",
+				"%USER% carefully drinks in %TARGET%'s armpit musk with their tongue, expressing dark devotion"
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s armpit.",
+				"%USER% tastes %TARGET%'s musky armpit sweat.",
+				"%USER% runs their tongue over %TARGET%'s armpit.",
+				"%USER% drinks in %TARGET%'s armpit musk with their tongue."
+			],
+			"hard": [
+				"%USER% roughly licks %TARGET%'s armpit, asserting dominance.",
+				"%USER% aggressively tastes %TARGET%'s armpit musk, marking territory.",
+				"%USER% forcefully runs their tongue over %TARGET%'s armpit without mercy.",
+				"%USER% roughly degrades %TARGET% by licking their armpit."
+			],
+			"rough": [
+				"%USER% aggressively licks %TARGET%'s armpit, asserting dominance.",
+				"%USER% harshly tastes %TARGET%'s armpit musk, marking territory.",
+				"%USER% forcefully runs their tongue over %TARGET%'s armpit without mercy.",
+				"%USER% roughly degrades %TARGET% by licking their armpit."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently lick your partner's armpit with twisted devotion",
+				"Softly taste your partner's musky armpit sweat, showing perverse affection",
+				"Tenderly run your tongue over your partner's armpit, lost in depraved passion",
+				"Carefully drink in your partner's armpit sweat with dark devotion"
+			],
+			"neutral": [
+				"Lick your partner's armpit.",
+				"Taste your partner's musky armpit sweat.",
+				"Run your tongue over your partner's armpit.",
+				"Drink in your partner's armpit musk."
+			],
+			"rough": [
+				"Forcefully lick your partner's armpit.",
+				"Taste your partner's armpit musk aggressively.",
+				"Run your tongue over your partner's armpit.",
+				"Degrade your partner by licking their armpit."
+			],
+			"hard": [
+				"Roughly lick your partner's armpit.",
+				"Aggressively taste your partner's armpit musk.",
+				"Forcefully run your tongue over your partner's armpit.",
+				"Roughly degrade your partner by licking their armpit."
+			]
+		},
+		"user_required_parts": ["tongue"],
+		"target_required_parts": ["armpit"],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 4,
+		"target_pleasure": 5,
+		"user_arousal": 4,
+		"target_arousal": 5
+	},
+	"Degrading Act": {
+		"name": "Degrading Act",
+		"description": "Perform a degrading act on target",
+		"category": "Depraved",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently performs a degrading act on %TARGET%, showing twisted devotion",
+				"%USER% softly humiliates %TARGET% with perverse affection",
+				"%USER% tenderly degrades %TARGET%, lost in depraved passion",
+				"%USER% carefully performs a depraved act on %TARGET% with dark devotion"
+			],
+			"neutral": [
+				"%USER% performs a degrading act on %TARGET%.",
+				"%USER% humiliates %TARGET%.",
+				"%USER% degrades %TARGET%.",
+				"%USER% performs a depraved act on %TARGET%."
+			],
+			"hard": [
+				"%USER% roughly performs a degrading act on %TARGET%.",
+				"%USER% aggressively humiliates %TARGET%.",
+				"%USER% forcefully degrades %TARGET%.",
+				"%USER% roughly performs a depraved act on %TARGET%."
+			],
+			"rough": [
+				"%USER% aggressively performs a degrading act on %TARGET%.",
+				"%USER% harshly humiliates %TARGET%.",
+				"%USER% forcefully degrades %TARGET%.",
+				"%USER% roughly performs a depraved act on %TARGET%."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently perform a degrading act on target with twisted devotion",
+				"Softly humiliate target, showing perverse affection",
+				"Tenderly degrade target, lost in depraved passion",
+				"Carefully perform a depraved act on target with dark devotion"
+			],
+			"neutral": [
+				"Perform a degrading act on target.",
+				"Humiliate target.",
+				"Degrade target.",
+				"Perform a depraved act on target."
+			],
+			"hard": [
+				"Roughly perform a degrading act on target.",
+				"Aggressively humiliate target.",
+				"Forcefully degrade target.",
+				"Roughly perform a depraved act on target."
+			],
+			"rough": [
+				"Aggressively perform a degrading act on target.",
+				"Harshly humiliate target.",
+				"Forcefully degrade target.",
+				"Roughly perform a depraved act on target."
+			]
+		},
+		"user_required_parts": [],
+		"target_required_parts": [],
+		"category_depraved": 1,
+		"category_violent": 0,
+		"color": "purple",
+		"user_pleasure": 5,
+		"target_pleasure": 5,
+		"user_arousal": 5,
+		"target_arousal": 5
+	}
+}

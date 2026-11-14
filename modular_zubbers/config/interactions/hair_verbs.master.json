@@ -1,0 +1,342 @@
+{
+	"Sniff Hair": {
+		"name": "Sniff Hair",
+		"description": "Sniff target's hair",
+		"category": "Hair",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently sniffs %TARGET%'s hair",
+				"%USER% softly inhales the scent of %TARGET%'s hair",
+				"%USER% tenderly breathes in %TARGET%'s hair scent",
+				"%USER% carefully takes in %TARGET%'s hair scent"
+			],
+			"neutral": [
+				"%USER% sniffs %TARGET%'s hair",
+				"%USER% inhales the scent of %TARGET%'s hair",
+				"%USER% breathes in %TARGET%'s hair scent",
+				"%USER% takes in %TARGET%'s hair scent"
+			],
+			"hard": [
+				"%USER% roughly sniffs %TARGET%'s hair",
+				"%USER% aggressively inhales the scent of %TARGET%'s hair",
+				"%USER% forcefully breathes in %TARGET%'s hair scent",
+				"%USER% roughly takes in %TARGET%'s hair scent"
+			],
+			"rough": [
+				"%USER% aggressively sniffs %TARGET%'s hair",
+				"%USER% harshly inhales the scent of %TARGET%'s hair",
+				"%USER% forcefully breathes in %TARGET%'s hair scent",
+				"%USER% roughly takes in %TARGET%'s hair scent"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently sniff target's hair",
+				"Softly inhale the scent of target's hair",
+				"Tenderly breathe in target's hair scent",
+				"Carefully take in target's hair scent"
+			],
+			"neutral": [
+				"Sniff target's hair",
+				"Inhale the scent of target's hair",
+				"Breathe in target's hair scent",
+				"Take in target's hair scent"
+			],
+			"hard": [
+				"Roughly sniff target's hair",
+				"Aggressively inhale the scent of target's hair",
+				"Forcefully breathe in target's hair scent",
+				"Roughly take in target's hair scent"
+			],
+			"rough": [
+				"Aggressively sniff target's hair",
+				"Harshly inhale the scent of target's hair",
+				"Forcefully breathe in target's hair scent",
+				"Roughly take in target's hair scent"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 3,
+		"user_arousal": 2,
+		"target_arousal": 3
+	},
+	"Lick Hair": {
+		"name": "Lick Hair",
+		"description": "Lick target's hair",
+		"category": "Hair",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently licks %TARGET%'s hair",
+				"%USER% softly runs their tongue through %TARGET%'s hair",
+				"%USER% tenderly licks %TARGET%'s locks",
+				"%USER% carefully licks %TARGET%'s hair"
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s hair",
+				"%USER% runs their tongue through %TARGET%'s hair",
+				"%USER% licks %TARGET%'s locks",
+				"%USER% performs oral on %TARGET%'s hair"
+			],
+			"hard": [
+				"%USER% roughly licks %TARGET%'s hair",
+				"%USER% aggressively runs their tongue through %TARGET%'s hair",
+				"%USER% forcefully licks %TARGET%'s locks",
+				"%USER% roughly performs oral on %TARGET%'s hair"
+			],
+			"rough": [
+				"%USER% aggressively licks %TARGET%'s hair",
+				"%USER% harshly runs their tongue through %TARGET%'s hair",
+				"%USER% forcefully licks %TARGET%'s locks",
+				"%USER% roughly performs oral on %TARGET%'s hair"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently lick target's hair",
+				"Softly run your tongue through target's hair",
+				"Tenderly lick target's locks",
+				"Carefully lick target's hair"
+			],
+			"neutral": [
+				"Lick target's hair",
+				"Run your tongue through target's hair",
+				"Lick target's locks",
+				"Perform oral on target's hair"
+			],
+			"hard": [
+				"Roughly lick target's hair",
+				"Aggressively run your tongue through target's hair",
+				"Forcefully lick target's locks",
+				"Roughly perform oral on target's hair"
+			],
+			"rough": [
+				"Aggressively lick target's hair",
+				"Harshly run your tongue through target's hair",
+				"Forcefully lick target's locks",
+				"Roughly perform oral on target's hair"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 4,
+		"user_arousal": 2,
+		"target_arousal": 4
+	},
+	"Kiss Hair": {
+		"name": "Kiss Hair",
+		"description": "Kiss target's hair",
+		"category": "Hair",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently kisses %TARGET%'s hair",
+				"%USER% softly pecks %TARGET%'s locks",
+				"%USER% tenderly kisses %TARGET%'s hair",
+				"%USER% carefully presses their lips to %TARGET%'s hair"
+			],
+			"neutral": [
+				"%USER% kisses %TARGET%'s hair",
+				"%USER% pecks %TARGET%'s locks",
+				"%USER% kisses %TARGET%'s hair",
+				"%USER% presses their lips to %TARGET%'s hair"
+			],
+			"hard": [
+				"%USER% roughly kisses %TARGET%'s hair",
+				"%USER% aggressively pecks %TARGET%'s locks",
+				"%USER% forcefully kisses %TARGET%'s hair",
+				"%USER% roughly presses their lips to %TARGET%'s hair"
+			],
+			"rough": [
+				"%USER% aggressively kisses %TARGET%'s hair",
+				"%USER% harshly pecks %TARGET%'s locks",
+				"%USER% forcefully kisses %TARGET%'s hair",
+				"%USER% roughly presses their lips to %TARGET%'s hair"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently kiss target's hair",
+				"Softly peck target's locks",
+				"Tenderly kiss target's hair",
+				"Carefully press your lips to target's hair"
+			],
+			"neutral": [
+				"Kiss target's hair",
+				"Peck target's locks",
+				"Kiss target's hair",
+				"Press your lips to target's hair"
+			],
+			"hard": [
+				"Roughly kiss target's hair",
+				"Aggressively peck target's locks",
+				"Forcefully kiss target's hair",
+				"Roughly press your lips to target's hair"
+			],
+			"rough": [
+				"Aggressively kiss target's hair",
+				"Harshly peck target's locks",
+				"Forcefully kiss target's hair",
+				"Roughly press your lips to target's hair"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 3,
+		"user_arousal": 2,
+		"target_arousal": 3
+	},
+	"Nibble Hair": {
+		"name": "Nibble Hair",
+		"description": "Nibble on target's hair",
+		"category": "Hair",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently nibbles on %TARGET%'s hair",
+				"%USER% softly bites %TARGET%'s locks",
+				"%USER% tenderly nibbles %TARGET%'s hair",
+				"%USER% carefully nips at %TARGET%'s hair"
+			],
+			"neutral": [
+				"%USER% nibbles on %TARGET%'s hair",
+				"%USER% bites %TARGET%'s locks",
+				"%USER% nibbles %TARGET%'s hair",
+				"%USER% nips at %TARGET%'s hair"
+			],
+			"hard": [
+				"%USER% roughly nibbles on %TARGET%'s hair",
+				"%USER% aggressively bites %TARGET%'s locks",
+				"%USER% forcefully nibbles %TARGET%'s hair",
+				"%USER% roughly nips at %TARGET%'s hair"
+			],
+			"rough": [
+				"%USER% aggressively nibbles on %TARGET%'s hair",
+				"%USER% harshly bites %TARGET%'s locks",
+				"%USER% forcefully nibbles %TARGET%'s hair",
+				"%USER% roughly nips at %TARGET%'s hair"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently nibble on target's hair",
+				"Softly bite target's locks",
+				"Tenderly nibble target's hair",
+				"Carefully nip at target's hair"
+			],
+			"neutral": [
+				"Nibble on target's hair",
+				"Bite target's locks",
+				"Nibble target's hair",
+				"Nip at target's hair"
+			],
+			"hard": [
+				"Roughly nibble on target's hair",
+				"Aggressively bite target's locks",
+				"Forcefully nibble target's hair",
+				"Roughly nip at target's hair"
+			],
+			"rough": [
+				"Aggressively nibble on target's hair",
+				"Harshly bite target's locks",
+				"Forcefully nibble target's hair",
+				"Roughly nip at target's hair"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 3,
+		"user_arousal": 2,
+		"target_arousal": 3
+	},
+	"Bite Hair": {
+		"name": "Bite Hair",
+		"description": "Bite target's hair",
+		"category": "Hair",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently bites %TARGET%'s hair",
+				"%USER% softly sinks their teeth into %TARGET%'s locks",
+				"%USER% tenderly bites %TARGET%'s hair",
+				"%USER% carefully bites down on %TARGET%'s hair"
+			],
+			"neutral": [
+				"%USER% bites %TARGET%'s hair",
+				"%USER% sinks their teeth into %TARGET%'s locks",
+				"%USER% bites %TARGET%'s hair",
+				"%USER% bites down on %TARGET%'s hair"
+			],
+			"hard": [
+				"%USER% roughly bites %TARGET%'s hair",
+				"%USER% aggressively sinks their teeth into %TARGET%'s locks",
+				"%USER% forcefully bites %TARGET%'s hair",
+				"%USER% roughly bites down on %TARGET%'s hair"
+			],
+			"rough": [
+				"%USER% aggressively bites %TARGET%'s hair",
+				"%USER% harshly sinks their teeth into %TARGET%'s locks",
+				"%USER% forcefully bites %TARGET%'s hair",
+				"%USER% roughly bites down on %TARGET%'s hair"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently bite target's hair",
+				"Softly sink your teeth into target's locks",
+				"Tenderly bite target's hair",
+				"Carefully bite down on target's hair"
+			],
+			"neutral": [
+				"Bite target's hair",
+				"Sink your teeth into target's locks",
+				"Bite target's hair",
+				"Bite down on target's hair"
+			],
+			"hard": [
+				"Roughly bite target's hair",
+				"Aggressively sink your teeth into target's locks",
+				"Forcefully bite target's hair",
+				"Roughly bite down on target's hair"
+			],
+			"rough": [
+				"Aggressively bite target's hair",
+				"Harshly sink your teeth into target's locks",
+				"Forcefully bite target's hair",
+				"Roughly bite down on target's hair"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": [],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 4,
+		"user_arousal": 3,
+		"target_arousal": 4
+	}
+}

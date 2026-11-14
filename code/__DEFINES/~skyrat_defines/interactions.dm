@@ -1,4 +1,5 @@
 #define INTERACTION_JSON_FOLDER "config/skyrat/interactions/"
+#define INTERACTION_JSON_FOLDER_ZUBBERS "modular_zubbers/config/interactions/"
 
 // Special values
 #define INTERACTION_MAX_CHAR 255

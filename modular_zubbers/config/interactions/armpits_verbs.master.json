@@ -1,0 +1,251 @@
+{
+	"Sniff Armpit": {
+		"name": "Sniff Armpit",
+		"description": "Sniff target's armpit",
+		"category": "Armpits",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently presses their nose into %TARGET%'s armpit, savoring their scent.",
+				"%USER% softly inhales the scent of %TARGET%'s underarm, nose pressed flush into the pit.",
+				"%USER% tenderly breathes in %TARGET%'s armpit, letting the scent wash over them.",
+				"%USER% intimately sniffs %TARGET%'s armpit, immersing themselves in their scent."
+			],
+			"neutral": [
+				"%USER% sniffs %TARGET%'s armpit, seeking out their scent.",
+				"%USER% inhales the scent of %TARGET%'s underarm.",
+				"%USER% breathes in %TARGET%'s armpit, exploring their scent.",
+				"%USER% takes in %TARGET%'s armpit scent, breathing it in deeply."
+			],
+			"hard": [
+				"%USER% jams their nose beneath %TARGET%'s arm and sniffs deeply.",
+				"%USER% aggressively inhales the scent of %TARGET%'s armpit.",
+				"%USER% presses their nose in roughly and breathes in %TARGET%'s armpit.",
+				"%USER% roughly presses into %TARGET%'s armpit, drinking in their scent."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently sniff target's armpit",
+				"Softly inhale the scent of target's underarm",
+				"Tenderly breathe in target's armpit",
+				"Carefully take in target's armpit scent"
+			],
+			"neutral": [
+				"Sniff target's armpit",
+				"Inhale the scent of target's underarm",
+				"Breathe in target's armpit",
+				"Take in target's armpit scent"
+			],
+			"hard": [
+				"Roughly sniff target's armpit",
+				"Aggressively inhale the scent of target's underarm",
+				"Forcefully breathe in target's armpit",
+				"Roughly take in target's armpit scent"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["armpits"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 4,
+		"user_arousal": 2,
+		"target_arousal": 4
+	},
+	"Nuzzle Armpit": {
+		"name": "Nuzzle Armpit",
+		"description": "Nuzzle target's armpit",
+		"category": "Armpits",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently nuzzles %TARGET%'s armpit, immersing themselves in their scent.",
+				"%USER% softly rubs themselves against %TARGET%'s underarm, pressing their face in lightly.",
+				"%USER% tenderly nuzzles into %TARGET%'s armpit, their nose pressed in lightly.",
+				"%USER% intimately presses their face against %TARGET%'s underarm, sighing softly."
+			],
+			"neutral": [
+				"%USER% nuzzles %TARGET%'s armpit, eager.",
+				"%USER% rubs their face against %TARGET%'s underarm, their nose pressed into the crease.",
+				"%USER% nuzzles into %TARGET%'s armpit, their face pressed in deeply.",
+				"%USER% presses their face against %TARGET%'s underarm, their nose pressed in tightly."
+			],
+			"hard": [
+				"%USER% roughly nuzzles %TARGET%'s armpit, their face pressed in roughly.",
+				"%USER% aggressively rubs their face against %TARGET%'s underarm, their nose pressed in roughly.",
+				"%USER% forcefully nuzzles into %TARGET%'s armpit, their face pressed in roughly.",
+				"%USER% roughly presses their face against %TARGET%'s underarm, their nose pressed in roughly."
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently nuzzle target's armpit",
+				"Softly rub your face against target's underarm",
+				"Tenderly nuzzle into target's armpit",
+				"Carefully press your face against target's underarm"
+			],
+			"neutral": [
+				"Nuzzle target's armpit",
+				"Rub your face against target's underarm",
+				"Nuzzle into target's armpit",
+				"Press your face against target's underarm"
+			],
+			"hard": [
+				"Roughly nuzzle target's armpit",
+				"Aggressively rub your face against target's underarm",
+				"Forcefully nuzzle into target's armpit",
+				"Roughly press your face against target's underarm"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["armpits"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 5,
+		"user_arousal": 3,
+		"target_arousal": 5
+	},
+	"Lick Armpit": {
+		"name": "Lick Armpit",
+		"description": "Lick target's armpit",
+		"category": "Armpits",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently licks %TARGET%'s armpit",
+				"%USER% softly licks %TARGET%'s underarm",
+				"%USER% tenderly runs their tongue along %TARGET%'s armpit",
+				"%USER% carefully licks %TARGET%'s underarm"
+			],
+			"neutral": [
+				"%USER% licks %TARGET%'s armpit",
+				"%USER% licks %TARGET%'s underarm",
+				"%USER% runs their tongue along %TARGET%'s armpit",
+				"%USER% performs oral on %TARGET%'s underarm"
+			],
+			"hard": [
+				"%USER% roughly licks %TARGET%'s armpit",
+				"%USER% aggressively licks %TARGET%'s underarm",
+				"%USER% forcefully runs their tongue along %TARGET%'s armpit",
+				"%USER% roughly performs oral on %TARGET%'s underarm"
+			],
+			"rough": [
+				"%USER% aggressively licks %TARGET%'s armpit",
+				"%USER% harshly licks %TARGET%'s underarm",
+				"%USER% forcefully runs their tongue along %TARGET%'s armpit",
+				"%USER% roughly performs oral on %TARGET%'s underarm"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently lick target's armpit",
+				"Softly lick target's underarm",
+				"Tenderly run your tongue along target's armpit",
+				"Carefully lick target's underarm"
+			],
+			"neutral": [
+				"Lick target's armpit",
+				"Lick target's underarm",
+				"Run your tongue along target's armpit",
+				"Perform oral on target's underarm"
+			],
+			"hard": [
+				"Roughly lick target's armpit",
+				"Aggressively lick target's underarm",
+				"Forcefully run your tongue along target's armpit",
+				"Roughly perform oral on target's underarm"
+			],
+			"rough": [
+				"Aggressively lick target's armpit",
+				"Harshly lick target's underarm",
+				"Forcefully run your tongue along target's armpit",
+				"Roughly perform oral on target's underarm"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["armpits"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 3,
+		"target_pleasure": 6,
+		"user_arousal": 3,
+		"target_arousal": 6
+	},
+	"Kiss Armpit": {
+		"name": "Kiss Armpit",
+		"description": "Kiss target's armpit",
+		"category": "Armpits",
+		"usage": "other",
+		"lewd": 1,
+		"message_by_attitude": {
+			"gentle": [
+				"%USER% gently kisses %TARGET%'s armpit",
+				"%USER% softly pecks %TARGET%'s underarm",
+				"%USER% tenderly kisses %TARGET%'s underarm",
+				"%USER% carefully presses their lips to %TARGET%'s armpit"
+			],
+			"neutral": [
+				"%USER% kisses %TARGET%'s armpit",
+				"%USER% pecks %TARGET%'s underarm",
+				"%USER% kisses %TARGET%'s underarm",
+				"%USER% presses their lips to %TARGET%'s armpit"
+			],
+			"hard": [
+				"%USER% roughly kisses %TARGET%'s armpit",
+				"%USER% aggressively pecks %TARGET%'s underarm",
+				"%USER% forcefully kisses %TARGET%'s underarm",
+				"%USER% roughly presses their lips to %TARGET%'s armpit"
+			],
+			"rough": [
+				"%USER% aggressively kisses %TARGET%'s armpit",
+				"%USER% harshly pecks %TARGET%'s underarm",
+				"%USER% forcefully kisses %TARGET%'s underarm",
+				"%USER% roughly presses their lips to %TARGET%'s armpit"
+			]
+		},
+		"description_by_attitude": {
+			"gentle": [
+				"Gently kiss target's armpit",
+				"Softly peck target's underarm",
+				"Tenderly kiss target's underarm",
+				"Carefully press your lips to target's armpit"
+			],
+			"neutral": [
+				"Kiss target's armpit",
+				"Peck target's underarm",
+				"Kiss target's underarm",
+				"Press your lips to target's armpit"
+			],
+			"hard": [
+				"Roughly kiss target's armpit",
+				"Aggressively peck target's underarm",
+				"Forcefully kiss target's underarm",
+				"Roughly press your lips to target's armpit"
+			],
+			"rough": [
+				"Aggressively kiss target's armpit",
+				"Harshly peck target's underarm",
+				"Forcefully kiss target's underarm",
+				"Roughly press your lips to target's armpit"
+			]
+		},
+		"user_required_parts": ["mouth"],
+		"target_required_parts": ["armpits"],
+		"category_depraved": 0,
+		"category_violent": 0,
+		"color": "blue",
+		"user_pleasure": 2,
+		"target_pleasure": 5,
+		"user_arousal": 2,
+		"target_arousal": 5
+	}
+}
+
